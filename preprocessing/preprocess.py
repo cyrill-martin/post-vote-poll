@@ -58,7 +58,7 @@ def save_results(poll, name, data) -> None:
       indent=4
     )
 
-def clean_cell(cell): 
+def clean_cell(cell) -> str: 
   string = str(cell)
   str_list = string.split("  ")
   str_list = filter(lambda i: i != "", str_list)
@@ -67,7 +67,7 @@ def clean_cell(cell):
   string = string.replace("  ", " ")
   return string
 
-def preprocess(poll):
+def preprocess(poll) -> None:
   """
     Function to preprocess post-vote poll data. 
     The functions reads the codebook of a specific post-vote poll
@@ -90,10 +90,16 @@ def preprocess(poll):
   fr_col = 4
   it_col = 5
 
+  lang_columns = {
+    de_col: "de",
+    fr_col: "fr",
+    it_col: "it"
+  }
+
   selections = {}
   arrangements = {}
 
-  curr_super_sel = "---"
+  curr_super_sel = "_-_"
   curr_sel = ""
   curr_att = ""
   is_super_selection = False
@@ -102,6 +108,15 @@ def preprocess(poll):
   skip_indicators = [1939, "[JJJJ]", "[offene Nennung]"]
   continous_indicators = ["birthyearr"]
   delete_indicators = ["control1", "control3", "control3@"]
+
+  def create_selection(cell) -> None: 
+    if curr_sel.startswith(curr_super_sel):
+      selections[curr_super_sel]["selections"][curr_sel][lang_columns[cell.column]] = clean_cell(cell.value)
+    else: 
+      selections[curr_sel][lang_columns[cell.column]] = clean_cell(cell.value)
+
+  def create_arrangement(cell) -> None:
+    arrangements[curr_sel][curr_att][lang_columns[cell.column]] = clean_cell(cell.value)
 
   # Iterate rows in codebook (starting from 2nd row)
   for row in codebook.iter_rows(
@@ -139,7 +154,7 @@ def preprocess(poll):
         continue
 
       elif cell.column == 2:
-        # It's a code
+        # It's a code!
 
         if str(cell.value).isnumeric() == False and cell.value != None:
           # It's a selection
@@ -167,44 +182,21 @@ def preprocess(poll):
           arrangements[curr_sel][cell.value] = {}
 
         else:
-          # It's a super selection
+          # It's a super selection!
+          # See if cell.column == 1 and cell.value != None
           is_super_selection = True
+          # Skip cell
           continue
 
       else: 
-        # It's a label
+        # It's a label!
         if not is_super_selection:
-          # Super selections are handled very early 
-          # # with if cell.column == 1 and cell.value != None
           if is_selection:
             # It's a selection key
-            if cell.column == de_col:
-              if curr_sel.startswith(curr_super_sel):
-                selections[curr_super_sel]["selections"][curr_sel]["de"] = clean_cell(cell.value)
-              else: 
-                selections[curr_sel]["de"] = clean_cell(cell.value)
-
-            elif cell.column == fr_col:
-              if curr_sel.startswith(curr_super_sel):
-                selections[curr_super_sel]["selections"][curr_sel]["fr"] = clean_cell(cell.value)
-              else: 
-                selections[curr_sel]["fr"] = clean_cell(cell.value)
-
-
-            elif cell.column == it_col:
-              if curr_sel.startswith(curr_super_sel):
-                selections[curr_super_sel]["selections"][curr_sel]["it"] = clean_cell(cell.value)
-              else: 
-                selections[curr_sel]["it"] = clean_cell(cell.value)
-          
+            create_selection(cell)
           else:
             # It's a selection attribute
-            if cell.column == de_col:
-              arrangements[curr_sel][curr_att]["de"] = clean_cell(cell.value)
-            elif cell.column == fr_col:
-              arrangements[curr_sel][curr_att]["fr"] = clean_cell(cell.value)
-            elif cell.column == it_col:
-              arrangements[curr_sel][curr_att]["it"] = clean_cell(cell.value)
+            create_arrangement(cell)
 
   # Remove controls
   for item in delete_indicators:
