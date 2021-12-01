@@ -73,11 +73,9 @@ def preprocess(poll):
 
   min_row = codebook.min_row
   max_row = codebook.max_row
-  # max_row = 900
 
   min_col = 1
   max_col = 5
-  code_col = 2
 
   de_col = 3
   fr_col = 4
@@ -95,6 +93,15 @@ def preprocess(poll):
   skip_indicators = [1939, "[JJJJ]", "[offene Nennung]"]
   continous_indicators = ["birthyearr"]
   delete_indicators = ["control1", "control3", "control3@"]
+
+  def clean_cell(cell): 
+    string = str(cell)
+    str_list = string.split("  ")
+    str_list = filter(lambda i: i != "", str_list)
+    string = " ".join(str_list)
+    string = string.strip()
+    string = string.replace("  ", " ")
+    return string
 
   # Iterate rows in codebook
   for row in codebook.iter_rows(
@@ -131,7 +138,7 @@ def preprocess(poll):
         # Skip cell
         continue
 
-      elif cell.column == code_col:
+      elif cell.column == 2:
         # It's a code
 
         if str(cell.value).isnumeric() == False and cell.value != None:
@@ -167,36 +174,37 @@ def preprocess(poll):
       else: 
         # It's a label
         if not is_super_selection:
-
+          # Super selections are handled very early 
+          # # with if cell.column == 1 and cell.value != None
           if is_selection:
             # It's a selection key
             if cell.column == de_col:
               if curr_sel.startswith(curr_super_sel):
-                selections[curr_super_sel]["selections"][curr_sel]["de"] = cell.value
+                selections[curr_super_sel]["selections"][curr_sel]["de"] = clean_cell(cell.value)
               else: 
-                selections[curr_sel]["de"] = cell.value
+                selections[curr_sel]["de"] = clean_cell(cell.value)
 
             elif cell.column == fr_col:
               if curr_sel.startswith(curr_super_sel):
-                selections[curr_super_sel]["selections"][curr_sel]["fr"] = cell.value
+                selections[curr_super_sel]["selections"][curr_sel]["fr"] = clean_cell(cell.value)
               else: 
-                selections[curr_sel]["fr"] = cell.value
+                selections[curr_sel]["fr"] = clean_cell(cell.value)
 
 
             elif cell.column == it_col:
               if curr_sel.startswith(curr_super_sel):
-                selections[curr_super_sel]["selections"][curr_sel]["it"] = cell.value
+                selections[curr_super_sel]["selections"][curr_sel]["it"] = clean_cell(cell.value)
               else: 
-                selections[curr_sel]["it"] = cell.value
+                selections[curr_sel]["it"] = clean_cell(cell.value)
           
           else:
             # It's a selection attribute
             if cell.column == de_col:
-              arrangements[curr_sel][curr_att]["de"] = cell.value
+              arrangements[curr_sel][curr_att]["de"] = clean_cell(cell.value)
             elif cell.column == fr_col:
-              arrangements[curr_sel][curr_att]["fr"] = cell.value
+              arrangements[curr_sel][curr_att]["fr"] = clean_cell(cell.value)
             elif cell.column == it_col:
-              arrangements[curr_sel][curr_att]["it"] = cell.value
+              arrangements[curr_sel][curr_att]["it"] = clean_cell(cell.value)
 
   # Remove controls
   for item in delete_indicators:
@@ -208,7 +216,7 @@ def preprocess(poll):
   save_results(poll, "arrangements", arrangements)
  
 if __name__ == "__main__":
-  # Ask for poll number in terminal !
-  poll = 647
+  print("Poll ID?")
+  poll = input()
   if precheck(poll):
     preprocess(poll)
