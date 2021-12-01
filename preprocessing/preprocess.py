@@ -50,13 +50,22 @@ def precheck(poll=None) -> bool:
         return True
 
 def save_results(poll, name, data) -> None:
-  with open(f"{poll}_{name}.json", "w", encoding="utf-8") as file:
+  with open(f"polls/{poll}/{poll}_{name}.json", "w", encoding="utf-8") as file:
     json.dump(
       data,
       file, 
       ensure_ascii=False, 
       indent=4
     )
+
+def clean_cell(cell): 
+  string = str(cell)
+  str_list = string.split("  ")
+  str_list = filter(lambda i: i != "", str_list)
+  string = " ".join(str_list)
+  string = string.strip()
+  string = string.replace("  ", " ")
+  return string
 
 def preprocess(poll):
   """
@@ -94,16 +103,7 @@ def preprocess(poll):
   continous_indicators = ["birthyearr"]
   delete_indicators = ["control1", "control3", "control3@"]
 
-  def clean_cell(cell): 
-    string = str(cell)
-    str_list = string.split("  ")
-    str_list = filter(lambda i: i != "", str_list)
-    string = " ".join(str_list)
-    string = string.strip()
-    string = string.replace("  ", " ")
-    return string
-
-  # Iterate rows in codebook
+  # Iterate rows in codebook (starting from 2nd row)
   for row in codebook.iter_rows(
     min_row=min_row + 1, 
     max_row=max_row, 
