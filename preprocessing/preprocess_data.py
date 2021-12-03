@@ -1,5 +1,20 @@
+def poll_ids() -> list:
+  poll_ids = [636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647]
+  return poll_ids
+
+def polls_with_semicolon() -> list:
+  return [641, 642, 643, 644, 645]
+
 def poll_vote_info() -> dict:
   return {
+    647: {
+      "vote": 2, 
+      "nr_of_votes": 2 
+    },
+    646: {
+      "vote": 1, 
+      "nr_of_votes": 2 
+    },
     645: {
       "vote": 5, # In the codebook, vote 645 is discussed as vote5, etc.
       "nr_of_votes": 5 # In the codebook, a total of 5 votes is discussed
@@ -20,6 +35,26 @@ def poll_vote_info() -> dict:
       "vote": 1,
       "nr_of_votes": 5
     },
+    640: {
+      "vote": 3,
+      "nr_of_votes": 3
+    },
+    639: {
+      "vote": 2,
+      "nr_of_votes": 3
+    },
+    638: {
+      "vote": 1,
+      "nr_of_votes": 3
+    },
+    637: {
+      "vote": 2,
+      "nr_of_votes": 2
+    },
+    636: {
+      "vote": 1,
+      "nr_of_votes": 2
+    },
   }
 
 def column_info() -> dict:
@@ -37,19 +72,6 @@ def column_info() -> dict:
     dic["it_col"]: "it"
   }
   return dic
-
-# min_col = 1
-# max_col = 5
-
-# de_col = 3
-# fr_col = 4
-# it_col = 5
-
-# lang_columns = {
-#   de_col: "de",
-#   fr_col: "fr",
-#   it_col: "it"
-# }
 
 def create_poll_messages(poll=None) -> dict:
   return {
@@ -73,26 +95,18 @@ def create_target_paths(poll, name) -> dict:
     "target_file": f"../public/data/polls/{poll}/{poll}_{name}.json"
   }
 
-def poll_ids() -> list:
-  # poll_ids = [636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647]
-  poll_ids = [641, 642]
-  return poll_ids
-
-def polls_with_semicolon() -> list:
-  return [641, 642, 643, 644, 645]
-
 def skip_indicators() -> list:
   # Skip rows with this in column 2 or 3
  return [1939, "[JJJJ]", "[offene Nennung]"]
 
 def continous_indicators() -> list:
-  return ["birthyearr"]
+  return ["birthyearr".upper()]
 
 def delete_indicators() -> list:
   return [
-    "control1",
-    "control3",
-    "control3@",
+    "control1".upper(),
+    "control3".upper(),
+    "control3@".upper(),
     "GEWVORL1",
     "GEWVORL2",
     "GEWVORL3",
@@ -102,7 +116,7 @@ def delete_indicators() -> list:
   ]
 
 def abc() -> list:
-  return ["a", "b", "c", "d", "e", "f", "g", "h"]
+  return ["A", "B", "C", "D", "E", "F", "G", "H"]
 
 def keys_to_remove_by_nr(vote_nr) -> list:
   """
@@ -113,13 +127,13 @@ def keys_to_remove_by_nr(vote_nr) -> list:
     :param vote_nr: int
   """
   return [
-    f"vote{vote_nr}",
-    f"vote{vote_nr}a",
-    f"vote{vote_nr}b",
-    f"vote{vote_nr}c",
-    f"importance{vote_nr}",
-    f"difficul{vote_nr}",
-    f"dectime{vote_nr}"
+    f"vote{vote_nr}".upper(),
+    f"vote{vote_nr}a".upper(),
+    f"vote{vote_nr}b".upper(),
+    f"vote{vote_nr}c".upper(),
+    f"importance{vote_nr}".upper(),
+    f"difficul{vote_nr}".upper(),
+    f"dectime{vote_nr}".upper()
   ]
 
 def keys_to_remove_by_letter(letter) -> list:
@@ -131,7 +145,7 @@ def keys_to_remove_by_letter(letter) -> list:
     :param letter: str
   """
   return [
-    f"covid1{letter}"
+    f"covid1{letter}".upper()
   ]
 
 def keys_to_remove_by_start(vote_nr) -> list:
@@ -143,9 +157,9 @@ def keys_to_remove_by_start(vote_nr) -> list:
     :param vote_nr: int
   """
   return [
-    f"reason1acc{vote_nr}",
-    f"reason2acc{vote_nr}",
-    f"reason1den{vote_nr}",
-    f"reason2den{vote_nr}",
-    f"argu{vote_nr}"
+    f"reason1acc{vote_nr}".upper(),
+    f"reason2acc{vote_nr}".upper(),
+    f"reason1den{vote_nr}".upper(),
+    f"reason2den{vote_nr}".upper(),
+    f"argu{vote_nr}".upper()
   ]

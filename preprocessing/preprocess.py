@@ -77,12 +77,12 @@ def preprocess_data(poll, delimiter) -> None:
 
   # Reduce data
   for obj in data:
-    new_obj = reduce_data_obj(poll, obj, True)
+    new_obj = reduce_data_obj(poll, obj)
     reduced_data.append(new_obj)
 
   save_results(poll, "data", reduced_data)
 
-def reduce_data_obj(poll, obj, upper=False): 
+def reduce_data_obj(poll, obj): 
 
   poll_info = poll_vote_info()
   alphabet = abc()
@@ -108,9 +108,8 @@ def reduce_data_obj(poll, obj, upper=False):
   # Flatten starts_with_to_remove
   keys_to_remove_start = [ key for key_list in keys_to_remove_start for key in key_list ]
 
-  if upper:
-    keys_to_remove_complete = [ key.upper() for key in keys_to_remove_complete ]
-    keys_to_remove_start = [ key.upper() for key in keys_to_remove_start ]
+  keys_to_remove_complete = [ key.upper() for key in keys_to_remove_complete ]
+  keys_to_remove_start = [ key.upper() for key in keys_to_remove_start ]
 
   # Remove unwanted keys directly
   for key in keys_to_remove_complete:
@@ -191,7 +190,7 @@ def preprocess_codebook(poll) -> None:
 
       if cell.column == 1 and cell.value != None:
         # It's a super selection
-        curr_super_sel = cell.value
+        curr_super_sel = cell.value.upper()
         # Already add super selection to dict
         selections[curr_super_sel] = {
           "de": row[columns["de_col"] - 1].value,
@@ -211,7 +210,7 @@ def preprocess_codebook(poll) -> None:
           is_super_selection = False
           is_selection = True
           # Set current selection
-          curr_sel = cell.value
+          curr_sel = cell.value.upper()
           
           # Create keys in final objects
           if curr_sel.startswith(curr_super_sel):
