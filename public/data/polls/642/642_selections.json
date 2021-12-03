@@ -1,0 +1,594 @@
+{
+    "BIRTHYEARR": {
+        "de": "Bitte geben Sie Ihr Geburtsjahr an",
+        "fr": "Pouvez-vous me donner votre année de naissance?",
+        "it": "Potrebbe magari dirmi il Suo anno di nascita?"
+    },
+    "S11": {
+        "de": "Bitte geben Sie Ihr Geschlecht an",
+        "fr": "Veuillez indiquer votre sexe",
+        "it": "Inserite il vostro sesso"
+    },
+    "POLINT": {
+        "de": "Wie interessiert sind Sie im Allgemeinen an der Politik?",
+        "fr": "Dans quelle mesure vous intéressez-vous à la politique en général ?",
+        "it": "Prima di tutto, quanto Le interessa in generale la politica?"
+    },
+    "PART": {
+        "de": "Gerade erst fanden eidgenössische Abstimmungen statt. Bei solchen Abstimmungen nimmt normalerweise weniger als die Hälfte der Stimmberechtigten teil. Haben Sie an der Abstimmung vom 7.3.2021 teilgenommen oder nicht teilgenommen?",
+        "fr": "Des votations populaires fédérales viennent d’avoir lieu. Habituellement, moins de la moitié des électeurs inscrits participent à ce genre de votation. Avez-vous ou non participé à la votation du 7.3.2021 ?",
+        "it": "Si sono appena svolte le votazioni federali. Solitamente, a queste votazioni partecipa meno della metà delle persone aventi diritto di voto. Lei ha partecipato alle votazioni del 7.3.2021 oppure no?"
+    },
+    "NONVOTE": {
+        "de": "Nachfolgend sehen Sie verschiedene Gründe, weshalb man an einer Abstimmung nicht teilnimmt. Bitte geben Sie jeweils an, ob der angegebene Grund für Sie zutrifft oder nicht.",
+        "fr": "Voici diverses raisons pour lesquels les gens ne participent pas à une votation. Merci d’indiquer pour chacune d’elles si la raison invoquée est pertinente ou non dans votre cas.",
+        "it": "Ecco alcune ragioni per cui le persone non partecipano alle votazioni. Indichi se una di queste ragioni è stato il motivo per cui Lei non ha partecipato. Non ho partecipato alle votazioni perché …",
+        "selections": {
+            "NONVOTE_01": {
+                "de": "Ich konnte mich nicht entscheiden",
+                "fr": "Je n’ai pas pu me décider",
+                "it": "non ho saputo decidermi"
+            },
+            "NONVOTE_02": {
+                "de": "Die Abstimmungsthemen haben mich nicht interessiert",
+                "fr": "Les objets de la votation ne m’intéressaient pas",
+                "it": "i temi in votazione non mi interessavano"
+            },
+            "NONVOTE_03": {
+                "de": "Die Abstimmungsthemen waren zu kompliziert",
+                "fr": "Les objets de la votation étaient trop compliqués",
+                "it": "i temi in votazione erano troppo complicati"
+            },
+            "NONVOTE_04": {
+                "de": "Ich war verhindert",
+                "fr": "J'ai eu un empêchement",
+                "it": "non ho potuto (soggiorno all'estero, malattia, vacanze)"
+            },
+            "NONVOTE_05": {
+                "de": "Ich bin der Meinung, dass Abstimmungen sowieso nichts ändern",
+                "fr": "Je pense que les votations ne peuvent rien changer de toute façon",
+                "it": "sono dell'opinione che le votazioni non servano a cambiare la situazione."
+            },
+            "NONVOTE_06": {
+                "de": "Ich bin der Meinung, dass es auf meine einzelne Stimme sowieso nicht ankommt",
+                "fr": "Je pense que, de toute façon, le résultat ne dépend pas de ma seule voix",
+                "it": "sono dell'opinione che il mio singolo voto non faccia cambiare niente."
+            },
+            "NONVOTE_07": {
+                "de": "Ich bin davon ausgegangen, dass das Abstimmungsergebnis klar gewesen ist",
+                "fr": "Je suis parti(e) de l’idée que le résultat de la votation était clair",
+                "it": "pensavo che il risultato delle votazioni fosse già chiaro."
+            },
+            "NONVOTE_08": {
+                "de": "Ich habe vergessen, an der Abstimmung teilzunehmen",
+                "fr": "J’ai oublié de participer à la votation",
+                "it": "mi sono dimenticato di partecipare alla votazione."
+            },
+            "NONVOTE_09": {
+                "de": "Ich misstraue demokratischen Prozessen",
+                "fr": "Je me méfie des processus démocratiques",
+                "it": "Je me méfie des processus démocratiques"
+            },
+            "NONVOTE_10": {
+                "de": "Ich nehme aus Prinzip nie an Abstimmungen teil",
+                "fr": "Je ne participe jamais aux votes par principe",
+                "it": "non prendo mai parte alle votazioni per principio"
+            },
+            "NONVOTE_98": {
+                "de": "weiss nicht / keine Angabe",
+                "fr": "ne sais pas / aucune indication",
+                "it": "non so / nessuna risposta"
+            }
+        }
+    },
+    "PARTY15": {
+        "de": "Welche Partei entspricht Ihren Ansichten am meisten?",
+        "fr": "Quel parti correspond le plus à votre point de vue ?",
+        "it": "Quale partito corrisponde meglio al suo punto di vista?"
+    },
+    "VOTE2": {
+        "de": "Wie haben Sie bei der Volksinitiative «Für eine Schweiz ohne synthetische Pestizide» abgestimmt?",
+        "fr": "Comment avez-vous voté sur l'initiative pour l’interdiction des pesticides?",
+        "it": "Comment avez-vous voté sur l'initiative pour l’interdiction des pesticides?"
+    },
+    "VOTE2A": {
+        "de": "Wie ist das bei Ihnen? \nWaren Sie immer dieser Meinung oder haben Sie Ihre Meinung im Abstimmungskampf verändert?",
+        "fr": "Et dans votre cas?\nAvez-vous toujours été de cet avis ou avez-vous changé d'avis pendant la campagne qui a précédé le vote?",
+        "it": "Qual è la Sua situazione?_x000D_\nE’ sempre stato di questo avviso o ha cambiato la Sua opinione durante la campagna di voto."
+    },
+    "VOTE2B": {
+        "de": "Wie ist das bei Ihnen? \nWaren Sie immer dieser Meinung oder haben Sie Ihre Meinung im Abstimmungskampf verändert?",
+        "fr": "Et dans votre cas?\nAvez-vous toujours été de cet avis ou avez-vous changé d'avis pendant la campagne qui a précédé le vote?",
+        "it": "Qual è la Sua situazione?_x000D_\nE’ sempre stato di questo avviso o ha cambiato la Sua opinione durante la campagna di voto."
+    },
+    "VOTE2C": {
+        "de": "Wie ist das bei Ihnen? \nWaren Sie immer dieser Meinung oder haben Sie Ihre Meinung im Abstimmungskampf verändert?",
+        "fr": "Et dans votre cas?\nAvez-vous toujours été de cet avis ou avez-vous changé d'avis pendant la campagne qui a précédé le vote?",
+        "it": "Qual è la Sua situazione?_x000D_\nE’ sempre stato di questo avviso o ha cambiato la Sua opinione durante la campagna di voto."
+    },
+    "IMPORTANCE2": {
+        "de": "Auf einer Skala von 0 (überhaupt nicht wichtig) bis 10 (sehr wichtig), wie wichtig war die Volksinitiative «Für eine Schweiz ohne synthetische Pestizide» für Sie persönlich?",
+        "fr": "Indiquez sur une échelle de 0 (aucune importance) à 10 (très grande importance) l'importance que revêtait l'initiative pour l’interdiction des pesticides à vos yeux ?",
+        "it": "Su una scala da 0 (nessuna importanza) a 10 (molto importante), quanto è stata importante per voi l'iniziativa popolare «Per una Svizzera senza pesticidi sintetici»?"
+    },
+    "REASON1ACC2_01-10": {
+        "de": "Welches ist der Hauptgrund, dass Sie diese Vorlage angenommen haben?",
+        "fr": "Quelle est la principale raison qui vous a amené(e) à accepter ce projet ?",
+        "it": "Qual è la ragione principale per cui Lei ha accettato questo oggetto?"
+    },
+    "REASON2ACC2_01-10": {
+        "de": "Welche anderen Gründe hat es für Sie noch gegeben, diese Vorlage anzunehmen?",
+        "fr": "Quelles autres raisons aviez-vous ?",
+        "it": "Ci sono state altre ragioni?"
+    },
+    "REASON1DEN2_01-07": {
+        "de": "Welches ist der Hauptgrund, dass Sie diese Vorlage abgelehnt haben?",
+        "fr": "Quelle est la principale raison qui vous a amené(e) à rejeter ce projet ?",
+        "it": "Qual è la ragione principale per cui Lei ha respinto questo oggetto?"
+    },
+    "REASON2DEN2_01-05": {
+        "de": "Welche anderen Gründe hat es für Sie noch gegeben, diese Vorlage abzulehnen?",
+        "fr": "Quelles autres raisons aviez-vous ?",
+        "it": "Ci sono state altre ragioni?"
+    },
+    "TRUST": {
+        "de": "Nachfolgend sehen Sie verschiedene Institutionen. Geben Sie bitte jeweils auf einer Skala von 0 (kein Vertrauen) bis 10 (vollständiges Vertrauen) an, wie stark Sie jeder einzelnen vertrauen. ",
+        "fr": "Voici une liste de diverses institutions. Indiquez sur une échelle de 0 (aucune confiance) à 10 (confiance totale) dans quelle mesure vous leur faites confiance.",
+        "it": "Di seguito potrà leggere il nome di varie istituzioni. Indichi, su una scala da 0 (nessuna fiducia) a 10 (totale fiducia), il grado di fiducia che nutre nei confronti di ognuna di queste istituzioni:",
+        "selections": {
+            "TRUST_1": {
+                "de": "Bundesrat",
+                "fr": "Conseil fédéral",
+                "it": "Consiglio Federale"
+            },
+            "TRUST_2": {
+                "de": "Eidgenössisches Parlament in Bern",
+                "fr": "Parlement fédéral à Berne",
+                "it": "Parlamento Federale a Berna"
+            },
+            "TRUST_3": {
+                "de": "Parteien",
+                "fr": "partis",
+                "it": "partiti"
+            },
+            "TRUST_4": {
+                "de": "Medien",
+                "fr": "médias",
+                "it": "media"
+            },
+            "TRUST_5": {
+                "de": "Wirtschaftsverbände",
+                "fr": "associations de l'économie",
+                "it": "associazioni imprenditoriali"
+            },
+            "TRUST_6": {
+                "de": "Wissenschaft",
+                "fr": "science",
+                "it": "scienza"
+            },
+            "TRUST_7": {
+                "de": "Kantonale Regierungen",
+                "fr": "gouvernements cantonaux",
+                "it": "governi cantonali"
+            },
+            "TRUST_8": {
+                "de": "Gewerkschaften",
+                "fr": "syndicats",
+                "it": "sindacati"
+            },
+            "TRUST_9": {
+                "de": "Gewerbeverbände",
+                "fr": "associations professionnelles",
+                "it": "associazioni professionali"
+            },
+            "TRUST_10": {
+                "de": "Umweltverbände",
+                "fr": "organisations environnementales",
+                "it": "associazioni ambientaliste"
+            },
+            "TRUST_16": {
+                "de": "Bauern",
+                "fr": "paysans",
+                "it": "contadini"
+            },
+            "TRUST_30": {
+                "de": "Bundesamt für Gesundheit BAG",
+                "fr": "Office fédéral de la santé publique OFSP",
+                "it": "Ufficio federale della sanità pubblica UFSP"
+            },
+            "TRUST_31": {
+                "de": "Klimaforschung",
+                "fr": "recherche climatique",
+                "it": "ricerca sul clima"
+            },
+            "TRUST_32": {
+                "de": "Polizei",
+                "fr": "police",
+                "it": "polizia"
+            },
+            "TRUST_33": {
+                "de": "Swiss National COVID-19 Task Force",
+                "fr": "Swiss National COVID-19 Task Force",
+                "it": "Swiss National COVID-19 Task Force"
+            },
+            "TRUST_34": {
+                "de": "Freunde der Verfassung",
+                "fr": "Amis de la constitution",
+                "it": "Amici della constituzione"
+            }
+        }
+    },
+    "LRSP": {
+        "de": "«Links», «Mitte» und «rechts» sind drei Begriffe, die häufig gebraucht werden, um politische Ansichten zu charakterisieren. Geben Sie bitte an, wo Sie selber stehen auf einer Skala, wo 0 ganz links, 5 das politische Zentrum und 10 ganz rechts bedeutet.",
+        "fr": "«Gauche», «Centre» et «Droite» sont trois notions souvent utilisées pour caractériser des opinions politiques. Où vous positionnez-vous sur une échelle où 0 signifie tout à gauche, 5 centre et 10 tout à droite?",
+        "it": "SINISTRA, \"CENTRO\" e \"DESTRA\" sono tre termini spesso usati per descrivere le posizioni politiche. Potrebbe indicare dove Lei si situerebbe su una scala da 0 a 10, in cui 0 sta per pienamente a sinistra, 5 per centro e 10 per pienamente a destra?"
+    },
+    "VALUE3": {
+        "de": "A) eine Schweiz, in der Umweltschutz wichtiger ist als der wirtschaftliche Wohlstand, oder_x000D_\nB) eine Schweiz, in der wirtschaftlicher Wohlstand wichtiger ist als der Umweltschutz",
+        "fr": "A) une Suisse où la protection de l’environnement est plus importante que la prospérité économique ou_x000D_\nB) une Suisse où la prospérité économique est plus importante que la protection de l’environnement ?",
+        "it": "A) una Svizzera in cui la tutela dell'ambiente è considerata più importante del benessere economico oppure _x000D_\nB) una Svizzera in cui il benessere economico è più importante della tutela dell'ambiente"
+    },
+    "VALUE5": {
+        "de": "A) eine Schweiz mit mehr Staatseingriffen in die Wirtschaft oder_x000D_\nB) eine Schweiz mit mehr Wettbewerb auf dem Markt",
+        "fr": "A) une Suisse où l’Etat intervient davantage dans l’économie ou B) une Suisse avec davantage de concurrence sur le marché",
+        "it": "A) una Svizzera in cui lo Stato interviene maggiormente nell'economia oppure _x000D_\nB) una Svizzera con più concorrenza sul mercato"
+    },
+    "VALUE6": {
+        "de": "A) eine Schweiz mit einer starken Armee oder_x000D_\nB) eine Schweiz ohne Armee",
+        "fr": "A) une Suisse dotée d’une armée forte ou B) une Suisse sans armée",
+        "it": "A) una Svizzera con un esercito forte oppure _x000D_\nB) una Svizzera senza esercito"
+    },
+    "VALUE7": {
+        "de": "A) eine Schweiz, in der der Bund mehr Macht hat, oder_x000D_\nB) eine Schweiz, in der die Kantone mehr Macht haben",
+        "fr": "A) une Suisse où la Confédération a davantage de pouvoir ou B) une Suisse où les cantons ont davantage de pouvoir",
+        "it": "A) una Svizzera in cui la Confederazione ha maggior potere oppure _x000D_\nB) una Svizzera dove sono i Cantoni ad avere maggior potere"
+    },
+    "VALUE8": {
+        "de": "A) eine Schweiz, die mit dem Zeitgeist geht, oder_x000D_\nB) eine Schweiz, die ihre Traditionen schützt",
+        "fr": "A) une suisse qui corresponde à l'esprit du temps ou_x000D_\nB) une suisse qui protège ses traditions",
+        "it": "A) una Svizzera che si adatta allo spirito del nostro tempo oppure_x000D_\nB) una Svizzera che protegge le sue tradizioni"
+    },
+    "VALUE10": {
+        "de": "A) eine Schweiz, in der die Solidarität wichtiger ist als die Eigenverantwortung, oder_x000D_\nB) eine Schweiz, in der die Eigenverantwortung wichtiger ist als die Solidarität?",
+        "fr": "A) une Suisse où la solidarité est plus importante que la responsabilité individuelle ou _x000D_\nB) une Suisse où la responsabilité individuelle est plus importante que la solidarité",
+        "it": "A) una Svizzera in cui la solidarietà è più importante della responsabilità del singolo oppure_x000D_\nB) una Svizzera in cui la responsabilità del singolo è più importante della solidarietà"
+    },
+    "VALUE11": {
+        "de": "A) eine Schweiz mit Atomenergie, oder_x000D_\nB) eine Schweiz ohne Atomenergie",
+        "fr": "A) une Suisse qui utilise l’énergie nucléaire ou _x000D_\nB) une Suisse sans énergie nucléaire",
+        "it": "A) una Svizzera con l'energia nucleare oppure_x000D_\nB) una Svizzera senza energia nuclear"
+    },
+    "VALUE15": {
+        "de": "A) eine Schweiz, in der die Steuern auf hohe Einkommen erhöht werden, oder_x000D_\nB) eine Schweiz, in der die Steuern auf hohe Einkommen vermindert werden",
+        "fr": "A) une Suisse où les impôts sur les revenus élevés augmentent ou B) une Suisse où les impôts sur les revenus élevés baissent",
+        "it": "A) una Svizzera nella quale le tasse sui redditi più alti vengono aumentate oppure _x000D__x000D_\nB) una Svizzera nella quale le tasse sui redditi più alti vengono abbassate"
+    },
+    "VALUE16": {
+        "de": "A) Die Digitalisierung vernetzt die Gesellschaft und vereinfacht das Leben oder",
+        "fr": "A) La numérisation met la société en réseau et simplifie la vie ou",
+        "it": "A) la digitalizzazione mette in rete la società e semplifica la vita o"
+    },
+    "DIFFICUL2": {
+        "de": "Ist es Ihnen bei der Volksinitiative «Für eine Schweiz ohne synthetische Pestizide» eher leicht oder eher schwer gefallen zu verstehen, um was es ging?",
+        "fr": "Vous a-t-il paru plutôt facile ou plutôt difficile de comprendre de quoi il s'agissait avec l'initiative pour l’interdiction des pesticides?",
+        "it": "Ritiene che sia stato piuttosto facile o piuttosto difficile capire di cosa trattava l'iniziativa popolare «Per una Svizzera senza pesticidi sintetici»?"
+    },
+    "DECTIME2": {
+        "de": "Wann haben Sie bei der Vorlage zur Volksinitiative «Für eine Schweiz ohne synthetische Pestizide» gewusst, wie Sie stimmen werden?",
+        "fr": "Quand avez-vous su comment vous alliez voter sur l'initiative pour l’interdiction des pesticides?",
+        "it": "Nel caso dell'iniziativa popolare «Per una Svizzera senza pesticidi sintetici», quando ha deciso come votare?"
+    },
+    "ARGU2": {
+        "de": "Im folgenden finden Sie Argumente zur Vorlage zur Volksinitiative «Für eine Schweiz ohne synthetische Pestizide». Bitte geben Sie an, ob Sie mit den Argumenten einverstanden oder nicht einverstanden sind.",
+        "fr": "Veuillez trouver ci-après des arguments sur l'initiative pour l’interdiction des pesticides. Veuillez indiquer si vous approuvez ou non les arguments.",
+        "it": "Di seguito abbiamo raccolto alcune argomentazioni in merito all'iniziativa popolare «Per una Svizzera senza pesticidi sintetici». Indichi quanto si trova d'accordo con ognuna di esse.",
+        "selections": {
+            "ARGU2_1": {
+                "de": "Gewisse Betriebe beweisen schon heute, dass die Forderungen eingehalten werden können. Die Vorlage ist machbar und langfristig profitabel.",
+                "fr": "Certaines entreprises prouvent déjà que les exigences peuvent être satisfaites. La proposition est réalisable et rentable à long terme.",
+                "it": "Alcune aziende stanno già dimostrando che i requisiti possono essere soddisfatti. La proposta è fattibile e redditizia a lungo termine."
+            },
+            "ARGU2_2": {
+                "de": "Die Gesundheit der nächsten Generationen ist besonders schlimm betroffen, wenn der Einsatz von synthetischen Pestizide nicht gestoppt wird.",
+                "fr": "La santé des générations futures sera particulièrement affectée si l'utilisation des pesticides synthétiques n'est pas arrêtée.",
+                "it": "La salute delle generazioni future sarà particolarmente colpita se l'uso di pesticidi sintetici non sarà fermato."
+            },
+            "ARGU2_3": {
+                "de": "Der Einsatz von synthetischen Pestiziden muss grundsätzlich gestoppt werden. Solche Pestizide haben weder etwas in der Landwirtschaft noch in der Boden- oder Landschaftspflege zu suchen.",
+                "fr": "L'utilisation des pesticides de synthèse doit être arrêtée par principe. Ces pesticides n'ont leur place ni dans l'agriculture ni dans la gestion des sols et des paysages.",
+                "it": "L'uso di pesticidi sintetici deve essere fermato per principio. Questi pesticidi non hanno posto nell'agricoltura o nella conservazione del suolo o del paesaggio."
+            },
+            "ARGU2_4": {
+                "de": "Durch zusätzliche Auflagen für die Landwirtschaft werden die Lebensmittel für die Konsumenten in der Schweiz noch teurer.",
+                "fr": "Des obligations supplémentaires assignées à l’agriculture vont rendre encore plus chers les produits alimentaires destinés à la consommation en Suisse.",
+                "it": "Con oneri addizionali per l’agricoltura, per i/le consumatori/trici in Svizzera gli alimenti diventeranno ancora più costosi."
+            },
+            "ARGU2_5": {
+                "de": "Die Schweiz hat bereits genug starke Regeln, wenn es um den Gebrauch von synthetischen Pestizide geht.",
+                "fr": "La Suisse dispose déjà de règles suffisamment strictes en ce qui concerne l'utilisation des pesticides de synthèse.",
+                "it": "La Svizzera ha già regole abbastanza forti per quanto riguarda l'uso di pesticidi sintetici."
+            },
+            "ARGU2_6": {
+                "de": "Die Forderungen sorgen bei Importen für einen klaren Konkurrenznachteil im internationalen Markt.",
+                "fr": "Ces exigences placent les importations en net désavantage concurrentiel sur le marché international.",
+                "it": "I requisiti mettono le importazioni in un chiaro svantaggio competitivo sul mercato internazionale."
+            }
+        }
+    },
+    "COVID1B": {
+        "de": "Die Covid-19-Pandemie hatte nicht nur gesundheitliche, sondern auch soziale und wirtschaftliche Folgen. Können Sie uns für jede der fünf Vorlagen sagen, inwieweit die Corona-Krise Ihren entsprechenden Stimmentscheid beeinflusst hat? Hat die Corona-Krise und ihre Folgen Ihren Entscheid zur Volksinitiative «Für eine Schweiz ohne synthetische Pestizide» ... ?",
+        "fr": "La pandémie de Covid-19 a eu des retombées non seulement sanitaires, mais aussi sociales et économiques. Pouvez-vous, pour chacun des cinq objets, nous dire dans quelle mesure la crise du coronavirus a influencé votre décision de vote ? La crise du coronavirus et ses conséquences ont influencé ma décision de vote sur l'Initiative pour l’interdiction des pesticides ?",
+        "it": "La pandemia di COVID-19 ha avuto ripercussioni non solo sanitarie ma anche sociali ed economiche. Potrebbe indicarci, per ogni oggetto in votazione, quanto la crisi di coronavirus ha inciso sulle Sue decisioni di voto? La crisi di coronavirus e le sue conseguenze hanno influenzato la Sua decisione sulla Iniziativa popolare «Per una Svizzera senza pesticidi sintetici»?"
+    },
+    "COVID2": {
+        "de": "Die Schweizer Armee hat während der Corona-Krise Einsätze in Spitälern und an der Grenze geleistet. Wie beurteilen Sie insgesamt die Notwendigkeit des Corona-Einsatzes der Armee?",
+        "fr": "Au plus fort de la crise due au COVID-19, l’Armée suisse a été engagée dans des hôpitaux et à la frontière. Quel est, dans l’ensemble, votre avis sur la nécessité de cet engagement de l’armée ?",
+        "it": "Durante la crisi di coronavirus, l’Esercito svizzero è stato impegnato negli ospedali e alle frontiere. Come giudica complessivamente la necessità di questo impiego dell’esercito?"
+    },
+    "COVID3": {
+        "de": "Derzeit werden Menschen in der Schweiz gegen COVID-19 geimpft. _x000D_Bitte geben Sie an, ob Sie mit der Aussage einverstanden sind oder nicht. ",
+        "fr": "Les personnes en Suisse sont actuellement vaccinées contre le COVID-19. _x000D_Veuillez indiquer si vous approuvez ou non les arguments.",
+        "it": "Le persone in Svizzera sono attualmente vaccinate contro il COVID-19. _x000D_Indichi quanto si trova d'accordo con ognuna di esse.",
+        "selections": {
+            "COVID3_1": {
+                "de": "Ein Impfobligatorium wäre sinnvoll, damit ein normales Leben wieder möglich wird.",
+                "fr": "Une vaccination obligatoire serait logique pour qu'une vie normale soit à nouveau possible.",
+                "it": "Una vaccinazione obbligatoria avrebbe senso per rendere di nuovo possibile una vita normale."
+            },
+            "COVID3_2": {
+                "de": "Die Schweiz sollte auch weniger wirksame Impfstoffe zulassen, damit mehr Menschen schneller geimpft werden können.",
+                "fr": "La Suisse devrait également autoriser les vaccins moins efficaces afin que davantage de personnes puissent être vaccinées plus rapidement.",
+                "it": "La Svizzera dovrebbe anche permettere vaccini meno efficaci in modo che più persone possano essere vaccinate più rapidamente."
+            }
+        }
+    },
+    "COVID4_1": {
+        "de": "Der Bundesrat plant ein COVID-Zertifikat herauszugeben, das eine vollständige Impfung bestätigt und somit das Reisen oder den Besuch von Grossveranstaltungen erleichtern könnte. _x000D_Bitte geben Sie an, ob Sie mit der Aussage einverstanden sind oder nicht.\n\nDas COVID-Zertifikat diskriminiert und sollte nicht herausgegeben werden.",
+        "fr": "Le Conseil fédéral prévoit de délivrer un certificat COVID confirmant une vaccination complète, ce qui pourrait faciliter les voyages ou la participation à de grandes manifestations. _x000D_Veuillez indiquer si vous approuvez ou non l'argument.\n\nLe certificat COVID est discriminatoire et ne devrait pas être délivré.",
+        "it": "Il Consiglio federale prevede di rilasciare un certificato COVID che conferma la vaccinazione completa, il che potrebbe rendere più facile viaggiare o partecipare a eventi importanti. _x000D_Indichi quanto si trova d'accordo con ognuna di esse.\n\nIl certificato COVID discrimina e non dovrebbe essere rilasciato."
+    },
+    "ONLINE": {
+        "de": "Ganz generell: Wo informieren Sie sich häufiger über Politik?",
+        "fr": "De manière générale, où vous informez-vous le plus souvent sur la politique ?",
+        "it": "In generale: la Sua principale fonte d'informazione per la politica si trova…"
+    },
+    "MEDIAUSE": {
+        "de": "Auf einer Skala von 0 (gar nicht genutzt) bis 10 (sehr stark genutzt), wie stark haben Sie die folgenden Quellen genutzt, um sich vor der Abstimmung zu informieren und eine Meinung zu bilden? ",
+        "fr": "Sur une échelle de 0 (pas utilisé) à 10 (beaucoup utilisé) comment avez-vous utilisé les sources suivantes pour vous informer avant les votations et  de vous forger une opinion.",
+        "it": "Quali fonti d'informazione ha utilizzato per approfondire le Sue conoscenze sull'oggetto in votazione e farsi un'opinione? Indichi un valore tra 0 (non l'ho utilizzato per niente) e 10 (l'ho utilizzato moltissimo). Con i valori intermedi può graduare la Sua risposta.",
+        "selections": {
+            "MEDIAUSE_1": {
+                "de": "Artikel in Zeitungen",
+                "fr": "articles dans les journaux",
+                "it": "articoli nei giornali"
+            },
+            "MEDIAUSE_2": {
+                "de": "Abstimmungssendungen am Radio",
+                "fr": "émissions sur la votation à la radio",
+                "it": "trasmissioni radiofoniche sulle votazioni"
+            },
+            "MEDIAUSE_3": {
+                "de": "Abstimmungssendungen am Fernsehen",
+                "fr": "émissions sur la votation à la télévision",
+                "it": "trasmissioni televisive sulle votazioni"
+            },
+            "MEDIAUSE_4": {
+                "de": "Das Bundesbüchlein",
+                "fr": "brochure des Explications du Conseil fédéral",
+                "it": "opuscolo informativo inviato dalla Confederazione"
+            },
+            "MEDIAUSE_5": {
+                "de": "Abstimmungszeitungen oder Flyers",
+                "fr": "journaux ou prospectus de votation",
+                "it": "bollettini sulle votazioni o volantini"
+            },
+            "MEDIAUSE_6": {
+                "de": "Inserate in Zeitungen",
+                "fr": "annonces dans les journaux",
+                "it": "inserzioni nei giornali"
+            },
+            "MEDIAUSE_7": {
+                "de": "Strassenplakate",
+                "fr": "affiches dans la rue",
+                "it": "cartelloni pubblicitari"
+            },
+            "MEDIAUSE_8": {
+                "de": "News-Seiten im Internet",
+                "fr": "pages d’actualités sur Internet",
+                "it": "pagine di notizie in Internet"
+            },
+            "MEDIAUSE_9": {
+                "de": "Leserbriefe in Zeitungen oder Leserkommentare in Internetforen",
+                "fr": "courriers de lecteurs dans les journaux ou commentaires de lecteurs sur les forums Internet",
+                "it": "posta dei lettori nei giornali oppure commenti dei lettori nei forum online"
+            },
+            "MEDIAUSE_10": {
+                "de": "Meinungsumfragen",
+                "fr": "sondages",
+                "it": "sondaggi d'opinione"
+            },
+            "MEDIAUSE_11": {
+                "de": "Mitteilungen am Arbeitsplatz",
+                "fr": "informations sur le lieu de travail",
+                "it": "messaggi sul posto di lavoro"
+            },
+            "MEDIAUSE_12": {
+                "de": "Soziale Medien wie Facebook, Twitter oder Instagram",
+                "fr": "réseaux sociaux comme Facebook ou Twitter",
+                "it": "social media, come Facebook e Twitter"
+            },
+            "MEDIAUSE_13": {
+                "de": "Filme und Videoclips im Internet zum Beispiel auf Youtube",
+                "fr": "films et clips vidéo sur Internet",
+                "it": "filmati e video in Internet"
+            },
+            "MEDIAUSE_14": {
+                "de": "VoteInfo-App vom Bund",
+                "fr": "VoteInfo-App du gouvernement fédéral",
+                "it": "VoteInfo-App del governo federale"
+            },
+            "MEDIAUSE_15": {
+                "de": "Kommentare auf Online-Nachrichtenportalen",
+                "fr": "commentaires sur les portails d'information en ligne",
+                "it": "commenti sui portali di notizie online"
+            }
+        }
+    },
+    "MEDIAUSE2": {
+        "de": "Wie sehr vertrauen Sie folgenden Informationsquellen, wenn Sie sich über Abstimmungen informieren?",
+        "fr": "Quelle confiance accordez-vous aux sources d'information suivantes lorsqu'il s'agit des informations par rapport à des votations ?",
+        "it": "Quanta fiducia riponete nelle seguenti fonti d'informazione quando si tratta di votare?",
+        "selections": {
+            "MEDIAUSE2_1": {
+                "de": "Suchmaschinen",
+                "fr": "moteurs de recherche",
+                "it": "motori di ricerca"
+            },
+            "MEDIAUSE2_2": {
+                "de": "Online-Video-Websites",
+                "fr": "sites de vidéo en ligne",
+                "it": "siti web di video online"
+            },
+            "MEDIAUSE2_3": {
+                "de": "Soziale Netzwerke",
+                "fr": "réseaux sociaux",
+                "it": "i social network"
+            },
+            "MEDIAUSE2_4": {
+                "de": "Messaging-Anwendungen (z.B. Whatsapp, Signal, Treema usw.)",
+                "fr": "applications de messagerie (par exemple Whatsapp, Signal, Treema, etc.)",
+                "it": "applicazioni di messaggistica (ad es. Whatsapp, Signal, Treema ecc.)"
+            },
+            "MEDIAUSE2_5": {
+                "de": "Blogs oder Websites, die nicht von etablierten Medien stammen",
+                "fr": "blogs ou sites web qui ne sont pas issus de médias établis",
+                "it": "blog o siti web che non provengono da media consolidati"
+            },
+            "MEDIAUSE2_6": {
+                "de": "tagesaktuelle Medien grosser Medienhäuser",
+                "fr": "médias mis à jour quotidiennement par les grandes maisons de presse",
+                "it": "media aggiornati quotidianamente dalle grandi case di comunicazione"
+            },
+            "MEDIAUSE2_7": {
+                "de": "Prominente in sozialen Netzwerken",
+                "fr": "célébrités des réseaux sociaux",
+                "it": "celebrità dei social network"
+            },
+            "MEDIAUSE2_8": {
+                "de": "Das Bundesbüchlein",
+                "fr": "livret d'explications du Conseil fédéral",
+                "it": "l'opuscolo inviato dalla Confederazione"
+            }
+        }
+    },
+    "DISCUS": {
+        "de": "Wie häufig haben Sie in den Wochen vor dem letzten eidgenössischen Abstimmungstermin in Ihrem privaten Umfeld über die Vorlagen diskutiert?",
+        "fr": "Combien de fois avez-vous discuté sur les objets de la votation dans votre entourage privé dans les semaines qui ont précédé la dernière votation fédérale ?",
+        "it": "Nelle settimane prima delle ultime votazioni quante volte ha discusso degli oggetti in votazione nel Suo ambiente privato?"
+    },
+    "VOTEWIE": {
+        "de": "Wie haben Sie Ihre Stimme abgegeben?",
+        "fr": "Comment avez-vous voté ?",
+        "it": "In che modo ha dato il Suo voto?"
+    },
+    "PART2": {
+        "de": "Angenommen, in einem Jahr gibt es 10 eidgenössische Abstimmungstermine. An wie vielen davon nehmen Sie normalerweise teil?",
+        "fr": "Supposons qu’il y ait 10 votations fédérales par an. A combien d’entre elles participeriez-vous normalement ?",
+        "it": "Partiamo dal presupposto che in un anno siano pianificate 10 date per le votazioni federali. A quante di esse partecipa solitamente?"
+    },
+    "PARTYA": {
+        "de": "Welche Partei würden Sie hauptsächlich wählen, wenn am kommenden Wochenende in der Schweiz Nationalratswahlen wären?",
+        "fr": "Si les élections fédéral avaient lieu dimanche prochain, pour quel parti voteriez-vous en premier lieu ?_x000D_\n_x000D_\n_x000D_\n_x000D_",
+        "it": "Se le elezioni per il Consiglio nazionale si tenessero la prossima domenica, a chi darebbe il Suo voto in questo momento con più probabilità ?_x000D_\n_x000D_\n_x000D_"
+    },
+    "CITIZENREPA": {
+        "de": "Welche Staatsbürgerschaft hatten Sie bei der Geburt?",
+        "fr": "Quelle était votre nationalité à votre naissance ?",
+        "it": "Che cittadinanza aveva alla nascita?"
+    },
+    "ORIGINPARENTS": {
+        "de": "Sind Ihre Eltern beide in der Schweiz geboren?",
+        "fr": "Vos parents sont-ils nés tous les deux en Suisse ?",
+        "it": "I Suoi genitori sono nati entrambi in Svizzera?"
+    },
+    "CONFESSD": {
+        "de": "Gehören Sie einer Kirche oder Religionsgemeinschaft an?",
+        "fr": "Appartenez-vous à une Eglise ou à une communauté religieuse ?",
+        "it": "È membro di una Chiesa o fa parte di una comunità religiosa?"
+    },
+    "CONFESSR": {
+        "de": "Welcher Konfession oder Glaubensgemeinschaft gehören Sie an?",
+        "fr": "Quelle est votre confession ou de quelle communauté religieuse êtes-vous membre ?",
+        "it": "A quale confessione appartiene?"
+    },
+    "CULT": {
+        "de": "Wie oft besuchen Sie Gottesdienste oder andere Veranstaltungen Ihrer Glaubengsgemeinschaft?",
+        "fr": "Combien de fois assistez-vous à un culte ou à d’autres manifestations de votre communauté religieuse ?",
+        "it": "Quanto spesso si reca a messa o frequenta la Sua comunità religiosa?"
+    },
+    "EDUC": {
+        "de": "Was ist Ihre höchste abgeschlossene Ausbildung?",
+        "fr": "Quelle est votre niveau de formation le plus élevé ?",
+        "it": "Qual è la formazione più elevata che ha portato a termine?"
+    },
+    "ACTI": {
+        "de": "Was ist Ihre jetztige Beschäftigungssituation?",
+        "fr": "Quelle est votre situation professionnelle actuelle ?",
+        "it": "Qual è la Sua situazione professionale attuale?"
+    },
+    "ACTIPREV": {
+        "de": "Was war Ihre vorherige Beschäftigungssituation?",
+        "fr": "Quelle était votre situation professionnelle auparavant ?",
+        "it": "Qual era la Sua situazione professionale precedente?"
+    },
+    "S17JOBPOSITION": {
+        "de": "Was ist/war Ihre berufliche Stellung?",
+        "fr": "Quel est / était votre statut professionnel ?",
+        "it": "Qual è/era la Sua posizione professionale?"
+    },
+    "WORKLOAD": {
+        "de": "Was ist/war Ihr Beschäftigungsgrad?",
+        "fr": "Quel est / était votre degré d'activité ?",
+        "it": "Qual è/era il Suo grado di occupazione?"
+    },
+    "S17SECTOR": {
+        "de": "Arbeiten/arbeiteten Sie in der Privatwirtschaft oder bei der öffentlichen Hand?",
+        "fr": "Travaillez/travailliez-vous dans le secteur privé ou dans le secteur public ?",
+        "it": "Lavora(va) presso un ente privato o un ente pubblico?"
+    },
+    "MAINEARNER": {
+        "de": "Wer ist der Hauptverdiener oder die Hauptverdienerin in Ihrem Haushalt?",
+        "fr": "Qui gagne le plus dans votre ménage ?",
+        "it": "Chi è la persona con il reddito principale nella Sua economia domestica?"
+    },
+    "EDUCMAIN": {
+        "de": "Was ist die höchste abgeschlossene Ausbildung dieser Person? (Hauptverdiener/-in)",
+        "fr": "Quelle est le plus haut diplôme de cette personne ? (celle qui touche le revenu le plus élevé)",
+        "it": "Qual è la formazione più elevata conclusa da questa persona? (la persona con il reddito principale)"
+    },
+    "ACTIMAIN": {
+        "de": "Was ist die jetztige (Haupt-)beschäftigungssituation dieser Person? (Hauptverdiener/-in)",
+        "fr": "Quelle est actuellement la situation professionnelle principale de cette personne ? (personne touchant le revenu le plus élevé)",
+        "it": "Qual è la situazione professionale attuale di questa persona? (persona con il reddito principale)"
+    },
+    "INCOME": {
+        "de": "Wie hoch ist ungefähr das Brutto-Monatseinkommen Ihres Haushalts? \n\nZählen Sie bitte alle Einkommen der Personen zusammen, die etwas für den Unterhalt beisteuern. Zählen Sie nicht nur die Löhne, sondern auch allfällige andere Einkommen dazu.",
+        "fr": "À combien s'élève approximativement le revenu mensuel brut de votre ménage ?\n\nMerci d’additionner tous les revenus des personnes qui apportent leur contribution au ménage. Ne calculez pas seulement les salaires, mais aussi tous les autres revenus éventuels.",
+        "it": "A quanto ammonta, all'incirca, il reddito mensile lordo della Sua economia domestica?_x000D_\n_x000D_\nVoglia sommare tutti i redditi delle persone che contribuiscono all'economia domestica. Conti non soltanto gli stipendi ma anche tutti gli altri redditi provenienti da varie fonti."
+    },
+    "INCOMEPRECARIAT": {
+        "de": "Vom Einkommen muss man ja einen Teil gerade wieder ausgeben, z. B. für Miete und Versicherungen. Mit dem, was Ihnen dann noch bleibt: Kommen Sie damit gut aus?",
+        "fr": "On doit immédiatement dépenser une partie de son revenu, par exemple pour le loyer et les assurances. Avec ce qu’il vous reste, diriez-vous que vous vous en sortez bien ?",
+        "it": "Una parte del reddito viene subito versata per esempio per l'affitto e le assicurazioni. Riesce a vivere bene con quello che Le rimane?"
+    },
+    "HABITAT": {
+        "de": "Sind Sie Mieter/in oder Eigentümer/in Ihrer Wohnung oder Ihres Hauses?",
+        "fr": "Êtes-vous locataire ou propriétaire de votre appartement ou de votre maison ?",
+        "it": "L'appartamento o la casa in cui abita è in affitto o di Sua proprietà?"
+    },
+    "UNUSED": {
+        "de": "Nicht verwendete Fälle",
+        "fr": "Cas non utilisés",
+        "it": "Casi non utilizzati"
+    }
+}

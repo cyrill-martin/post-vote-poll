@@ -1,0 +1,6138 @@
+{
+    "S11": {
+        "1": {
+            "de": "Mann",
+            "fr": "homme",
+            "it": "uomo"
+        },
+        "2": {
+            "de": "Frau",
+            "fr": "femme",
+            "it": "donna"
+        },
+        "3": {
+            "de": "divers",
+            "fr": "divers",
+            "it": "vari"
+        },
+        "8": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        }
+    },
+    "POLINT": {
+        "1": {
+            "de": "sehr interessiert",
+            "fr": "très intéressé(e)",
+            "it": "molto"
+        },
+        "2": {
+            "de": "eher interessiert",
+            "fr": "plutôt intéressé(e)",
+            "it": "abbastanza"
+        },
+        "3": {
+            "de": "eher nicht interessiert",
+            "fr": "plutôt pas intéressé(e)",
+            "it": "non molto"
+        },
+        "4": {
+            "de": "überhaupt nicht interessiert",
+            "fr": "pas du tout intéressé(e)?",
+            "it": "non mi interessa per nulla"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        }
+    },
+    "PART": {
+        "1": {
+            "de": "teilgenommen",
+            "fr": "participé",
+            "it": "partecipato"
+        },
+        "2": {
+            "de": "nicht teilgenommen",
+            "fr": "pas participé",
+            "it": "non partecipato"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        }
+    },
+    "NONVOTE_01": {
+        "0": {
+            "de": "nicht genannt",
+            "fr": "non mentionné",
+            "it": "non menzionato"
+        },
+        "1": {
+            "de": "genannt",
+            "fr": "mentionné",
+            "it": "menzionato"
+        },
+        "8": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "NONVOTE_02": {
+        "0": {
+            "de": "nicht genannt",
+            "fr": "non mentionné",
+            "it": "non menzionato"
+        },
+        "1": {
+            "de": "genannt",
+            "fr": "mentionné",
+            "it": "menzionato"
+        },
+        "8": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "NONVOTE_03": {
+        "0": {
+            "de": "nicht genannt",
+            "fr": "non mentionné",
+            "it": "non menzionato"
+        },
+        "1": {
+            "de": "genannt",
+            "fr": "mentionné",
+            "it": "menzionato"
+        },
+        "8": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "NONVOTE_04": {
+        "0": {
+            "de": "nicht genannt",
+            "fr": "non mentionné",
+            "it": "non menzionato"
+        },
+        "1": {
+            "de": "genannt",
+            "fr": "mentionné",
+            "it": "menzionato"
+        },
+        "8": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "NONVOTE_05": {
+        "0": {
+            "de": "nicht genannt",
+            "fr": "non mentionné",
+            "it": "non menzionato"
+        },
+        "1": {
+            "de": "genannt",
+            "fr": "mentionné",
+            "it": "menzionato"
+        },
+        "8": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "NONVOTE_06": {
+        "0": {
+            "de": "nicht genannt",
+            "fr": "non mentionné",
+            "it": "non menzionato"
+        },
+        "1": {
+            "de": "genannt",
+            "fr": "mentionné",
+            "it": "menzionato"
+        },
+        "8": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "NONVOTE_07": {
+        "0": {
+            "de": "nicht genannt",
+            "fr": "non mentionné",
+            "it": "non menzionato"
+        },
+        "1": {
+            "de": "genannt",
+            "fr": "mentionné",
+            "it": "menzionato"
+        },
+        "8": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "NONVOTE_08": {
+        "0": {
+            "de": "nicht genannt",
+            "fr": "non mentionné",
+            "it": "non menzionato"
+        },
+        "1": {
+            "de": "genannt",
+            "fr": "mentionné",
+            "it": "menzionato"
+        },
+        "8": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "NONVOTE_09": {
+        "0": {
+            "de": "nicht genannt",
+            "fr": "non mentionné",
+            "it": "non menzionato"
+        },
+        "1": {
+            "de": "genannt",
+            "fr": "mentionné",
+            "it": "menzionato"
+        },
+        "8": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "NONVOTE_10": {
+        "0": {
+            "de": "nicht genannt",
+            "fr": "non mentionné",
+            "it": "non menzionato"
+        },
+        "1": {
+            "de": "genannt",
+            "fr": "mentionné",
+            "it": "menzionato"
+        },
+        "8": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "NONVOTE_98": {
+        "0": {
+            "de": "nicht genannt",
+            "fr": "non mentionné",
+            "it": "non menzionato"
+        },
+        "1": {
+            "de": "genannt",
+            "fr": "mentionné",
+            "it": "menzionato"
+        },
+        "8": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "PARTY15": {
+        "1": {
+            "de": "SVP Schweizerische Volkspartei",
+            "fr": "UDC Union Démocratique du centre",
+            "it": "UDC Unione Democratica di centro"
+        },
+        "2": {
+            "de": "SP Sozialdemokratische Partei der Schweiz",
+            "fr": "PS Parti socialiste suisse",
+            "it": "PS Partito socialista svizzero"
+        },
+        "3": {
+            "de": "FDP FDP.Die Liberalen",
+            "fr": "PLR. Les Libéraux-Radicaux",
+            "it": "PLR. I Liberali"
+        },
+        "4": {
+            "de": "CVP Christlichdemokratische Volkspartei",
+            "fr": "PDC Parti Démocrate-Chrétien suisse",
+            "it": "PPD Partito Popolare Democratico Svizzero"
+        },
+        "5": {
+            "de": "GPS und GP Grüne Partei der Schweiz",
+            "fr": "PES Les Verts/Parti écologiste suisse",
+            "it": "PET I verdi/Partito ecolog. ticinese"
+        },
+        "6": {
+            "de": "EVP Evangelische Volkspartei",
+            "fr": "PEV Parti évangélique suisse",
+            "it": "PPE Parti popolare evangelico"
+        },
+        "7": {
+            "de": "Lega dei Ticinesi",
+            "fr": "Lega dei Ticinesi",
+            "it": "Lega dei Ticinesi"
+        },
+        "8": {
+            "de": "CSP Christlich-soziale Partei",
+            "fr": "PCS Parti chrétien-social",
+            "it": "PCS Partito cristiano-sociale"
+        },
+        "9": {
+            "de": "GLP Grünliberale Partei",
+            "fr": "PVL Parti Verts Libéraux",
+            "it": "PEL Partito ecolog. liberale"
+        },
+        "10": {
+            "de": "BDP Bürgerlich-Demokratische Partei",
+            "fr": "PBD Parti Bourgeois-Démocratique Suisse",
+            "it": "PBD Partito borghese democratico Svizzera"
+        },
+        "11": {
+            "de": "Alternative Linke / Alternative Liste / Partei der Arbeit / solidaritéS",
+            "fr": "La Gauche/PST/POP Parti suisse du Travail/solidaritéS",
+            "it": "La Sinistra/PSL Partito svizzero del lavoro/solidaritéS"
+        },
+        "12": {
+            "de": "EDU Eidgenössisch-Demokratische Union",
+            "fr": "UDF Union Démocratique Fédéral",
+            "it": "UDF Unione Democratica Federale"
+        },
+        "13": {
+            "de": "Piratenpartei",
+            "fr": "PartiPirate",
+            "it": "PartitoPirata"
+        },
+        "14": {
+            "de": "Mouvement Citoyens Romand",
+            "fr": "Mouvement Citoyens Romand",
+            "it": "Mouvement Citoyens Romand"
+        },
+        "15": {
+            "de": "eindeutig andere Partei",
+            "fr": "clairement un autre parti",
+            "it": "chiaramente un partito diverse"
+        },
+        "16": {
+            "de": "keine Partei",
+            "fr": "aucun parti",
+            "it": "nessun partito"
+        },
+        "17": {
+            "de": "mehrere Parteien gleich",
+            "fr": "plusieurs partis en même temps",
+            "it": "più di un partito allo stesso tempo"
+        },
+        "99": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        }
+    },
+    "VOTE1": {
+        "1": {
+            "de": "ja (angenommen)",
+            "fr": "oui (accepté)",
+            "it": "sì (accettata)"
+        },
+        "2": {
+            "de": "nein (abgelehnt)",
+            "fr": "non (refusé)",
+            "it": "no (respinta)"
+        },
+        "3": {
+            "de": "leer eingelegt / nicht bei dieser Vorlage abgestimmt",
+            "fr": "vote blanc / n’ai pas voté sur ce projet",
+            "it": "voto in bianco / nessun voto per questo oggetto"
+        },
+        "8": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "VOTE1A": {
+        "1": {
+            "de": "wollte zuerst nicht teilnehmen",
+            "fr": "ne voulait pas, au début, participer",
+            "it": "inizialmente non voleva partecipare"
+        },
+        "2": {
+            "de": "war zuerst unentschieden",
+            "fr": "était indécis(e) au début",
+            "it": "inizialmente era indeciso/a"
+        },
+        "3": {
+            "de": "war zuerst Gegner*in",
+            "fr": "en a été l'adversaire au début",
+            "it": "inizialmente era contrario/a"
+        },
+        "4": {
+            "de": "war von Beginn an Befürworter*in",
+            "fr": "en a été partisan(ne) dès le départ",
+            "it": "è stato/a favorevole dall’inizio"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "indeciso/a / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "VOTE1B": {
+        "1": {
+            "de": "wollte zuerst nicht teilnehmen",
+            "fr": "ne voulait pas, au début, participer",
+            "it": "inizialmente non voleva partecipare"
+        },
+        "2": {
+            "de": "war zuerst unentschieden",
+            "fr": "était indécis(e) au début",
+            "it": "inizialmente era indeciso/a"
+        },
+        "3": {
+            "de": "war zuerst Befürworter*in",
+            "fr": "en a été partisan(ne) au début",
+            "it": "inizialmente era favorevole"
+        },
+        "4": {
+            "de": "war von Beginn weg Gegner*in",
+            "fr": "en a été l'adversaire dès le départ",
+            "it": "era un avversario/a fin dall'inizio"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "indeciso/a / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "VOTE1C": {
+        "1": {
+            "de": "wollte zuerst nicht teilnehmen",
+            "fr": "ne voulait pas, au début, participer",
+            "it": "inizialmente non voleva partecipare"
+        },
+        "2": {
+            "de": "war zuerst Befürworter*in",
+            "fr": "en a été partisan(ne) au début",
+            "it": "inizialmente era favorevole"
+        },
+        "3": {
+            "de": "war zuerst Gegner*in",
+            "fr": "en a été l'adversaire au début",
+            "it": "inizialmente era contrario/a"
+        },
+        "4": {
+            "de": "war von Beginn an unentschieden",
+            "fr": "était indécis dès le début",
+            "it": "è stato/a indeciso dall’inizio"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "indeciso/a / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "IMPORTANCE1": {
+        "0": {
+            "de": "0 überhaupt nicht wichtig",
+            "fr": "0 aucune importance",
+            "it": "0 nessuna importanza"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 sehr wichtig",
+            "fr": "10 très grande importance",
+            "it": "10 molto importante"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "REASON1ACC1_01 - 11": {
+        "10": {
+            "de": "Allgemeines",
+            "fr": "Informations générales",
+            "it": "Informazioni generali"
+        },
+        "11": {
+            "de": "allgemeine Antworten (z.B. schon mal gehört)",
+            "fr": "des réponses générales (par exemple, entendues auparavant)",
+            "it": "risposte generali (ad es. sentite prima)"
+        },
+        "12": {
+            "de": "allgemeine positive Äusserungen (z.B. wichtig, gut)",
+            "fr": "des remarques générales positives (par exemple, importantes, bonnes, etc.)",
+            "it": "osservazioni generali positive (ad es. importanti, buone, ecc.)"
+        },
+        "13": {
+            "de": "allgemeine negative Äusserungen (z.B. nicht gut so)",
+            "fr": "des déclarations négatives générales (par exemple, pas bonnes comme celle-ci)",
+            "it": "dichiarazioni generali negative (ad es. non buone come questa)"
+        },
+        "14": {
+            "de": "Bauchgefühl",
+            "fr": "sentiment instinctif",
+            "it": "sensazione di pancia"
+        },
+        "15": {
+            "de": "direkt betroffen (z.B. arbeite für einen Schweizer Unternehmen)",
+            "fr": "directement concernés (par exemple, travailler pour une entreprise suisse)",
+            "it": "direttamente interessati (ad es. lavoro per un'azienda svizzera)"
+        },
+        "16": {
+            "de": "Sympathie-Votum/Diskussion unterstützen",
+            "fr": "soutenir le vote de sympathie/discussion",
+            "it": "sostenere il voto di simpatia e la discussione"
+        },
+        "17": {
+            "de": "Abstimmungskampf",
+            "fr": "Campagne de vote",
+            "it": "Campagna di voto"
+        },
+        "18": {
+            "de": "Corona",
+            "fr": "Corona",
+            "it": "Corona"
+        },
+        "19": {
+            "de": "Anderes zu Allgemeines",
+            "fr": "Autre au général",
+            "it": "Altro a Generale"
+        },
+        "20": {
+            "de": "Menschenrechte/Rolle der CH",
+            "fr": "Droits de l'homme/rôle de la CH",
+            "it": "Diritti umani/ruolo di CH"
+        },
+        "21": {
+            "de": "freiwillige Massnahmen reichen nicht aus",
+            "fr": "les mesures volontaires ne suffisent pas",
+            "it": "le misure volontarie non sono sufficienti"
+        },
+        "22": {
+            "de": "stärkt Ansehen der Schweiz",
+            "fr": "Renforce la réputation de la Suisse",
+            "it": "Rafforza la reputazione della Svizzera"
+        },
+        "23": {
+            "de": "Einhaltung Menschenrechte",
+            "fr": "Respect des droits de l'homme",
+            "it": "Rispetto dei diritti umani"
+        },
+        "24": {
+            "de": "Vorbildfunktion",
+            "fr": "Fonction de modèle",
+            "it": "Funzione di modello di ruolo"
+        },
+        "25": {
+            "de": "Image/Ruf der Schweiz",
+            "fr": "Image et réputation de la Suisse",
+            "it": "Immagine/reputazione della Svizzera"
+        },
+        "26": {
+            "de": "humanistische Tradition",
+            "fr": "La tradition humaniste",
+            "it": "Tradizione umanistica"
+        },
+        "27": {
+            "de": "keine Kinderarbeit",
+            "fr": "Pas de travail des enfants",
+            "it": "Niente lavoro minorile"
+        },
+        "29": {
+            "de": "Anderes zu Menschenrechte/Rolle der CH",
+            "fr": "Autres droits de l'homme/rôle de la CH",
+            "it": "Altri diritti umani/ruolo di CH"
+        },
+        "30": {
+            "de": "wirtschaftsethische Gründe",
+            "fr": "des raisons économiques et éthiques",
+            "it": "motivi economico-etici"
+        },
+        "31": {
+            "de": "faire Produkte",
+            "fr": "produits équitables",
+            "it": "prodotti equi"
+        },
+        "32": {
+            "de": "Verbesserung Arbeitsbedingungen",
+            "fr": "l'amélioration des conditions de travail",
+            "it": "miglioramento delle condizioni di lavoro"
+        },
+        "33": {
+            "de": "wirtschaftliche Benachteiligung Entwicklungsländer",
+            "fr": "le désavantage économique des pays en développement",
+            "it": "svantaggio economico dei paesi in via di sviluppo"
+        },
+        "34": {
+            "de": "Konzerne müssen kontrolliert werden/Kontrolle",
+            "fr": "Les sociétés doivent être contrôlées/contrôlées",
+            "it": "Le aziende devono essere controllate/controllare"
+        },
+        "35": {
+            "de": "Regulierung nötig",
+            "fr": "réglementation nécessaire",
+            "it": "regolamentazione necessaria"
+        },
+        "36": {
+            "de": "faire Produktion",
+            "fr": "production équitable",
+            "it": "produzione equa"
+        },
+        "37": {
+            "de": "wer sauber produziert hat nichts zu befürchten",
+            "fr": "qui produit proprement n'a rien à craindre",
+            "it": "chi produce in modo pulito non ha nulla da temere"
+        },
+        "38": {
+            "de": "Geld und Profit sind nicht alles",
+            "fr": "L'argent et le profit ne sont pas tout",
+            "it": "Il denaro e il profitto non sono tutto"
+        },
+        "39": {
+            "de": "Anderes zu wirtschaftsethische Gründe",
+            "fr": "Autres raisons liées à l'éthique des affaires",
+            "it": "Altri motivi di etica aziendale"
+        },
+        "40": {
+            "de": "Umwelt und Verantwortung",
+            "fr": "Environnement et responsabilité",
+            "it": "Ambiente e responsabilità"
+        },
+        "41": {
+            "de": "Schadensreduzierung Umwelt",
+            "fr": "Réduction des dommages Environnement",
+            "it": "Riduzione dei danni Ambiente"
+        },
+        "42": {
+            "de": "Verantwortung übernehmen",
+            "fr": "Prendre ses responsabilités",
+            "it": "Assumersi la responsabilità"
+        },
+        "43": {
+            "de": "keine Gewinnmaximierung auf Kosten der Menschen",
+            "fr": "pas de maximisation des profits au détriment des personnes",
+            "it": "nessuna massimizzazione del profitto a scapito delle persone"
+        },
+        "44": {
+            "de": "Gerechtigkeit",
+            "fr": "Justice",
+            "it": "Giustizia"
+        },
+        "45": {
+            "de": "Gleichberechtigung",
+            "fr": "Égalité",
+            "it": "Uguaglianza"
+        },
+        "46": {
+            "de": "keine Kinderarbeit",
+            "fr": "pas de travail des enfants",
+            "it": "niente lavoro minorile"
+        },
+        "47": {
+            "de": "Einhaltung Umweltstandards",
+            "fr": "Respect des normes environnementales",
+            "it": "Conformità alle norme ambientali"
+        },
+        "48": {
+            "de": "Ethik/ethische Gründe",
+            "fr": "Éthique / raisons éthiques",
+            "it": "Motivi etici/etici"
+        },
+        "49": {
+            "de": "globale Verantwortung",
+            "fr": "responsabilité mondiale",
+            "it": "responsabilità globale"
+        },
+        "59": {
+            "de": "Anderes zu Umwelt und Verantwortung",
+            "fr": "Autres sur l'environnement et la responsabilité",
+            "it": "Altro su ambiente e responsabilità"
+        },
+        "90": {
+            "de": "Anderes",
+            "fr": "Autres",
+            "it": "Altro"
+        },
+        "91": {
+            "de": "falsche Nennungen/Antworten",
+            "fr": "mentions et réponses incorrectes",
+            "it": "menzioni/risposte errate"
+        },
+        "92": {
+            "de": "Empfehlungen von Parteien",
+            "fr": "Recommandations des parties",
+            "it": "Raccomandazioni delle parti"
+        },
+        "93": {
+            "de": "Empfehlungen von Verbänden",
+            "fr": "Recommandations des associations",
+            "it": "Raccomandazioni delle associazioni"
+        },
+        "94": {
+            "de": "Empfehlungen von Familienmitgliedern/Verwandten",
+            "fr": "Recommandations des membres de la famille/des parents/des amis",
+            "it": "Raccomandazioni di famigliari/parenti/amici"
+        },
+        "95": {
+            "de": "Empfehlungen von Bundesrat/Parlament/Kantonen",
+            "fr": "Recommandations du Conseil fédéral/Parlement/Cantons",
+            "it": "Raccomandazioni del Consiglio federale/Parlamento/Cantone"
+        },
+        "96": {
+            "de": "wegen Fernsehbeitrag/Zeitungsartikel/Medienbericht",
+            "fr": "en raison d'un reportage télévisé/un article de journal/un reportage médiatique",
+            "it": "a causa di un reportage televisivo/articolo di giornale/servizio mediatico"
+        },
+        "97": {
+            "de": "Verwechslung mit anderen Vorlagen",
+            "fr": "Confusion avec d'autres propositions",
+            "it": "Confusione con altre proposte"
+        },
+        "98": {
+            "de": "weiss nicht/Nein",
+            "fr": "ne sait pas/non",
+            "it": "non so / no"
+        },
+        "99": {
+            "de": "keine Antwort",
+            "fr": "pas de réponse",
+            "it": "nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "REASON2ACC1_01 - 10": {
+        "10": {
+            "de": "Allgemeines",
+            "fr": "Informations générales",
+            "it": "Informazioni generali"
+        },
+        "11": {
+            "de": "allgemeine Antworten (z.B. schon mal gehört)",
+            "fr": "des réponses générales (par exemple, entendues auparavant)",
+            "it": "risposte generali (ad es. sentite prima)"
+        },
+        "12": {
+            "de": "allgemeine positive Äusserungen (z.B. wichtig, gut)",
+            "fr": "des remarques générales positives (par exemple, importantes, bonnes, etc.)",
+            "it": "osservazioni generali positive (ad es. importanti, buone, ecc.)"
+        },
+        "13": {
+            "de": "allgemeine negative Äusserungen (z.B. nicht gut so)",
+            "fr": "des déclarations négatives générales (par exemple, pas bonnes comme celle-ci)",
+            "it": "dichiarazioni generali negative (ad es. non buone come questa)"
+        },
+        "14": {
+            "de": "Bauchgefühl",
+            "fr": "sentiment instinctif",
+            "it": "sensazione di pancia"
+        },
+        "15": {
+            "de": "direkt betroffen (z.B. arbeite für einen Schweizer Unternehmen)",
+            "fr": "directement concernés (par exemple, travailler pour une entreprise suisse)",
+            "it": "direttamente interessati (ad es. lavoro per un'azienda svizzera)"
+        },
+        "16": {
+            "de": "Sympathie-Votum/Diskussion unterstützen",
+            "fr": "soutenir le vote de sympathie/discussion",
+            "it": "sostenere il voto di simpatia e la discussione"
+        },
+        "17": {
+            "de": "Abstimmungskampf",
+            "fr": "Campagne de vote",
+            "it": "Campagna di voto"
+        },
+        "18": {
+            "de": "Corona",
+            "fr": "Corona",
+            "it": "Corona"
+        },
+        "19": {
+            "de": "Anderes zu Allgemeines",
+            "fr": "Autre au général",
+            "it": "Altro a Generale"
+        },
+        "20": {
+            "de": "Menschenrechte/Rolle der CH",
+            "fr": "Droits de l'homme/rôle de la CH",
+            "it": "Diritti umani/ruolo di CH"
+        },
+        "21": {
+            "de": "freiwillige Massnahmen reichen nicht aus",
+            "fr": "les mesures volontaires ne suffisent pas",
+            "it": "le misure volontarie non sono sufficienti"
+        },
+        "22": {
+            "de": "stärkt Ansehen der Schweiz",
+            "fr": "Renforce la réputation de la Suisse",
+            "it": "Rafforza la reputazione della Svizzera"
+        },
+        "23": {
+            "de": "Einhaltung Menschenrechte",
+            "fr": "Respect des droits de l'homme",
+            "it": "Rispetto dei diritti umani"
+        },
+        "24": {
+            "de": "Vorbildfunktion",
+            "fr": "Fonction de modèle",
+            "it": "Funzione di modello di ruolo"
+        },
+        "25": {
+            "de": "Image/Ruf der Schweiz",
+            "fr": "Image et réputation de la Suisse",
+            "it": "Immagine/reputazione della Svizzera"
+        },
+        "26": {
+            "de": "humanistische Tradition",
+            "fr": "La tradition humaniste",
+            "it": "Tradizione umanistica"
+        },
+        "27": {
+            "de": "keine Kinderarbeit",
+            "fr": "Pas de travail des enfants",
+            "it": "Niente lavoro minorile"
+        },
+        "29": {
+            "de": "Anderes zu Menschenrechte/Rolle der CH",
+            "fr": "Autres droits de l'homme/rôle de la CH",
+            "it": "Altri diritti umani/ruolo di CH"
+        },
+        "30": {
+            "de": "wirtschaftsethische Gründe",
+            "fr": "des raisons économiques et éthiques",
+            "it": "motivi economico-etici"
+        },
+        "31": {
+            "de": "faire Produkte",
+            "fr": "produits équitables",
+            "it": "prodotti equi"
+        },
+        "32": {
+            "de": "Verbesserung Arbeitsbedingungen",
+            "fr": "l'amélioration des conditions de travail",
+            "it": "miglioramento delle condizioni di lavoro"
+        },
+        "33": {
+            "de": "wirtschaftliche Benachteiligung Entwicklungsländer",
+            "fr": "le désavantage économique des pays en développement",
+            "it": "svantaggio economico dei paesi in via di sviluppo"
+        },
+        "34": {
+            "de": "Konzerne müssen kontrolliert werden/Kontrolle",
+            "fr": "Les sociétés doivent être contrôlées/contrôlées",
+            "it": "Le aziende devono essere controllate/controllare"
+        },
+        "35": {
+            "de": "Regulierung nötig",
+            "fr": "réglementation nécessaire",
+            "it": "regolamentazione necessaria"
+        },
+        "36": {
+            "de": "faire Produktion",
+            "fr": "production équitable",
+            "it": "produzione equa"
+        },
+        "37": {
+            "de": "wer sauber produziert hat nichts zu befürchten",
+            "fr": "qui produit proprement n'a rien à craindre",
+            "it": "chi produce in modo pulito non ha nulla da temere"
+        },
+        "38": {
+            "de": "Geld und Profit sind nicht alles",
+            "fr": "L'argent et le profit ne sont pas tout",
+            "it": "Il denaro e il profitto non sono tutto"
+        },
+        "39": {
+            "de": "Anderes zu wirtschaftsethische Gründe",
+            "fr": "Autres raisons liées à l'éthique des affaires",
+            "it": "Altri motivi di etica aziendale"
+        },
+        "40": {
+            "de": "Umwelt und Verantwortung",
+            "fr": "Environnement et responsabilité",
+            "it": "Ambiente e responsabilità"
+        },
+        "41": {
+            "de": "Schadensreduzierung Umwelt",
+            "fr": "Réduction des dommages Environnement",
+            "it": "Riduzione dei danni Ambiente"
+        },
+        "42": {
+            "de": "Verantwortung übernehmen",
+            "fr": "Prendre ses responsabilités",
+            "it": "Assumersi la responsabilità"
+        },
+        "43": {
+            "de": "keine Gewinnmaximierung auf Kosten der Menschen",
+            "fr": "pas de maximisation des profits au détriment des personnes",
+            "it": "nessuna massimizzazione del profitto a scapito delle persone"
+        },
+        "44": {
+            "de": "Gerechtigkeit",
+            "fr": "Justice",
+            "it": "Giustizia"
+        },
+        "45": {
+            "de": "Gleichberechtigung",
+            "fr": "Égalité",
+            "it": "Uguaglianza"
+        },
+        "46": {
+            "de": "keine Kinderarbeit",
+            "fr": "pas de travail des enfants",
+            "it": "niente lavoro minorile"
+        },
+        "47": {
+            "de": "Einhaltung Umweltstandards",
+            "fr": "Respect des normes environnementales",
+            "it": "Conformità alle norme ambientali"
+        },
+        "48": {
+            "de": "Ethik/ethische Gründe",
+            "fr": "Éthique / raisons éthiques",
+            "it": "Motivi etici/etici"
+        },
+        "49": {
+            "de": "globale Verantwortung",
+            "fr": "responsabilité mondiale",
+            "it": "responsabilità globale"
+        },
+        "59": {
+            "de": "Anderes zu Umwelt und Verantwortung",
+            "fr": "Autres sur l'environnement et la responsabilité",
+            "it": "Altro su ambiente e responsabilità"
+        },
+        "90": {
+            "de": "Anderes",
+            "fr": "Autres",
+            "it": "Altro"
+        },
+        "91": {
+            "de": "falsche Nennungen/Antworten",
+            "fr": "mentions et réponses incorrectes",
+            "it": "menzioni/risposte errate"
+        },
+        "92": {
+            "de": "Empfehlungen von Parteien",
+            "fr": "Recommandations des parties",
+            "it": "Raccomandazioni delle parti"
+        },
+        "93": {
+            "de": "Empfehlungen von Verbänden",
+            "fr": "Recommandations des associations",
+            "it": "Raccomandazioni delle associazioni"
+        },
+        "94": {
+            "de": "Empfehlungen von Familienmitgliedern/Verwandten",
+            "fr": "Recommandations des membres de la famille/des parents/des amis",
+            "it": "Raccomandazioni di famigliari/parenti/amici"
+        },
+        "95": {
+            "de": "Empfehlungen von Bundesrat/Parlament/Kantonen",
+            "fr": "Recommandations du Conseil fédéral/Parlement/Cantons",
+            "it": "Raccomandazioni del Consiglio federale/Parlamento/Cantone"
+        },
+        "96": {
+            "de": "wegen Fernsehbeitrag/Zeitungsartikel/Medienbericht",
+            "fr": "en raison d'un reportage télévisé/un article de journal/un reportage médiatique",
+            "it": "a causa di un reportage televisivo/articolo di giornale/servizio mediatico"
+        },
+        "97": {
+            "de": "Verwechslung mit anderen Vorlagen",
+            "fr": "Confusion avec d'autres propositions",
+            "it": "Confusione con altre proposte"
+        },
+        "98": {
+            "de": "weiss nicht/Nein",
+            "fr": "ne sait pas/non",
+            "it": "non so / no"
+        },
+        "99": {
+            "de": "keine Antwort",
+            "fr": "pas de réponse",
+            "it": "nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "REASON1DEN1_01 - 09": {
+        "10": {
+            "de": "Allgemeines",
+            "fr": "Informations générales",
+            "it": "Informazioni generali"
+        },
+        "11": {
+            "de": "allgemeine Antworten (z.B. schon mal gehört)",
+            "fr": "des réponses générales (par exemple, entendues auparavant)",
+            "it": "risposte generali (ad es. sentite prima)"
+        },
+        "12": {
+            "de": "allgemeine negative Äusserungen (z.B. falscher Weg)",
+            "fr": "les déclarations négatives générales",
+            "it": "dichiarazioni generali negative (ad es. modo sbagliato)"
+        },
+        "13": {
+            "de": "Bauchgefühl",
+            "fr": "sentiment instinctif",
+            "it": "sensazione di pancia"
+        },
+        "14": {
+            "de": "direkt betroffen (z.B. arbeite für einen Konzern)",
+            "fr": "directement concernés (par exemple, travail pour une société)",
+            "it": "direttamente interessati (ad esempio, lavoro per una società)"
+        },
+        "15": {
+            "de": "zu extrem, geht zu weit, zu restriktiv",
+            "fr": "trop extrême, va trop loin, trop restrictif",
+            "it": "troppo estremo, va troppo oltre, troppo restrittivo"
+        },
+        "16": {
+            "de": "Abstimmungskampf",
+            "fr": "Campagne de vote",
+            "it": "Campagna di voto"
+        },
+        "17": {
+            "de": "Corona",
+            "fr": "Corona",
+            "it": "Corona"
+        },
+        "19": {
+            "de": "Anderes zu Allgemeines",
+            "fr": "Autre au général",
+            "it": "Altro a Generale"
+        },
+        "20": {
+            "de": "Politik und Recht",
+            "fr": "Politique et droit",
+            "it": "Politica e diritto"
+        },
+        "21": {
+            "de": "Bürokratie",
+            "fr": "Bureaucratie",
+            "it": "Burocrazia"
+        },
+        "22": {
+            "de": "freiwillige Massnahmen reichen aus",
+            "fr": "les mesures volontaires sont suffisantes",
+            "it": "sono sufficienti misure volontarie"
+        },
+        "23": {
+            "de": "schwierige Umsetzung",
+            "fr": "une mise en œuvre difficile",
+            "it": "implementazione difficile"
+        },
+        "24": {
+            "de": "braucht internationale Regelung, Alleingang nicht",
+            "fr": "a besoin d'une réglementation internationale, il ne suffit pas de faire cavalier seul",
+            "it": "ha bisogno di una regolamentazione internazionale, andare da soli non basta"
+        },
+        "25": {
+            "de": "staatliche Kontrolle falsch / unangemessen",
+            "fr": "contrôle gouvernemental erroné / inapproprié",
+            "it": "controllo del governo sbagliato / inappropriato"
+        },
+        "26": {
+            "de": "Gerichtsverfahren-Problematik",
+            "fr": "Problème de litige",
+            "it": "Problemi di contenzioso"
+        },
+        "27": {
+            "de": "Klageflut/Anklagwelle",
+            "fr": "avalanche de procès / vague de procès",
+            "it": "ondata di cause legali / ondata di cause legali"
+        },
+        "28": {
+            "de": "Gegenvorschlag besser",
+            "fr": "Meilleure contre-proposition",
+            "it": "Controproposta migliore"
+        },
+        "29": {
+            "de": "Anderes zu Politik und Recht",
+            "fr": "Autres sur la politique et le droit",
+            "it": "Altro su politica e diritto"
+        },
+        "30": {
+            "de": "wirtschaftliche Gründe",
+            "fr": "des raisons économiques",
+            "it": "motivi economici"
+        },
+        "31": {
+            "de": "Wirtschaft / Schaden für die Wirtschaft",
+            "fr": "Économie / dommages à l'économie",
+            "it": "Economia / danni all'economia"
+        },
+        "32": {
+            "de": "Belastung für Firmen / KMU",
+            "fr": "charge pour les entreprises / PME",
+            "it": "onere per le aziende / PMI"
+        },
+        "33": {
+            "de": "hohe Kosten durch staatliche Vorschriften",
+            "fr": "des coûts élevés en raison des réglementations gouvernementales",
+            "it": "costi elevati dovuti alle normative governative"
+        },
+        "34": {
+            "de": "Schwächung von Schweizer Firmen im Konkurrenzvergleich",
+            "fr": "L'affaiblissement des entreprises suisses en comparaison avec leurs concurrents",
+            "it": "Indebolimento delle aziende svizzere nel confronto competitivo"
+        },
+        "35": {
+            "de": "Benachteiligung Wirtschaftsstandort Schweiz",
+            "fr": "Désavantage de la Suisse en tant que site économique",
+            "it": "Svantaggio della Svizzera come piazza economica"
+        },
+        "36": {
+            "de": "Schutz der Schweizer Firmen",
+            "fr": "Protection des entreprises suisses",
+            "it": "Protezione delle imprese svizzere"
+        },
+        "37": {
+            "de": "Stellenabbau / Arbeitsplätze",
+            "fr": "pertes d'emplois / emplois",
+            "it": "perdita di posti di lavoro / posti di lavoro"
+        },
+        "38": {
+            "de": "unschätzbare Risiken",
+            "fr": "des risques inestimables",
+            "it": "rischi inestimabili"
+        },
+        "39": {
+            "de": "Anderes zu wirtschaftliche Gründe",
+            "fr": "Autres raisons économiques",
+            "it": "Altri motivi economici"
+        },
+        "40": {
+            "de": "verfehlte Wirkung",
+            "fr": "effet manqué",
+            "it": "effetto mancato"
+        },
+        "41": {
+            "de": "kein menschenrechtlicher Nutzen",
+            "fr": "pas de bénéfice pour les droits de l'homme",
+            "it": "nessun beneficio per i diritti umani"
+        },
+        "42": {
+            "de": "kein ökologischer Nutzen",
+            "fr": "aucun avantage écologique",
+            "it": "nessun beneficio ecologico"
+        },
+        "43": {
+            "de": "Schweizer Firmen können keine Verantwortung tragen",
+            "fr": "Les entreprises suisses ne peuvent pas assumer la responsabilité",
+            "it": "Le aziende svizzere non possono assumersi la responsabilità"
+        },
+        "44": {
+            "de": "Alleingang nicht sinnvoll",
+            "fr": "Faire cavalier seul n'a pas de sens",
+            "it": "Andare da soli non ha senso"
+        },
+        "45": {
+            "de": "schwierige Umsetzung",
+            "fr": "une mise en œuvre difficile",
+            "it": "implementazione difficile"
+        },
+        "49": {
+            "de": "Anderes zu verfehlte Wirkung",
+            "fr": "D'autres impacts trop manqués",
+            "it": "Altro impatto troppo mancato"
+        },
+        "90": {
+            "de": "Anderes",
+            "fr": "Autres",
+            "it": "Altro"
+        },
+        "91": {
+            "de": "falsche Nennungen/Antworten",
+            "fr": "des mentions et réponses erronées",
+            "it": "menzioni/risposte errate"
+        },
+        "92": {
+            "de": "Empfehlungen von Parteien",
+            "fr": "Recommandations des parties",
+            "it": "Raccomandazioni delle parti"
+        },
+        "93": {
+            "de": "Empfehlungen von Verbänden",
+            "fr": "Recommandations des associations",
+            "it": "Raccomandazioni delle associazioni"
+        },
+        "94": {
+            "de": "Empfehlungen von Familienmitgliedern/Verwandten",
+            "fr": "Recommandations des membres de la famille/des parents/des amis",
+            "it": "Raccomandazioni di famigliari/parenti/amici"
+        },
+        "95": {
+            "de": "Empfehlungen von Bundesrat/Parlament/Kantonen",
+            "fr": "Recommandations du Conseil fédéral/Parlement/Cantons",
+            "it": "Raccomandazioni del Consiglio federale/Parlamento/Cantone"
+        },
+        "96": {
+            "de": "wegen Fernsehbeitrag/Zeitungsartikel/Medienbericht",
+            "fr": "en raison d'un reportage télévisé/un article de journal/un reportage médiatique",
+            "it": "a causa di un reportage televisivo/articolo di giornale/servizio mediatico"
+        },
+        "97": {
+            "de": "Verwechslung mit anderen Vorlagen",
+            "fr": "Confusion avec d'autres propositions",
+            "it": "Confusione con altre proposte"
+        },
+        "100": {
+            "de": "zu extrem/übertriebene Massnahmen/wirkungslos",
+            "fr": "trop extrême/mesures exagérées/inefficaces",
+            "it": "misure troppo estreme/esasperte/inefficaci"
+        },
+        "98": {
+            "de": "weiss nicht/Nein",
+            "fr": "ne sait pas/non",
+            "it": "non so / no"
+        },
+        "99": {
+            "de": "keine Antwort",
+            "fr": "pas de réponse",
+            "it": "nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "REASON2DEN1_01 - 08": {
+        "10": {
+            "de": "Allgemeines",
+            "fr": "Informations générales",
+            "it": "Informazioni generali"
+        },
+        "11": {
+            "de": "allgemeine Antworten (z.B. schon mal gehört)",
+            "fr": "des réponses générales (par exemple, entendues auparavant)",
+            "it": "risposte generali (ad es. sentite prima)"
+        },
+        "12": {
+            "de": "allgemeine negative Äusserungen (z.B. falscher Weg)",
+            "fr": "les déclarations négatives générales",
+            "it": "dichiarazioni generali negative (ad es. modo sbagliato)"
+        },
+        "13": {
+            "de": "Bauchgefühl",
+            "fr": "sentiment instinctif",
+            "it": "sensazione di pancia"
+        },
+        "14": {
+            "de": "direkt betroffen (z.B. arbeite für einen Konzern)",
+            "fr": "directement concernés (par exemple, travail pour une société)",
+            "it": "direttamente interessati (ad esempio, lavoro per una società)"
+        },
+        "15": {
+            "de": "zu extrem, geht zu weit, zu restriktiv",
+            "fr": "trop extrême, va trop loin, trop restrictif",
+            "it": "troppo estremo, va troppo oltre, troppo restrittivo"
+        },
+        "16": {
+            "de": "Abstimmungskampf",
+            "fr": "Campagne de vote",
+            "it": "Campagna di voto"
+        },
+        "17": {
+            "de": "Corona",
+            "fr": "Corona",
+            "it": "Corona"
+        },
+        "19": {
+            "de": "Anderes zu Allgemeines",
+            "fr": "Autre au général",
+            "it": "Altro a Generale"
+        },
+        "20": {
+            "de": "Politik und Recht",
+            "fr": "Politique et droit",
+            "it": "Politica e diritto"
+        },
+        "21": {
+            "de": "Bürokratie",
+            "fr": "Bureaucratie",
+            "it": "Burocrazia"
+        },
+        "22": {
+            "de": "freiwillige Massnahmen reichen aus",
+            "fr": "les mesures volontaires sont suffisantes",
+            "it": "sono sufficienti misure volontarie"
+        },
+        "23": {
+            "de": "schwierige Umsetzung",
+            "fr": "une mise en œuvre difficile",
+            "it": "implementazione difficile"
+        },
+        "24": {
+            "de": "braucht internationale Regelung, Alleingang nicht",
+            "fr": "a besoin d'une réglementation internationale, il ne suffit pas de faire cavalier seul",
+            "it": "ha bisogno di una regolamentazione internazionale, andare da soli non basta"
+        },
+        "25": {
+            "de": "staatliche Kontrolle falsch / unangemessen",
+            "fr": "contrôle gouvernemental erroné / inapproprié",
+            "it": "controllo del governo sbagliato / inappropriato"
+        },
+        "26": {
+            "de": "Gerichtsverfahren-Problematik",
+            "fr": "Problème de litige",
+            "it": "Problemi di contenzioso"
+        },
+        "27": {
+            "de": "Klageflut/Anklagwelle",
+            "fr": "avalanche de procès / vague de procès",
+            "it": "ondata di cause legali / ondata di cause legali"
+        },
+        "28": {
+            "de": "Gegenvorschlag besser",
+            "fr": "Meilleure contre-proposition",
+            "it": "Controproposta migliore"
+        },
+        "29": {
+            "de": "Anderes zu Politik und Recht",
+            "fr": "Autres sur la politique et le droit",
+            "it": "Altro su politica e diritto"
+        },
+        "30": {
+            "de": "wirtschaftliche Gründe",
+            "fr": "des raisons économiques",
+            "it": "motivi economici"
+        },
+        "31": {
+            "de": "Wirtschaft / Schaden für die Wirtschaft",
+            "fr": "Économie / dommages à l'économie",
+            "it": "Economia / danni all'economia"
+        },
+        "32": {
+            "de": "Belastung für Firmen / KMU",
+            "fr": "charge pour les entreprises / PME",
+            "it": "onere per le aziende / PMI"
+        },
+        "33": {
+            "de": "hohe Kosten durch staatliche Vorschriften",
+            "fr": "des coûts élevés en raison des réglementations gouvernementales",
+            "it": "costi elevati dovuti alle normative governative"
+        },
+        "34": {
+            "de": "Schwächung von Schweizer Firmen im Konkurrenzvergleich",
+            "fr": "L'affaiblissement des entreprises suisses en comparaison avec leurs concurrents",
+            "it": "Indebolimento delle aziende svizzere nel confronto competitivo"
+        },
+        "35": {
+            "de": "Benachteiligung Wirtschaftsstandort Schweiz",
+            "fr": "Désavantage de la Suisse en tant que site économique",
+            "it": "Svantaggio della Svizzera come piazza economica"
+        },
+        "36": {
+            "de": "Schutz der Schweizer Firmen",
+            "fr": "Protection des entreprises suisses",
+            "it": "Protezione delle imprese svizzere"
+        },
+        "37": {
+            "de": "Stellenabbau / Arbeitsplätze",
+            "fr": "pertes d'emplois / emplois",
+            "it": "perdita di posti di lavoro / posti di lavoro"
+        },
+        "38": {
+            "de": "unschätzbare Risiken",
+            "fr": "des risques inestimables",
+            "it": "rischi inestimabili"
+        },
+        "39": {
+            "de": "Anderes zu wirtschaftliche Gründe",
+            "fr": "Autres raisons économiques",
+            "it": "Altri motivi economici"
+        },
+        "40": {
+            "de": "verfehlte Wirkung",
+            "fr": "effet manqué",
+            "it": "effetto mancato"
+        },
+        "41": {
+            "de": "kein menschenrechtlicher Nutzen",
+            "fr": "pas de bénéfice pour les droits de l'homme",
+            "it": "nessun beneficio per i diritti umani"
+        },
+        "42": {
+            "de": "kein ökologischer Nutzen",
+            "fr": "aucun avantage écologique",
+            "it": "nessun beneficio ecologico"
+        },
+        "43": {
+            "de": "Schweizer Firmen können keine Verantwortung tragen",
+            "fr": "Les entreprises suisses ne peuvent pas assumer la responsabilité",
+            "it": "Le aziende svizzere non possono assumersi la responsabilità"
+        },
+        "44": {
+            "de": "Alleingang nicht sinnvoll",
+            "fr": "Faire cavalier seul n'a pas de sens",
+            "it": "Andare da soli non ha senso"
+        },
+        "45": {
+            "de": "schwierige Umsetzung",
+            "fr": "une mise en œuvre difficile",
+            "it": "implementazione difficile"
+        },
+        "49": {
+            "de": "Anderes zu verfehlte Wirkung",
+            "fr": "D'autres impacts trop manqués",
+            "it": "Altro impatto troppo mancato"
+        },
+        "90": {
+            "de": "Anderes",
+            "fr": "Autres",
+            "it": "Altro"
+        },
+        "91": {
+            "de": "falsche Nennungen/Antworten",
+            "fr": "des mentions et réponses erronées",
+            "it": "menzioni/risposte errate"
+        },
+        "92": {
+            "de": "Empfehlungen von Parteien",
+            "fr": "Recommandations des parties",
+            "it": "Raccomandazioni delle parti"
+        },
+        "93": {
+            "de": "Empfehlungen von Verbänden",
+            "fr": "Recommandations des associations",
+            "it": "Raccomandazioni delle associazioni"
+        },
+        "94": {
+            "de": "Empfehlungen von Familienmitgliedern/Verwandten",
+            "fr": "Recommandations des membres de la famille/des parents/des amis",
+            "it": "Raccomandazioni di famigliari/parenti/amici"
+        },
+        "95": {
+            "de": "Empfehlungen von Bundesrat/Parlament/Kantonen",
+            "fr": "Recommandations du Conseil fédéral/Parlement/Cantons",
+            "it": "Raccomandazioni del Consiglio federale/Parlamento/Cantone"
+        },
+        "96": {
+            "de": "wegen Fernsehbeitrag/Zeitungsartikel/Medienbericht",
+            "fr": "en raison d'un reportage télévisé/un article de journal/un reportage médiatique",
+            "it": "a causa di un reportage televisivo/articolo di giornale/servizio mediatico"
+        },
+        "97": {
+            "de": "Verwechslung mit anderen Vorlagen",
+            "fr": "Confusion avec d'autres propositions",
+            "it": "Confusione con altre proposte"
+        },
+        "100": {
+            "de": "zu extrem/übertriebene Massnahmen/wirkungslos",
+            "fr": "trop extrême/mesures exagérées/inefficaces",
+            "it": "misure troppo estreme/esasperte/inefficaci"
+        },
+        "98": {
+            "de": "weiss nicht/Nein",
+            "fr": "ne sait pas/non",
+            "it": "non so / no"
+        },
+        "99": {
+            "de": "keine Antwort",
+            "fr": "pas de réponse",
+            "it": "nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "TRUST_1": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 aucune confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 confiance totale",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "TRUST_2": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 aucune confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 confiance totale",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "TRUST_3": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 aucune confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 confiance totale",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "TRUST_4": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 aucune confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 confiance totale",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "TRUST_5": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 aucune confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 confiance totale",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "TRUST_6": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 aucune confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 confiance totale",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "TRUST_7": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 aucune confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 confiance totale",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "TRUST_8": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 aucune confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 confiance totale",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "TRUST_9": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 aucune confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 confiance totale",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "TRUST_10": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 aucune confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 confiance totale",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "TRUST_13": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 aucune confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 confiance totale",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "TRUST_14": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 aucune confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 confiance totale",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "TRUST_15": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 aucune confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 confiance totale",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "TRUST_21": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 aucune confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 confiance totale",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "TRUST_22": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 aucune confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 confiance totale",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "TRUST_24": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 aucune confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 confiance totale",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "TRUST_25": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 aucune confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 confiance totale",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "LRSP": {
+        "0": {
+            "de": "0 ganz links",
+            "fr": "0 tout à gauche",
+            "it": "0 estrema sinistra"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 Zentrum",
+            "fr": "5 centre",
+            "it": "5 centro"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 ganz rechts",
+            "fr": "10 tout à droite",
+            "it": "10 estrema destra"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        }
+    },
+    "VALUE1": {
+        "1": {
+            "de": "1 – vermehrt öffnen",
+            "fr": "1 – s'ouvre davantage",
+            "it": "1 – più aperta verso l'esterno"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6 – vermehrt verschliessen",
+            "fr": "6 – se ferme davantage",
+            "it": "6 – più richiusa su se stessa"
+        },
+        "8": {
+            "de": "nicht beurteilbar",
+            "fr": "pas évaluable",
+            "it": "non valutabile"
+        },
+        "9": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        }
+    },
+    "VALUE2": {
+        "1": {
+            "de": "1 – gleiche Chancen für Ausländer*innen",
+            "fr": "1 – égalité des chances pour étrangers et étrangères",
+            "it": "1 – pari opportunità per gli stranieri"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6 – bessere Chancen für Schweizer*innen",
+            "fr": "6 – meilleures chances aux Suisses et Suissesses",
+            "it": "6 – migliori opportunità per gli svizzeri"
+        },
+        "8": {
+            "de": "nicht beurteilbar",
+            "fr": "pas évaluable",
+            "it": "non valutabile"
+        },
+        "9": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        }
+    },
+    "VALUE3": {
+        "1": {
+            "de": "1 – Umweltschutz wichtiger",
+            "fr": "1 – protection de l'environnement plus importante",
+            "it": "1 – più importante la tutela dell'ambiente"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6 – wirtschaftlicher Wohlstand wichtiger",
+            "fr": "6 - prospérité économique plus importante",
+            "it": "6 – più importante il benessere economico"
+        },
+        "8": {
+            "de": "nicht beurteilbar",
+            "fr": "pas évaluable",
+            "it": "non valutabile"
+        },
+        "9": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        }
+    },
+    "VALUE4": {
+        "1": {
+            "de": "1 – stark ausgebauter Sozialstaat",
+            "fr": "1 - Etat social bien développé",
+            "it": "1 – Stato sociale ben sviluppato"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6 – gering ausgebauter Sozialstaat",
+            "fr": "6 - Etat social faiblement développé",
+            "it": "6 – Stato sociale poco sviluppato"
+        },
+        "8": {
+            "de": "nicht beurteilbar",
+            "fr": "pas évaluable",
+            "it": "non valutabile"
+        },
+        "9": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        }
+    },
+    "VALUE5": {
+        "1": {
+            "de": "1 – mehr Staatseingriffe",
+            "fr": "1 - plus d'interventions de l'Etat",
+            "it": "1 – maggiore intervento dello Stato"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6 – mehr Wettbewerb",
+            "fr": "6 - davantage de concurrence",
+            "it": "6 – più concorrenza sul mercato"
+        },
+        "8": {
+            "de": "nicht beurteilbar",
+            "fr": "pas évaluable",
+            "it": "non valutabile"
+        },
+        "9": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        }
+    },
+    "VALUE6": {
+        "1": {
+            "de": "1 – starke Armee",
+            "fr": "1 - armée forte",
+            "it": "1 – esercito forte"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6 – ohne Armee",
+            "fr": "6 - sans armée",
+            "it": "6 – senza esercito"
+        },
+        "8": {
+            "de": "nicht beurteilbar",
+            "fr": "pas évaluable",
+            "it": "non valutabile"
+        },
+        "9": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        }
+    },
+    "VALUE7": {
+        "1": {
+            "de": "1 – Bund mehr Macht",
+            "fr": "1 - davantage de pouvoir à la Confédération",
+            "it": "1 – maggiore potere alla Confederazione"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6 – Kantone mehr Macht",
+            "fr": "6 - davantage de pouvoir aux cantons",
+            "it": "6 – maggiore potere ai Cantoni"
+        },
+        "8": {
+            "de": "nicht beurteilbar",
+            "fr": "pas évaluable",
+            "it": "non valutabile"
+        },
+        "9": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        }
+    },
+    "VALUE8": {
+        "1": {
+            "de": "1 – Zeitgeist",
+            "fr": "1 – esprit du temps",
+            "it": "1 – spirito del nostro tempo"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6 – Traditionen schützen",
+            "fr": "6 - qui protège ses traditions",
+            "it": "6 – proteggere le tradizioni"
+        },
+        "8": {
+            "de": "nicht beurteilbar",
+            "fr": "pas évaluable",
+            "it": "non valutabile"
+        },
+        "9": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        }
+    },
+    "VALUE9": {
+        "1": {
+            "de": "1 – Gleichberechtigung der Geschlechter aktiv fördern",
+            "fr": "1 - qui encourage activement l'égalité des sexes",
+            "it": "1 – promuovere attivamente la parità tra i sessi"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6 – Gleichberechtigung der Geschlechter nicht aktiv fördern",
+            "fr": "6 - qui n'encourage pas activement l'égalité des sexes",
+            "it": "6 – non sostenere attivamente la parità tra i sessi"
+        },
+        "8": {
+            "de": "nicht beurteilbar",
+            "fr": "pas évaluable",
+            "it": "non valutabile"
+        },
+        "9": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        }
+    },
+    "VALUE10": {
+        "1": {
+            "de": "1 – Solidarität wichtiger",
+            "fr": "1 - solidarité plus importante",
+            "it": "1 – solidarietà più importante"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6 – Eigenverantwortung wichtiger",
+            "fr": "6 - responsabilité individuelle plus importante",
+            "it": "6 – responsabilità del singolo più importante"
+        },
+        "8": {
+            "de": "nicht beurteilbar",
+            "fr": "pas évaluable",
+            "it": "non valutabile"
+        },
+        "9": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        }
+    },
+    "VALUE11": {
+        "1": {
+            "de": "1 – mit Atomenergie",
+            "fr": "1 - avec énergie nucléaire",
+            "it": "1 – con energia nucleare"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6 – ohne Atomenergie",
+            "fr": "6 - sans énergie nucléaire",
+            "it": "6 – senza energia nucleare"
+        },
+        "8": {
+            "de": "nicht beurteilbar",
+            "fr": "pas évaluable",
+            "it": "non valutabile"
+        },
+        "9": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        }
+    },
+    "VALUE12": {
+        "1": {
+            "de": "1 – international neutral",
+            "fr": "1 - neutre sur le plan international",
+            "it": "1 – comportamento neutrale a livello internazionale"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6 – international Partei ergreifen",
+            "fr": "6 - prend parti sur le plan international",
+            "it": "6 – prese di posizione a livello internazionale"
+        },
+        "8": {
+            "de": "nicht beurteilbar",
+            "fr": "pas évaluable",
+            "it": "non valutabile"
+        },
+        "9": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        }
+    },
+    "VALUE13": {
+        "1": {
+            "de": "1 – Schweizer Recht über internationalem Recht",
+            "fr": "1 - le droit suisse l'emporte sur le droit international",
+            "it": "1 – diritto svizzero prevale sul diritto internazionale"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6 – internationales Recht über Schweizer Recht",
+            "fr": "6 - le droit international l'emporte sur le droit suisse",
+            "it": "6 – diritto internazionale prevale sul diritto svizzero"
+        },
+        "8": {
+            "de": "nicht beurteilbar",
+            "fr": "pas évaluable",
+            "it": "non valutabile"
+        },
+        "9": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        }
+    },
+    "VALUE14": {
+        "1": {
+            "de": "1 – Privatisierung ehemaliger Staatsbetriebe",
+            "fr": "1 - privatisation d'anciennes entreprises publiques",
+            "it": "1 – privatizzazione degli ex enti statali"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6 – Bund behält Kontrolle über Staatsbetriebe",
+            "fr": "6 - confédération conserve le contrôle sur les entreprises publiques",
+            "it": "6 – confederazione mantiene il controllo sugli enti statali"
+        },
+        "8": {
+            "de": "nicht beurteilbar",
+            "fr": "pas évaluable",
+            "it": "non valutabile"
+        },
+        "9": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        }
+    },
+    "VALUE15": {
+        "1": {
+            "de": "1 – Steuern auf hohe Einkommen erhöhen",
+            "fr": "1 - augmentation des impôts sur les revenus élevés",
+            "it": "1 – aumento delle tasse sui redditi più alti"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6 – Steuern auf hohe Einkommen vermindern",
+            "fr": "6 - baisse des impôts sur les revenus élevés",
+            "it": "6 – abbassamento delle tasse sui redditi più alti"
+        },
+        "8": {
+            "de": "nicht beurteilbar",
+            "fr": "pas évaluable",
+            "it": "non valutabile"
+        },
+        "9": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        }
+    },
+    "DIFFICUL1": {
+        "1": {
+            "de": "eher leicht gefallen",
+            "fr": "plutôt facile",
+            "it": "piuttosto facile"
+        },
+        "2": {
+            "de": "eher schwer gefallen",
+            "fr": "plutôt difficile",
+            "it": "piuttosto difficile"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "DECTIME1": {
+        "1": {
+            "de": "war mir von Anfang an klar",
+            "fr": "je le savais dès le début",
+            "it": "mi era chiaro sin dall'inizio"
+        },
+        "2": {
+            "de": "während des Abstimmungskampfs",
+            "fr": "dans le courant de la campagne",
+            "it": "durante la campagna"
+        },
+        "3": {
+            "de": "im letzten Moment",
+            "fr": "au dernier moment",
+            "it": "all'ultimo momento"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "ARGU1_1": {
+        "1": {
+            "de": "voll und ganz einverstanden",
+            "fr": "entièrement d’accord",
+            "it": "pienamente d'accordo"
+        },
+        "2": {
+            "de": "eher einverstanden",
+            "fr": "plutôt d’accord",
+            "it": "abbastanza d'accordo"
+        },
+        "3": {
+            "de": "eher nicht einverstanden",
+            "fr": "plutôt pas d’accord",
+            "it": "poco d'accordo"
+        },
+        "4": {
+            "de": "überhaupt nicht einverstanden",
+            "fr": "absolument pas d’accord",
+            "it": "per niente d'accordo"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas/aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "ARGU1_2": {
+        "1": {
+            "de": "voll und ganz einverstanden",
+            "fr": "entièrement d’accord",
+            "it": "pienamente d'accordo"
+        },
+        "2": {
+            "de": "eher einverstanden",
+            "fr": "plutôt d’accord",
+            "it": "abbastanza d'accordo"
+        },
+        "3": {
+            "de": "eher nicht einverstanden",
+            "fr": "plutôt pas d’accord",
+            "it": "poco d'accordo"
+        },
+        "4": {
+            "de": "überhaupt nicht einverstanden",
+            "fr": "absolument pas d’accord",
+            "it": "per niente d'accordo"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas/aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "ARGU1_3": {
+        "1": {
+            "de": "voll und ganz einverstanden",
+            "fr": "entièrement d’accord",
+            "it": "pienamente d'accordo"
+        },
+        "2": {
+            "de": "eher einverstanden",
+            "fr": "plutôt d’accord",
+            "it": "abbastanza d'accordo"
+        },
+        "3": {
+            "de": "eher nicht einverstanden",
+            "fr": "plutôt pas d’accord",
+            "it": "poco d'accordo"
+        },
+        "4": {
+            "de": "überhaupt nicht einverstanden",
+            "fr": "absolument pas d’accord",
+            "it": "per niente d'accordo"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas/aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "ARGU1_4": {
+        "1": {
+            "de": "voll und ganz einverstanden",
+            "fr": "entièrement d’accord",
+            "it": "pienamente d'accordo"
+        },
+        "2": {
+            "de": "eher einverstanden",
+            "fr": "plutôt d’accord",
+            "it": "abbastanza d'accordo"
+        },
+        "3": {
+            "de": "eher nicht einverstanden",
+            "fr": "plutôt pas d’accord",
+            "it": "poco d'accordo"
+        },
+        "4": {
+            "de": "überhaupt nicht einverstanden",
+            "fr": "absolument pas d’accord",
+            "it": "per niente d'accordo"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas/aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "ARGU1_5": {
+        "1": {
+            "de": "voll und ganz einverstanden",
+            "fr": "entièrement d’accord",
+            "it": "pienamente d'accordo"
+        },
+        "2": {
+            "de": "eher einverstanden",
+            "fr": "plutôt d’accord",
+            "it": "abbastanza d'accordo"
+        },
+        "3": {
+            "de": "eher nicht einverstanden",
+            "fr": "plutôt pas d’accord",
+            "it": "poco d'accordo"
+        },
+        "4": {
+            "de": "überhaupt nicht einverstanden",
+            "fr": "absolument pas d’accord",
+            "it": "per niente d'accordo"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas/aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "ARGU1_6": {
+        "1": {
+            "de": "voll und ganz einverstanden",
+            "fr": "entièrement d’accord",
+            "it": "pienamente d'accordo"
+        },
+        "2": {
+            "de": "eher einverstanden",
+            "fr": "plutôt d’accord",
+            "it": "abbastanza d'accordo"
+        },
+        "3": {
+            "de": "eher nicht einverstanden",
+            "fr": "plutôt pas d’accord",
+            "it": "poco d'accordo"
+        },
+        "4": {
+            "de": "überhaupt nicht einverstanden",
+            "fr": "absolument pas d’accord",
+            "it": "per niente d'accordo"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas/aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "COVID1A": {
+        "1": {
+            "de": "überhaupt nicht beeinflusst",
+            "fr": "n’a pas du tout influencé",
+            "it": "non hanno avuto alcuna influenza"
+        },
+        "2": {
+            "de": "ein wenig beeinflusst",
+            "fr": "ont légèrement influencé",
+            "it": "hanno avuto poca influenza"
+        },
+        "3": {
+            "de": "stark beeinflusst",
+            "fr": "ont fortement influencé",
+            "it": "nanno avuto grande influenza"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas/aucune indication",
+            "it": "non so /nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "COVID2": {
+        "1": {
+            "de": "unnötig",
+            "fr": "pas nécessaire",
+            "it": "pon necessario"
+        },
+        "2": {
+            "de": "eher unnötig",
+            "fr": "plutôt pas nécessaire",
+            "it": "piuttosto non necessario"
+        },
+        "3": {
+            "de": "eher nötig",
+            "fr": "plutôt nécessaire",
+            "it": "piuttosto necessario"
+        },
+        "4": {
+            "de": "nötig",
+            "fr": "nécessaire",
+            "it": "necessario"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas/aucune indication",
+            "it": "non so /nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "ONLINE": {
+        "1": {
+            "de": "Online (über das Internet)",
+            "fr": "en ligne (via Internet)",
+            "it": "online (ovvero in Internet)"
+        },
+        "2": {
+            "de": "Offline (Printmedien, Fernsehen oder Radio)",
+            "fr": "hors ligne (médias imprimés, télévision ou radio)",
+            "it": "offline (giornali, televisione, radio)"
+        },
+        "3": {
+            "de": "beides etwa gleich",
+            "fr": "les deux à égalité",
+            "it": "in entrambe le fonti"
+        },
+        "4": {
+            "de": "Ich informiere mich nie über Politik",
+            "fr": "je ne m’informe jamais sur la politique",
+            "it": "non m'informo mai sulla politica"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE_1": {
+        "0": {
+            "de": "0 gar nicht genutzt",
+            "fr": "0 pas du tout utilisé",
+            "it": "0 non utilizzato per niente"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 sehr stark genutzt",
+            "fr": "10 beaucoup utilisé",
+            "it": "10 utilizzato moltissimo"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE_2": {
+        "0": {
+            "de": "0 gar nicht genutzt",
+            "fr": "0 pas du tout utilisé",
+            "it": "0 non utilizzato per niente"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 sehr stark genutzt",
+            "fr": "10 beaucoup utilisé",
+            "it": "10 utilizzato moltissimo"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE_3": {
+        "0": {
+            "de": "0 gar nicht genutzt",
+            "fr": "0 pas du tout utilisé",
+            "it": "0 non utilizzato per niente"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 sehr stark genutzt",
+            "fr": "10 beaucoup utilisé",
+            "it": "10 utilizzato moltissimo"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE_4": {
+        "0": {
+            "de": "0 gar nicht genutzt",
+            "fr": "0 pas du tout utilisé",
+            "it": "0 non utilizzato per niente"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 sehr stark genutzt",
+            "fr": "10 beaucoup utilisé",
+            "it": "10 utilizzato moltissimo"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE_5": {
+        "0": {
+            "de": "0 gar nicht genutzt",
+            "fr": "0 pas du tout utilisé",
+            "it": "0 non utilizzato per niente"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 sehr stark genutzt",
+            "fr": "10 beaucoup utilisé",
+            "it": "10 utilizzato moltissimo"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE_6": {
+        "0": {
+            "de": "0 gar nicht genutzt",
+            "fr": "0 pas du tout utilisé",
+            "it": "0 non utilizzato per niente"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 sehr stark genutzt",
+            "fr": "10 beaucoup utilisé",
+            "it": "10 utilizzato moltissimo"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE_7": {
+        "0": {
+            "de": "0 gar nicht genutzt",
+            "fr": "0 pas du tout utilisé",
+            "it": "0 non utilizzato per niente"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 sehr stark genutzt",
+            "fr": "10 beaucoup utilisé",
+            "it": "10 utilizzato moltissimo"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE_8": {
+        "0": {
+            "de": "0 gar nicht genutzt",
+            "fr": "0 pas du tout utilisé",
+            "it": "0 non utilizzato per niente"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 sehr stark genutzt",
+            "fr": "10 beaucoup utilisé",
+            "it": "10 utilizzato moltissimo"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE_9": {
+        "0": {
+            "de": "0 gar nicht genutzt",
+            "fr": "0 pas du tout utilisé",
+            "it": "0 non utilizzato per niente"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 sehr stark genutzt",
+            "fr": "10 beaucoup utilisé",
+            "it": "10 utilizzato moltissimo"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE_10": {
+        "0": {
+            "de": "0 gar nicht genutzt",
+            "fr": "0 pas du tout utilisé",
+            "it": "0 non utilizzato per niente"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 sehr stark genutzt",
+            "fr": "10 beaucoup utilisé",
+            "it": "10 utilizzato moltissimo"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE_11": {
+        "0": {
+            "de": "0 gar nicht genutzt",
+            "fr": "0 pas du tout utilisé",
+            "it": "0 non utilizzato per niente"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 sehr stark genutzt",
+            "fr": "10 beaucoup utilisé",
+            "it": "10 utilizzato moltissimo"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE_12": {
+        "0": {
+            "de": "0 gar nicht genutzt",
+            "fr": "0 pas du tout utilisé",
+            "it": "0 non utilizzato per niente"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 sehr stark genutzt",
+            "fr": "10 beaucoup utilisé",
+            "it": "10 utilizzato moltissimo"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE_13": {
+        "0": {
+            "de": "0 gar nicht genutzt",
+            "fr": "0 pas du tout utilisé",
+            "it": "0 non utilizzato per niente"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 sehr stark genutzt",
+            "fr": "10 beaucoup utilisé",
+            "it": "10 utilizzato moltissimo"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE_14": {
+        "0": {
+            "de": "0 gar nicht genutzt",
+            "fr": "0 pas du tout utilisé",
+            "it": "0 non utilizzato per niente"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 sehr stark genutzt",
+            "fr": "10 beaucoup utilisé",
+            "it": "10 utilizzato moltissimo"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE_15": {
+        "0": {
+            "de": "0 gar nicht genutzt",
+            "fr": "0 pas du tout utilisé",
+            "it": "0 non utilizzato per niente"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 sehr stark genutzt",
+            "fr": "10 beaucoup utilisé",
+            "it": "10 utilizzato moltissimo"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE2_1": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 absolument pas confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 totalement confiance",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE2_2": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 absolument pas confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 totalement confiance",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE2_3": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 absolument pas confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 totalement confiance",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE2_4": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 absolument pas confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 totalement confiance",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE2_5": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 absolument pas confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 totalement confiance",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE2_6": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 absolument pas confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 totalement confiance",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE2_7": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 absolument pas confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 totalement confiance",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MEDIAUSE2_8": {
+        "0": {
+            "de": "0 überhaupt kein Vertrauen",
+            "fr": "0 absolument pas confiance",
+            "it": "0 nessuna fiducia"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 mittleres Vertrauen",
+            "fr": "5 confiance moyenne",
+            "it": "5 media fiducia"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 vollständiges Vertrauen",
+            "fr": "10 totalement confiance",
+            "it": "10 totale fiducia"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "DISCUS": {
+        "1": {
+            "de": "täglich",
+            "fr": "tous les jours",
+            "it": "quotidianamente"
+        },
+        "2": {
+            "de": "mehrmals pro Woche",
+            "fr": "plusieurs fois par semaine",
+            "it": "più volte alla settimana"
+        },
+        "3": {
+            "de": "etwa 1 mal pro Woche",
+            "fr": "a peu près 1 fois par semaine",
+            "it": "circa una volta alla settimana"
+        },
+        "4": {
+            "de": "seltener als wöchentlich",
+            "fr": "plus rarement qu’une fois par semaine ou",
+            "it": "meno di una volta alla settimana oppure"
+        },
+        "5": {
+            "de": "nie",
+            "fr": "jamais",
+            "it": "mai"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "VOTEWIE": {
+        "1": {
+            "de": "brieflich (per Post)",
+            "fr": "par lettre (voie postale)",
+            "it": "per corrispondenza (posta)"
+        },
+        "2": {
+            "de": "an der Urne",
+            "fr": "scrutin déposé dans l’urne",
+            "it": "all'urna"
+        },
+        "3": {
+            "de": "per Internet/online abgestimmt",
+            "fr": "par Internet/en ligne",
+            "it": "su Internet/online"
+        },
+        "8": {
+            "de": "weiss nicht/ keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "PART2": {
+        "0": {
+            "de": "0 Abstimmungen",
+            "fr": "0 votations",
+            "it": "0 votazioni"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5",
+            "fr": "5",
+            "it": "5"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 Abstimmungen",
+            "fr": "10 votations",
+            "it": "10 votazioni"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        }
+    },
+    "PARTYA": {
+        "1": {
+            "de": "SVP Schweizerische Volkspartei",
+            "fr": "UDC Union Démocratique du centre",
+            "it": "UDC Unione Democratica di centro"
+        },
+        "2": {
+            "de": "SP Sozialdemokratische Partei der Schweiz",
+            "fr": "PS Parti socialiste suisse",
+            "it": "PS Partito socialista svizzero"
+        },
+        "3": {
+            "de": "FDP FDP.Die Liberalen",
+            "fr": "PLR. Les Libéraux-Radicaux",
+            "it": "PLR. I Liberali"
+        },
+        "4": {
+            "de": "CVP Christlichdemokratische Volkspartei",
+            "fr": "PDC Parti Démocrate-Chrétien suisse",
+            "it": "PPD Partito Popolare Democratico Svizzero"
+        },
+        "5": {
+            "de": "GPS und GP Grüne Partei der Schweiz",
+            "fr": "PES Les Verts/Parti écologiste suisse",
+            "it": "PET I verdi/Partito ecolog. ticinese"
+        },
+        "6": {
+            "de": "EVP Evangelische Volkspartei",
+            "fr": "PEV Parti évangélique suisse",
+            "it": "PPE Parti popolare evangelico"
+        },
+        "7": {
+            "de": "Lega dei Ticinesi",
+            "fr": "Lega dei Ticinesi",
+            "it": "Lega dei Ticinesi"
+        },
+        "8": {
+            "de": "CSP Christlich-soziale Partei",
+            "fr": "PCS Parti chrétien-social",
+            "it": "PCS Partito cristiano-sociale"
+        },
+        "9": {
+            "de": "GLP Grünliberale Partei",
+            "fr": "PVL Parti Verts Libéraux",
+            "it": "PEL Partito ecolog. liberale"
+        },
+        "10": {
+            "de": "BDP Bürgerlich-Demokratische Partei",
+            "fr": "PBD Parti Bourgeois-Démocratique Suisse",
+            "it": "PBD Partito borghese democratico Svizzera"
+        },
+        "11": {
+            "de": "Alternative Linke / Alternative Liste / Partei der Arbeit / solidaritéS",
+            "fr": "La Gauche/PST/POP Parti suisse du Travail/solidaritéS",
+            "it": "La Sinistra/PSL Partito svizzero del lavoro/solidaritéS"
+        },
+        "12": {
+            "de": "EDU Eidgenössisch-Demokratische Union",
+            "fr": "UDF Union Démocratique Fédéral",
+            "it": "UDF Unione Democratica Federale"
+        },
+        "13": {
+            "de": "Piratenpartei",
+            "fr": "PartiPirate",
+            "it": "PartitoPirata"
+        },
+        "14": {
+            "de": "Mouvement Citoyens Romand",
+            "fr": "Mouvement Citoyens Romand",
+            "it": "Mouvement Citoyens Romand"
+        },
+        "15": {
+            "de": "eindeutig andere Partei",
+            "fr": "clairement un autre parti",
+            "it": "chiaramente un partito diverse"
+        },
+        "16": {
+            "de": "keine Partei",
+            "fr": "aucun parti",
+            "it": "nessun partito"
+        },
+        "18": {
+            "de": "Ich würde nicht teilnehmen",
+            "fr": "ne participerais pas",
+            "it": "non parteciperei"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "CITIZENREPA": {
+        "1": {
+            "de": "Schweiz",
+            "fr": "Suisse",
+            "it": "cittadinanza svizzera"
+        },
+        "2": {
+            "de": "Andere Staatsbürgerschaft",
+            "fr": "autre nationalité",
+            "it": "altra cittadinanza"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        }
+    },
+    "ORIGINPARENTS": {
+        "1": {
+            "de": "ja",
+            "fr": "oui",
+            "it": "sì"
+        },
+        "2": {
+            "de": "nein",
+            "fr": "non",
+            "it": "no"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        }
+    },
+    "CONFESSD": {
+        "1": {
+            "de": "ja",
+            "fr": "oui",
+            "it": "sì"
+        },
+        "2": {
+            "de": "nein",
+            "fr": "non",
+            "it": "no"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        }
+    },
+    "CONFESSR": {
+        "1": {
+            "de": "protestantisch/reformiert/evangelisch",
+            "fr": "eglise protestante / réformée / évangélique",
+            "it": "protestante/riformata/evangelica"
+        },
+        "2": {
+            "de": "katholisch/christkatholisch/altkatholisch",
+            "fr": "eglise catholique romaine / catholique chrétienne / vieille-catholique",
+            "it": "cattolica/cattolico cristiana/vecchio-cattolica"
+        },
+        "5": {
+            "de": "Andere",
+            "fr": "autres",
+            "it": "altro"
+        },
+        "9": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "CULT": {
+        "1": {
+            "de": "nie",
+            "fr": "jamais",
+            "it": "mai"
+        },
+        "2": {
+            "de": "nur bei speziellen Anlässen (Taufe, Heirat, Abdankung)",
+            "fr": "seulement à l'occasion de cérémonies spéciales (baptême, mariage, obsèques)",
+            "it": "solo in caso di particolari eventi (battesimi, matrimoni, funerali)"
+        },
+        "3": {
+            "de": "einmal im Jahr",
+            "fr": "une fois par an",
+            "it": "una volta all'anno"
+        },
+        "4": {
+            "de": "mehrmals im Jahr",
+            "fr": "plusieurs fois par an",
+            "it": "più volte all'anno"
+        },
+        "5": {
+            "de": "ein- oder zweimal pro Monat",
+            "fr": "une ou deux fois par mois",
+            "it": "una o due volte al mese"
+        },
+        "6": {
+            "de": "einmal pro Woche",
+            "fr": "une fois par semaine",
+            "it": "una volta alla settimana"
+        },
+        "7": {
+            "de": "mehrmals pro Woche",
+            "fr": "plusieurs fois par semaine",
+            "it": "più volte alla settimana"
+        },
+        "9": {
+            "de": "keine Angabe",
+            "fr": "aucune indication",
+            "it": "nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "EDUC": {
+        "10": {
+            "de": "keine abgeschlossene Schulbildung/Primarschule",
+            "fr": "formation scolaire/école primaire non achevée",
+            "it": "nessuna formazione scolastica/solo le scuole elementari"
+        },
+        "21": {
+            "de": "obligatorische Schule",
+            "fr": "école obligatoire",
+            "it": "scuola dell'obbligo"
+        },
+        "22": {
+            "de": "Übergangsausbildungen (z.B. Vorlehre, 10. Schuljahr, Haushaltslehrjahr)",
+            "fr": "formation transitoire (p.ex. préapprentissage, 10e année scolaire, année d'enseignement ménager)",
+            "it": "formazioni passerella (p.es. pretirocinio, 10o anno scolastico)"
+        },
+        "31": {
+            "de": "Allgemeinbildung ohne Maturität (z.B. Fachmittelschule FMS, Diplommittelschule DMS, Verkehrsschule)",
+            "fr": "Formation générale sans maturité (p.ex. école de culture générale ECG, école de degré diplôme EDD, école d'administration et des transports)",
+            "it": "formazione di base senza la maturità (p.es. scuola media di diploma, scuola di cultura generale, scuola d'amministrazione)"
+        },
+        "32": {
+            "de": "berufliche Grundbildung oder Berufslehre (Anlehre, Berufsattest, Vollzeitberufsschule, Handelsmittelschule, Lehrwerkstätte)",
+            "fr": "formation professionnelle initiale ou apprentissage professionnel (formation professionnelle élémentaire, attestation de formation professionnelle, école professionnelle à plein temps, école de commerce, école de métiers)",
+            "it": "formazione professionale di base o apprendistato (formazione empirica, attestato federale di formazione pratica, scuola professionale a tempo pieno, scuola superiore di commercio, scuola di arti e mestieri)"
+        },
+        "33": {
+            "de": "Maturität oder Lehrkräfteseminar (Gymnasium, Berufsmaturität, Fachmaturität)",
+            "fr": "maturité ou école normale (gymnase, maturité professionnelle ou spécialisée)",
+            "it": "maturità o scuola magistrale (liceo, maturità professionale o specializzata)"
+        },
+        "40": {
+            "de": "nach-sekundäre nicht-tertiäre Stufe (Zusatz- oder Zweitausbildung)",
+            "fr": "enseignement post-secondaire non tertiaire (formation complémentaire ou deuxième formation)",
+            "it": "grado post secondario ma non terziario (formazione aggiuntiva o secondaria)"
+        },
+        "51": {
+            "de": "höhere Berufsbildung mit eidg. Fachausweis, Meisterdiplom (Technikerschule, HTL, HWV, HFG, HFS)",
+            "fr": "formation professionnelle supérieure avec brevet fédéral, maîtrise fédérale (école technique, ETS, ESCEA, ESAA, IES)",
+            "it": "formazione professionale superiore con attestato professionale federale o maestria (scuola per tecnici, STS, SSQUEA, SSAA, HFS)"
+        },
+        "52": {
+            "de": "Fachhochschule, Universität, ETH (auch Pädagogische Hochschule, Lizenziat, Bachelor, Master, Nachdiplomstudium)",
+            "fr": "haute école spécialisée, Université, EPF (aussi Haute école pédagogique, licence, bachelor, master, diplôme postgrade)",
+            "it": "SUP, UNI, PF (Alta scuola pedagogica, licenza, bachelor, master, formazione universitaria post-diploma)"
+        },
+        "60": {
+            "de": "Doktorat, Habilitation",
+            "fr": "doctorat, habilitation",
+            "it": "dottorato, abilitazione"
+        },
+        "97": {
+            "de": "Andere",
+            "fr": "autres",
+            "it": "altro"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        }
+    },
+    "ACTI": {
+        "1": {
+            "de": "Selbständige*r",
+            "fr": "indépendant",
+            "it": "indipendente"
+        },
+        "2": {
+            "de": "Mitarbeitende*r im Betrieb der eigenen Familie",
+            "fr": "membre de la famille travaillant dans l’entreprise familiale",
+            "it": "collaboratore/trice nell'azienda della propria famiglia"
+        },
+        "3": {
+            "de": "Angestellte*r",
+            "fr": "employé/e",
+            "it": "impiegato/a"
+        },
+        "4": {
+            "de": "Lehrling",
+            "fr": "apprenti/e",
+            "it": "apprendista"
+        },
+        "5": {
+            "de": "arbeitslos / erwerbslos",
+            "fr": "au chômage/sans emploi",
+            "it": "disoccupato/a /senza lavoro"
+        },
+        "6": {
+            "de": "Nichterwerbsperson in Ausbildung",
+            "fr": "personne inactive en formation",
+            "it": "senza attività professionale in formazione"
+        },
+        "7": {
+            "de": "Nichterwerbsperson im Ruhestand (pensioniert)",
+            "fr": "personne inactive à la retraite (pensionné/e)",
+            "it": "senza attività professionale in pensione"
+        },
+        "8": {
+            "de": "Hausfrau / Hausmann, Familienfrau/Familienmann",
+            "fr": "femme/homme au foyer, femme/homme der famille",
+            "it": "casalingo/a, uomo/donna di famiglia"
+        },
+        "9": {
+            "de": "andere Nichterwerbsperson",
+            "fr": "autre personne inactive",
+            "it": "altro tipo di persona senza attività professionale"
+        },
+        "98": {
+            "de": "weiss nicht /keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        }
+    },
+    "ACTIPREV": {
+        "1": {
+            "de": "Selbständige*r",
+            "fr": "indépendant",
+            "it": "indipendente"
+        },
+        "2": {
+            "de": "Mitarbeitende*r im Betrieb der eigenen Familie",
+            "fr": "membre de la famille travaillant dans l’entreprise familiale",
+            "it": "collaboratore/trice nell'azienda di famiglia"
+        },
+        "3": {
+            "de": "Angestellte*r",
+            "fr": "employé/e",
+            "it": "impiegato/a"
+        },
+        "4": {
+            "de": "Lehrling",
+            "fr": "apprenti/e",
+            "it": "apprendista"
+        },
+        "5": {
+            "de": "arbeitslos / erwerbslos",
+            "fr": "au chômage/sans emploi",
+            "it": "disoccupato/a /senza lavoro"
+        },
+        "6": {
+            "de": "Nichterwerbsperson in Ausbildung",
+            "fr": "personne inactive en formation",
+            "it": "senza attività professionale in formazione"
+        },
+        "7": {
+            "de": "Nichterwerbsperson im Ruhestand (pensioniert)",
+            "fr": "personne inactive à la retraite (pensionné/e)",
+            "it": "senza attività professionale in pensione"
+        },
+        "8": {
+            "de": "Hausfrau/ Hausmann, Familienfrau/Familienmann",
+            "fr": "femme/homme au foyer, femme/homme de famille",
+            "it": "casalingo/a, uomo/donna di famiglia"
+        },
+        "9": {
+            "de": "andere Nichterwerbsperson",
+            "fr": "autre personne inactive",
+            "it": "altro tipo di persona senza attività professionale"
+        },
+        "98": {
+            "de": "weiss nicht /keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "S17JOBPOSITION": {
+        "11": {
+            "de": "selbständig mit Angestellten",
+            "fr": "indépendant/e avec des employés",
+            "it": "indipendente con impiegati"
+        },
+        "12": {
+            "de": "selbständig ohne Angestellte",
+            "fr": "indépendant/e sans employés ?",
+            "it": "indipendente senza impiegati"
+        },
+        "31": {
+            "de": "Direktor oder Direktionsmitglied, Mitglied der Unternehmensleitung",
+            "fr": "directeur/trice ou membre de direction, membre de la direction de l’entreprise",
+            "it": "membro della direzione, membro della direzione aziendale"
+        },
+        "32": {
+            "de": "Angestellte*r mit Vorgesetztenfunktion",
+            "fr": "employé/e avec fonction de cadre",
+            "it": "impiegato con funzione dirigenziale"
+        },
+        "33": {
+            "de": "Angestellte*r ohne Vorgesetztenfunktion",
+            "fr": "employé/e sans fonction de cadre",
+            "it": "impiegato senza funzione dirigenziale"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "WORKLOAD": {
+        "10": {
+            "de": "Vollzeit (90-100%)",
+            "fr": "temps complet (90 - 100%)",
+            "it": "impiegato a tempo pieno, ovvero al 90-100%"
+        },
+        "21": {
+            "de": "Teilzeit zwischen 70% und 89%",
+            "fr": "temps partiel entre 70 et 89%",
+            "it": "impiegato a tempo parziale tra il 70 e l'89%"
+        },
+        "22": {
+            "de": "Teilzeit zwischen 50% und 69%",
+            "fr": "temps partiel entre 50 et 69%",
+            "it": "impiegato a tempo parziale tra il 50 e il 69%"
+        },
+        "23": {
+            "de": "Teilzeit weniger als 50%",
+            "fr": "temps partiel, moins de 50%",
+            "it": "impiegato a tempo parziale a meno del 50%"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "S17SECTOR": {
+        "1": {
+            "de": "Privatwirtschaft",
+            "fr": "secteur privé",
+            "it": "ente privato"
+        },
+        "2": {
+            "de": "öffentliche Hand (Bund, Kantone, Gemeinden, inkl. SBB und Post)",
+            "fr": "secteur public (Confédération, cantons, communes, y compris CFF, Poste)",
+            "it": "ente pubblico (Confederazione, Cantoni, Comuni, incl. FFS, La Posta)"
+        },
+        "3": {
+            "de": "Anderes (z.B. Gemischtwirtschaftlich)",
+            "fr": "autre (par exemple économie mixte)",
+            "it": "altro (per es. ente misto)"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "MAINEARNER": {
+        "1": {
+            "de": "Sie selbst",
+            "fr": "moi-même",
+            "it": "la persona intervistata"
+        },
+        "2": {
+            "de": "Ihr(e) (Ehe)Partner/-in",
+            "fr": "époux/épouse ou partenaire",
+            "it": "marito/moglie o partner"
+        },
+        "3": {
+            "de": "Beide verdienen etwa gleich viel",
+            "fr": "nous deux gagnons un revenu à peu près semblable",
+            "it": "entrambi i partner hanno redditi simili"
+        },
+        "4": {
+            "de": "Anderes (andere Person, WG, andere Haushaltskonstellation, etc.)",
+            "fr": "autre (autre personne, collocation, autre configuration du ménage, etc.)",
+            "it": "un'altra persona (coinquilino, altro tipo di costellazione di economia domestica ecc.)"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        }
+    },
+    "EDUCMAIN": {
+        "10": {
+            "de": "keine abgeschlossene Schulbildung / Primarschule",
+            "fr": "formation scolaire/école primaire non achevée",
+            "it": "nessuna formazione scolastica/solo le scuole elementari"
+        },
+        "21": {
+            "de": "obligatorische Schule",
+            "fr": "école obligatoire",
+            "it": "scuola dell'obbligo"
+        },
+        "22": {
+            "de": "Übergangsausbildungen (z.B. Vorlehre, 10. Schuljahr, Haushaltslehrjahr)",
+            "fr": "formation transitoire (p.ex. préapprentissage, 10e année scolaire, année d'enseignement ménager)",
+            "it": "formazioni passerella (p.es. pretirocinio, 10o anno scolastico)"
+        },
+        "31": {
+            "de": "Allgemeinbildung ohne Maturität (z.B. Fachmittelschule FMS, Diplommittelschule DMS, Verkehrsschule)",
+            "fr": "Formation générale sans maturité (p.ex. école de culture générale ECG, école de degré diplôme EDD, école d'administration et des transports)",
+            "it": "formazione di base senza la maturità (p.es. scuola media di diploma, scuola di cultura generale, scuola d'amministrazione)"
+        },
+        "32": {
+            "de": "berufliche Grundbildung oder Berufslehre (Anlehre, Berufsattest, Vollzeitberufsschule, Handelsmittelschule, Lehrwerkstätte)",
+            "fr": "formation professionnelle initiale ou apprentissage professionnel (formation professionnelle élémentaire, attestation de formation professionnelle, école professionnelle à plein temps, école de commerce, école de métiers)",
+            "it": "formazione professionale di base o apprendistato (formazione empirica, attestato federale di formazione pratica, scuola professionale a tempo pieno, scuola superiore di commercio, scuola di arti e mestieri)"
+        },
+        "33": {
+            "de": "Maturität oder Lehrkräfteseminar (Gymnasium, Berufsmaturität, Fachmaturität)",
+            "fr": "maturité ou école normale (gymnase, maturité professionnelle ou spécialisée)",
+            "it": "maturità o scuola magistrale (liceo, maturità professionale o specializzata)"
+        },
+        "40": {
+            "de": "nach-sekundäre nicht-tertiäre Stufe (Zusatz- oder Zweitausbildung)",
+            "fr": "enseignement post-secondaire non tertiaire (formation complémentaire ou deuxième formation)",
+            "it": "grado post secondario ma non terziario (formazione aggiuntiva o secondaria)"
+        },
+        "51": {
+            "de": "höhere Berufsbildung mit eidg. Fachausweis, Meisterdiplom (Technikerschule, HTL, HWV, HFG, HFS)",
+            "fr": "formation professionnelle supérieure avec brevet fédéral, maîtrise fédérale (école technique, ETS, ESCEA, ESAA, IES)",
+            "it": "formazione professionale superiore con attestato professionale federale o maestria (scuola per tecnici, STS, SSQUEA, SSAA, HFS)"
+        },
+        "52": {
+            "de": "Fachhochschule, Universität, ETH (auch Pädagogische Hochschule, Lizenziat, Bachelor, Master, Nachdiplomstudium)",
+            "fr": "haute école spécialisée, Université, EPF (aussi Haute école pédagogique, licence, bachelor, master, diplôme postgrade)",
+            "it": "SUP, UNI, PF (Alta scuola pedagogica, licenza, bachelor, master, formazione universitaria post-diploma)"
+        },
+        "60": {
+            "de": "Doktorat, Habilitation",
+            "fr": "doctorat, habilitation",
+            "it": "dottorato, abilitazione"
+        },
+        "97": {
+            "de": "Andere",
+            "fr": "autres",
+            "it": "altre"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "ACTIMAIN": {
+        "1": {
+            "de": "Selbständige*r",
+            "fr": "indépendant",
+            "it": "indipendente"
+        },
+        "2": {
+            "de": "Mitarbeitende*r im Betrieb der eigenen Familie",
+            "fr": "membre de la famille travaillant dans l’entreprise familiale",
+            "it": "collaboratore/trice nell'azienda della sua famiglia"
+        },
+        "3": {
+            "de": "Angestellte*r",
+            "fr": "employé/e",
+            "it": "datore di lavoro"
+        },
+        "4": {
+            "de": "Lehrling",
+            "fr": "apprenti/e",
+            "it": "apprendista"
+        },
+        "5": {
+            "de": "arbeitslos / erwerbslos",
+            "fr": "au chômage/sans emploi",
+            "it": "disoccupato/a /senza lavoro"
+        },
+        "6": {
+            "de": "Nichterwerbsperson in Ausbildung",
+            "fr": "personne inactive en formation",
+            "it": "senza attività professionale in formazione"
+        },
+        "7": {
+            "de": "Nichterwerbsperson im Ruhestand (pensioniert)",
+            "fr": "personne inactive à la retraite (pensionné/e)",
+            "it": "senza attività professionale in pensione"
+        },
+        "8": {
+            "de": "Hausfrau / Hausmann, Familienfrau/Familienmann",
+            "fr": "femme/homme au foyer, femme/homme de famille",
+            "it": "casalingo/a, uomo/donna di famiglia"
+        },
+        "9": {
+            "de": "andere Nichterwerbsperson",
+            "fr": "autre personne inactive",
+            "it": "altro tipo di persona senza attività professionale"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        },
+        "99999998": {
+            "de": "MISSING",
+            "fr": "MISSING",
+            "it": "MISSING"
+        }
+    },
+    "INCOME": {
+        "1": {
+            "de": "weniger als 2'000 CHF",
+            "fr": "moins de 2'000 CHF",
+            "it": "meno di 2'000 CHF"
+        },
+        "2": {
+            "de": "2'001-3'000 CHF",
+            "fr": "2'001-3'000 CHF",
+            "it": "2'001-3'000 CHF"
+        },
+        "3": {
+            "de": "3'001-4'000 CHF",
+            "fr": "3'001-4'000 CHF",
+            "it": "3'001-4'000 CHF"
+        },
+        "4": {
+            "de": "4'001-5'000 CHF",
+            "fr": "4'001-5'000 CHF",
+            "it": "4'001-5'000 CHF"
+        },
+        "5": {
+            "de": "5'001-6'000 CHF",
+            "fr": "5'001-6'000 CHF",
+            "it": "5'001-6'000 CHF"
+        },
+        "6": {
+            "de": "6'001-7'000 CHF",
+            "fr": "6'001-7'000 CHF",
+            "it": "6'001-7'000 CHF"
+        },
+        "7": {
+            "de": "7'001-8'000 CHF",
+            "fr": "7'001-8'000 CHF",
+            "it": "7'001-8'000 CHF"
+        },
+        "8": {
+            "de": "8'001-9'000 CHF",
+            "fr": "8'001-9'000 CHF",
+            "it": "8'001-9'000 CHF"
+        },
+        "9": {
+            "de": "9'001-10'000 CHF",
+            "fr": "9'001-10'000 CHF",
+            "it": "9'001-10'000 CHF"
+        },
+        "10": {
+            "de": "10'001-11'000 CHF",
+            "fr": "10'001-11'000 CHF",
+            "it": "10'001-11'000 CHF"
+        },
+        "11": {
+            "de": "11'001-12'000 CHF",
+            "fr": "11'001-12'000 CHF",
+            "it": "11'001-12'000 CHF"
+        },
+        "12": {
+            "de": "12'001-13'000 CHF",
+            "fr": "12'001-13'000 CHF",
+            "it": "12'001-13'000 CHF"
+        },
+        "13": {
+            "de": "13'001-14'000 CHF",
+            "fr": "13'001-14'000 CHF",
+            "it": "13'001-14'000 CHF"
+        },
+        "14": {
+            "de": "14'001-15'000 CHF",
+            "fr": "14'001-15'000 CHF",
+            "it": "14'001-15'000 CHF"
+        },
+        "15": {
+            "de": "mehr als 15'000 CHF",
+            "fr": "plus de 15'000 CHF",
+            "it": "più di 15'000 CHF"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        }
+    },
+    "INCOMEPRECARIAT": {
+        "1": {
+            "de": "ja",
+            "fr": "oui",
+            "it": "sì"
+        },
+        "2": {
+            "de": "mehr oder weniger",
+            "fr": "plus ou moins",
+            "it": "più o meno"
+        },
+        "3": {
+            "de": "nein",
+            "fr": "non",
+            "it": "no"
+        },
+        "8": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        }
+    },
+    "HABITAT": {
+        "1": {
+            "de": "Miete / Pacht",
+            "fr": "loyer / bail",
+            "it": "affitto / contratto di locazione"
+        },
+        "2": {
+            "de": "Eigentum",
+            "fr": "propriété",
+            "it": "di proprietà"
+        },
+        "7": {
+            "de": "Anderes (z.B. Frei-, Dienstwohnung)",
+            "fr": "autre (par exemple, logement gratuit ou de service)",
+            "it": "altro (per es. abitazione libera, abitazione di servizio)"
+        },
+        "8": {
+            "de": "weiss nicht /keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        }
+    },
+    "UNUSED": {
+        "0": {
+            "de": "verwendet",
+            "fr": "utilisé",
+            "it": "utilizzato"
+        },
+        "1": {
+            "de": "nicht verwendet",
+            "fr": "non utilisé",
+            "it": "non utilizzato"
+        }
+    }
+}
