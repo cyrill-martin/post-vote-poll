@@ -1,28 +1,15 @@
 import os
+import csv
 import json
 from pathlib import Path
 from openpyxl import load_workbook
 
-def create_poll_messages(poll=None) -> dict:
-  return {
-    "no_poll_id": "You have to indicate a poll ID",
-    "no_poll_folder": f"There's no 'polls' folder with a poll subfolder matching the indicated poll ID {poll}",
-    "no_codebook": f"There's no codebook matching the indicated poll ID {poll}",
-    "no_data": f"There's no data matching the indicated ID {poll}"
-  }
-
-def create_poll_paths(poll=None) -> dict: 
-  return {
-    "poll": f"polls/{poll}",
-    "codebook": f"polls/{poll}/{poll}.00-codebuch-zur-nachbefragung.xlsx",
-    "data": f"polls/{poll}/{poll}.00-datensatz-der-nachbefragung.csv"
-  }
+from preprocess_data import *
 
 def precheck(poll=None) -> bool:
   """
     Function to precheck if poll data is available or not.
   """
-
   messages = create_poll_messages(poll)
   paths = create_poll_paths(poll)
 
@@ -50,7 +37,14 @@ def precheck(poll=None) -> bool:
         return True
 
 def save_results(poll, name, data) -> None:
-  with open(f"polls/{poll}/{poll}_{name}.json", "w", encoding="utf-8") as file:
+
+  paths = create_target_paths(poll, name)
+  
+  if not os.path.isdir(paths["target_dir"]):
+    # Create target folder
+    os.mkdir(paths["target_dir"])
+
+  with open(paths["target_file"], "w+", encoding="utf-8") as file:
     json.dump(
       data,
       file, 
@@ -67,7 +61,74 @@ def clean_cell(cell) -> str:
   string = string.replace("  ", " ")
   return string
 
-def preprocess(poll) -> None:
+def preprocess_data(poll, delimiter) -> None:
+
+  paths = create_poll_paths(poll)
+  data_path = paths["data"]
+
+  data = []
+
+  with open(data_path, encoding="utf-8") as csv_file:
+    csv_reader = csv.DictReader(csv_file,delimiter=delimiter)
+    for row in csv_reader:
+      data.append(row)
+
+  reduced_data = []
+
+  # Reduce data
+  for obj in data:
+    new_obj = reduce_data_obj(poll, obj, True)
+    reduced_data.append(new_obj)
+
+  save_results(poll, "data", reduced_data)
+
+def reduce_data_obj(poll, obj, upper=False): 
+
+  poll_info = poll_vote_info()
+  alphabet = abc()
+
+  vote_nr = poll_info[poll]["vote"]
+  nr_of_votes = poll_info[poll]["nr_of_votes"]
+  letter = alphabet[vote_nr - 1]
+
+  votes_to_remove = list(range(1, nr_of_votes + 1))
+  votes_to_remove = list(filter(lambda nr: nr != vote_nr, votes_to_remove))
+  letters_to_remove = list(filter(lambda l: l != letter, alphabet))
+
+  keys_to_remove_complete = []
+  for v in votes_to_remove:
+    keys_to_remove_complete.append(keys_to_remove_by_nr(v))
+
+  for l in letters_to_remove:
+    keys_to_remove_complete.append(keys_to_remove_by_letter(l))
+  # Flatten keys_to_remove
+  keys_to_remove_complete = [ key for key_list in keys_to_remove_complete for key in key_list ]
+
+  keys_to_remove_start = [ keys_to_remove_by_start(v) for v in votes_to_remove ]
+  # Flatten starts_with_to_remove
+  keys_to_remove_start = [ key for key_list in keys_to_remove_start for key in key_list ]
+
+  if upper:
+    keys_to_remove_complete = [ key.upper() for key in keys_to_remove_complete ]
+    keys_to_remove_start = [ key.upper() for key in keys_to_remove_start ]
+
+  # Remove unwanted keys directly
+  for key in keys_to_remove_complete:
+    obj.pop(key, False)
+
+  # Remove unwanted keys complicated
+  keys_to_delete_by_start = []
+  for key in obj:
+    for k in keys_to_remove_start:
+      if key.startswith(k):
+        keys_to_delete_by_start.append(key)
+
+  for key in keys_to_delete_by_start:
+    obj.pop(key, False)
+  
+  return obj
+
+def preprocess_codebook(poll) -> None:
   """
     Function to preprocess post-vote poll data. 
     The functions reads the codebook of a specific post-vote poll
@@ -77,24 +138,15 @@ def preprocess(poll) -> None:
     :param poll: int
   """
 
-  wb = load_workbook(filename = f"polls/{poll}/{poll}.00-codebuch-zur-nachbefragung.xlsx")
-  codebook = wb["Codebook"]
+  paths = create_poll_paths(poll)
+
+  wb = load_workbook(filename=paths["codebook"])
+  codebook = wb[paths["codebook_sheet"]]
+
+  columns = column_info()
 
   min_row = codebook.min_row
   max_row = codebook.max_row
-
-  min_col = 1
-  max_col = 5
-
-  de_col = 3
-  fr_col = 4
-  it_col = 5
-
-  lang_columns = {
-    de_col: "de",
-    fr_col: "fr",
-    it_col: "it"
-  }
 
   selections = {}
   arrangements = {}
@@ -105,35 +157,32 @@ def preprocess(poll) -> None:
   is_super_selection = False
   is_selection = False
 
-  skip_indicators = [1939, "[JJJJ]", "[offene Nennung]"]
-  continous_indicators = ["birthyearr"]
-  delete_indicators = ["control1", "control3", "control3@"]
-
   def create_selection(cell) -> None: 
     if curr_sel.startswith(curr_super_sel):
-      selections[curr_super_sel]["selections"][curr_sel][lang_columns[cell.column]] = clean_cell(cell.value)
+      selections[curr_super_sel]["selections"][curr_sel][columns["lang_columns"][cell.column]] = clean_cell(cell.value)
     else: 
-      selections[curr_sel][lang_columns[cell.column]] = clean_cell(cell.value)
+      selections[curr_sel][columns["lang_columns"][cell.column]] = clean_cell(cell.value)
 
   def create_arrangement(cell) -> None:
-    arrangements[curr_sel][curr_att][lang_columns[cell.column]] = clean_cell(cell.value)
+    arrangements[curr_sel][curr_att][columns["lang_columns"][cell.column]] = clean_cell(cell.value)
 
   # Iterate rows in codebook (starting from 2nd row)
   for row in codebook.iter_rows(
     min_row=min_row + 1, 
     max_row=max_row, 
-    min_col=min_col, 
-    max_col=max_col
+    min_col=columns["min_col"], 
+    max_col=columns["max_col"]
   ):
 
-    if row[1].value in skip_indicators: 
+    if row[1].value in skip_indicators(): 
       # Skip row
       continue
 
-    if str(row[2].value).strip() in skip_indicators:
-      # Try to remove already added keys from dicts
-      selections.pop(curr_sel, False)
-      arrangements.pop(curr_sel, False)
+    if str(row[2].value).strip() in skip_indicators():
+      if curr_sel not in continous_indicators():
+        # Try to remove already added keys from dicts
+        selections.pop(curr_sel, False)
+        arrangements.pop(curr_sel, False)
       # Skip row
       continue
 
@@ -141,14 +190,15 @@ def preprocess(poll) -> None:
     for cell in row:
 
       if cell.column == 1 and cell.value != None:
-        # Set super selection
+        # It's a super selection
         curr_super_sel = cell.value
         # Already add super selection to dict
         selections[curr_super_sel] = {
-          "de": row[de_col - 1].value,
-          "fr": row[fr_col - 1].value,
-          "it": row[it_col - 1].value,
-          "selections": {}}
+          "de": row[columns["de_col"] - 1].value,
+          "fr": row[columns["fr_col"] - 1].value,
+          "it": row[columns["it_col"] - 1].value,
+          "selections": {}
+        }
       elif cell.column == 1 and cell.value == None:
         # Skip cell
         continue
@@ -162,14 +212,14 @@ def preprocess(poll) -> None:
           is_selection = True
           # Set current selection
           curr_sel = cell.value
-
+          
           # Create keys in final objects
           if curr_sel.startswith(curr_super_sel):
             selections[curr_super_sel]["selections"][curr_sel] = {}
           else:
             selections[curr_sel] = {}
 
-          if curr_sel not in continous_indicators:
+          if curr_sel not in continous_indicators():
             arrangements[curr_sel] = {}
 
         elif str(cell.value).isnumeric() == True and cell.value != None:
@@ -198,17 +248,29 @@ def preprocess(poll) -> None:
             # It's a selection attribute
             create_arrangement(cell)
 
-  # Remove controls
-  for item in delete_indicators:
+  # Remove controls and weightings
+  for item in delete_indicators():
     selections.pop(item, False)
     arrangements.pop(item, False)
+
+  # Reduce data!
+
+  selections = reduce_data_obj(poll, selections)
+  arrangements = reduce_data_obj(poll, arrangements)
 
   # Save results
   save_results(poll, "selections", selections)
   save_results(poll, "arrangements", arrangements)
  
 if __name__ == "__main__":
-  print("Poll ID?")
-  poll = input()
-  if precheck(poll):
-    preprocess(poll)
+  for poll in poll_ids(): 
+    print("")
+    print(f"Checking files for poll {poll}")
+    if precheck(poll):
+      print(f"Preprocessing codebook of poll {poll}")
+      preprocess_codebook(poll)
+      print(f"Preprocessing data of poll {poll}")
+      delimiter = ","
+      if poll in polls_with_semicolon():
+        delimiter = ";"
+      preprocess_data(poll, delimiter)
