@@ -1,0 +1,86 @@
+[
+  {
+    "id": 636,
+    "de": "Konzernverantwortungsinitiative",
+    "fr": "Initiative «Entreprises responsables»",
+    "it": "Iniziativa «Aziende responsabili»",
+    "date": "2020-11-29"
+  },
+  {
+    "id": 637,
+    "de": "Kriegsgeschäfte-Initiative",
+    "fr": "Initiative «Contre le commerce de guerre»",
+    "it": "Iniziativa «Contro il commercio di armi»",
+    "date": "2020-11-29"
+  },
+  {
+    "id": 638,
+    "de": "Initiative für ein Verhüllungsverbot",
+    "fr": "Initiative pour l'interdiction de se dissimuler le visage",
+    "it": "Iniziativa per il divieto di nascondere il volto",
+    "date": "2021-03-07"
+  },
+  {
+    "id": 639,
+    "de": "Gesetz über elektronische Identifizierungsdienste",
+    "fr": "Loi sur les services d'identification électronique",
+    "it": "Legge sui servizi d'identificazione elettronica",
+    "date": "2021-03-07"
+  },
+  {
+    "id": 640,
+    "de": "Freihandelsabkommen mit Indonesien",
+    "fr": "Accord de libre-échange avec l'Indonésie",
+    "it": "Accordo di libero scambio con l'Indonesia",
+    "date": "2021-03-07"
+  },
+  {
+    "id": 641,
+    "de": "Trinkwasserinitiative",
+    "fr": "Initiative pour une eau potable propre",
+    "it": "Iniziativa acqua potabile",
+    "date": "2021-06-13"
+  },
+  {
+    "id": 642,
+    "de": "Pestizidinitiative",
+    "fr": "Initiative sur les pesticides",
+    "it": "Iniziativa sui pesticidi",
+    "date": "2021-06-13"
+  },
+  {
+    "id": 643,
+    "de": "Covid-19-Gesetz",
+    "fr": "Loi COVID-19",
+    "it": "Legge COVID-19",
+    "date": "2021-06-13"
+  },
+  {
+    "id": 644,
+    "de": "CO2-Gesetz",
+    "fr": "Loi sur le CO2",
+    "it": "Legge sul CO2",
+    "date": "2021-06-13"
+  },
+  {
+    "id": 645,
+    "de": "Gesetz über polizeiliche Massnahmen gegen Terrorismus",
+    "fr": "Loi sur les mesures policières contre le terrorisme",
+    "it": "Legge sulle misure di polizia contro il terrorismo",
+    "date": "2021-06-13"
+  },
+  {
+    "id": 646,
+    "de": "99%-Initiative",
+    "fr": "Initiative 99%",
+    "it": "Iniziativa 99%",
+    "date": "2021-09-26"
+  },
+  {
+    "id": 647,
+    "de": "Ehe für alle",
+    "fr": "Mariage pour tous",
+    "it": "Matrimonio per tutti",
+    "date": "2021-09-26"
+  }
+]
