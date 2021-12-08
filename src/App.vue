@@ -4,9 +4,7 @@
       <the-header @change-language="changeLanguage" :lang=lang></the-header>
     </header>
     <main class="row">
-      <div class="col-12">
-        <router-view :lang="lang"></router-view>
-      </div>
+      <router-view :lang="lang"></router-view>
     </main>
     <footer class="row">
       <the-footer></the-footer>

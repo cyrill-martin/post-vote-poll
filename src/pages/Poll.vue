@@ -1,32 +1,62 @@
 <template>
-  <div>{{ pollMetadata }}</div>
-  <div>---</div>
-  <div v-if="pollData">{{ pollData[0] }}</div>
-  <div v-else>Loading...</div>
-  <div>---</div>
-  <div v-if="pollArrangements">{{ pollArrangements }}</div>
-  <div v-else>Loading...</div>
-  <div>---</div>
-  <div v-if="pollSelections">{{ pollSelections }}</div>
-  <div v-else>Loading...</div>
+  <div class="container">
+    <div class="row col-12 poll-info">
+      <h1>{{ pollMetadata[lang] }} - {{ pollMetadata.date }}</h1>
+    </div>
+    <div class="row col-12" id="table-header">
+      <table>
+        <tr>
+          <th class="poll-question">{{ question[lang] }}</th>
+          <th class="poll-arrangement">
+            <img src="../assets/images/drag_indicator_black_24dp.svg" alt="">
+          </th>
+          <th class="poll-feature">
+            <img src="../assets/images/south_black_24dp.svg" alt="">
+          </th>
+        </tr>
+      </table>
+    </div>
+    <div class="row" id="poll-questions">
+      <div v-if="pollSelections" class="col-12">
+        <the-poll-table
+          :lang="lang"
+          :selections="pollSelections"
+        ></the-poll-table>
+      </div>
+      <div v-else class="col-12">Loading...</div>
+    </div>
+    <div class="row">
+      <div class="col-9" id="poll-chart">Chart</div>
+      <div class="col-3" id="poll-legend">Legend</div>
+    </div>
+  </div>
 </template>
 
 <script>
 import Polls from "../data/polls.json";
+import ThePollTable from "../components/ThePollTable.vue";
 
 export default {
+  components: {
+    ThePollTable,
+  },
   props: ["id", "lang"],
   data() {
     return {
       pollData: null,
       pollArrangements: null,
       pollSelections: null,
+      question: {
+        de: "Frage",
+        fr: "Question",
+        it: "Questione"
+      }
     };
   },
   computed: {
     pollMetadata() {
       return Polls.find((poll) => poll.id.toString() === this.id);
-    }
+    },
   },
   async mounted() {
     const pollData = await this.tryCatchData("data");
@@ -39,7 +69,7 @@ export default {
       this.pollArrangements = pollArrangements;
     }
 
-    const pollSelections = await this.tryCatchData("arrangements");
+    const pollSelections = await this.tryCatchData("selections");
     if (pollSelections) {
       this.pollSelections = pollSelections;
     }
@@ -72,3 +102,32 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+#table-header {
+  padding-bottom: 0;
+}
+#poll-questions {
+  padding-top: 0;
+  height: 30vh;
+  border-bottom: solid 1px black;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+#poll-questions::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+tr {
+  background-color: lightgrey;
+}
+th {
+  text-align: left;
+}
+</style>

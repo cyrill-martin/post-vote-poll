@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="container row col-12">
     <table>
       <tr>
-        <th class="header" @click="sortColumn('date')">
+        <th @click="sortColumn('date')">
           {{ tableColumns.date[lang] }}
           <span v-html="sortIndicator('date')"></span>
         </th>
-        <th class="header" @click="sortColumn('vote')">
+        <th @click="sortColumn('vote')">
           {{ tableColumns.vote[lang] }}
           <span v-html="sortIndicator('vote')"></span>
         </th>
@@ -118,7 +118,8 @@ th {
   padding: 0.5rem;
   background-color: lightgrey;
   color: blue;
-  border-bottom: solid 2px black;
+  text-align: left;
+  cursor: pointer;
 }
 span {
   color: blue;
@@ -127,10 +128,6 @@ td {
   padding: 0.5rem;
   vertical-align: top;
   border-bottom: solid 1px rgb(68, 68, 68);
-}
-.header {
-  text-align: left;
-  cursor: pointer;
 }
 .vote {
   cursor: pointer;
