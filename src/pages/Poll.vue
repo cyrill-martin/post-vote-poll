@@ -31,7 +31,11 @@
     </div>
     <div class="row">
       <div v-if="pollData" class="col-9" id="poll-chart">
-        {{ arrangement }} by {{ order }}
+        <span v-if="arrangement">{{ selectionText(arrangement) }}</span>
+        <span v-else></span>
+        by
+        <span v-if="order">{{ selectionText(order) }}</span>
+        <span v-else></span>
       </div>
       <div class="col-3" id="poll-legend">Legend</div>
     </div>
@@ -64,6 +68,13 @@ export default {
   computed: {
     pollMetadata() {
       return Polls.find((poll) => poll.id.toString() === this.id);
+    },
+    selectionKeys() {
+      if (this.pollSelections) {
+        return Object.keys(this.pollSelections);
+      } else {
+        return [];
+      }
     },
   },
   async mounted() {
@@ -120,6 +131,14 @@ export default {
         this.order = false;
       } else {
         this.order = ord[1];
+      }
+    },
+    selectionText(key) {
+      if (this.pollSelections[key]) {
+        return this.pollSelections[key][this.lang];
+      } else {
+        const superKey = key.split("_");
+        return this.pollSelections[superKey[0]].selections[key][this.lang];
       }
     },
   },
