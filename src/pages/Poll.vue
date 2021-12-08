@@ -8,10 +8,10 @@
         <tr>
           <th class="poll-question">{{ question[lang] }}</th>
           <th class="poll-arrangement">
-            <img src="../assets/images/drag_indicator_black_24dp.svg" alt="">
+            <img src="../assets/images/drag_indicator_black_24dp.svg" alt="" />
           </th>
           <th class="poll-feature">
-            <img src="../assets/images/south_black_24dp.svg" alt="">
+            <img src="../assets/images/south_black_24dp.svg" alt="" />
           </th>
         </tr>
       </table>
@@ -21,12 +21,18 @@
         <the-poll-table
           :lang="lang"
           :selections="pollSelections"
+          :arrangement="arrangement"
+          :order="order"
+          @set-arrangement="setArrangement"
+          @set-order="setOrder"
         ></the-poll-table>
       </div>
       <div v-else class="col-12">Loading...</div>
     </div>
     <div class="row">
-      <div class="col-9" id="poll-chart">Chart</div>
+      <div v-if="pollData" class="col-9" id="poll-chart">
+        {{ arrangement }} by {{ order }}
+      </div>
       <div class="col-3" id="poll-legend">Legend</div>
     </div>
   </div>
@@ -46,11 +52,13 @@ export default {
       pollData: null,
       pollArrangements: null,
       pollSelections: null,
+      arrangement: false,
+      order: false,
       question: {
         de: "Frage",
         fr: "Question",
-        it: "Questione"
-      }
+        it: "Questione",
+      },
     };
   },
   computed: {
@@ -97,6 +105,21 @@ export default {
       } catch (error) {
         console.log(`Error: "${file}" for poll ${this.id} not found!`);
         console.log(error);
+      }
+    },
+    setArrangement(arr) {
+      // [ "arr", "BIRTHYEARR", true ]
+      if (this.arrangement === arr[1]) {
+        this.arrangement = false;
+      } else {
+        this.arrangement = arr[1];
+      }
+    },
+    setOrder(ord) {
+      if (this.order === ord[1]) {
+        this.order = false;
+      } else {
+        this.order = ord[1];
       }
     },
   },

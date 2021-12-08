@@ -11,8 +11,8 @@
       :selection-id="key"
       :lang="lang"
       :question="selections[key]"
-      :selected-arr="selectedArr"
-      :selected-ord="selectedOrd"
+      :selected-arr="arrangement"
+      :selected-ord="order"
       @new-chart-setting="setSetting"
     ></the-poll-table-row>
   </table>
@@ -25,13 +25,7 @@ export default {
   components: {
     ThePollTableRow,
   },
-  props: ["lang", "selections"],
-  data() {
-    return {
-      selectedArr: false,
-      selectedOrd: false,
-    }
-  },
+  props: ["lang", "selections", "arrangement", "order"],
   computed: {
     selectionKeys() {
       return Object.keys(this.selections);
@@ -44,13 +38,9 @@ export default {
       newSetting.push(newChartSetting.state)
       // [ "arr", "BIRTHYEARR", true ]
       if (newSetting[0] === "arr") {
-        if (newSetting[2]) {
-          this.selectedArr = newSetting[1];
-        }
+        this.$emit("set-arrangement", newSetting);
       } else {
-        if (newSetting[2]) {
-          this.selectedOrd = newSetting[1];
-        }
+        this.$emit("set-order", newSetting);
       }
     }
   }

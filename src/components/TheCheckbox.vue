@@ -1,5 +1,10 @@
 <template>
-  <input type="checkbox" :id="inputId" v-model="checked" />
+  <input
+    type="checkbox"
+    :id="inputId"
+    v-model="checked"
+    @click.stop="emitSetting"
+  />
 </template>
 
 <script>
@@ -8,19 +13,20 @@ export default {
   props: ["chart-control", "selection-id", "selected-arr", "selected-ord"],
   data() {
     return {
-      checked: this.ischecked(),
-    }
+      checked: false,
+    };
   },
   watch: {
-    checked(newValue) {
-      this.$emit("new-chart-setting", { id: this.inputId, state: newValue });
-    },
     selectedArr() {
-      this.checked = this.ischecked();
-    }, 
+      if (this.chartControl === "arr") {
+        this.checked = this.isChecked();
+      }
+    },
     selectedOrd() {
-      this.checked = this.ischecked();
-    }
+      if (this.chartControl === "ord") {
+        this.checked = this.isChecked();
+      }
+    },
   },
   computed: {
     inputId() {
@@ -28,14 +34,20 @@ export default {
     },
   },
   methods: {
-    ischecked() {
+    emitSetting() {
+      this.$emit("new-chart-setting", {
+        id: this.inputId,
+        state: this.isChecked(),
+      });
+    },
+    isChecked() {
       if (this.chartControl === "arr") {
         return this.selectionId === this.selectedArr;
       } else {
         return this.selectionId === this.selectedOrd;
-      } 
-    }
-  }
+      }
+    },
+  },
 };
 </script>
 
