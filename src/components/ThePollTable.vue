@@ -3,7 +3,7 @@
     <tr>
       <th class="poll-question"></th>
       <th class="poll-arrangement"></th>
-      <th class="poll-feature"></th>
+      <th class="poll-order"></th>
     </tr>
     <the-poll-table-row
       v-for="key in selectionKeys"

@@ -7,11 +7,11 @@
       <table>
         <tr>
           <th class="poll-question">{{ question[lang] }}</th>
-          <th class="poll-arrangement">
-            <img src="../assets/images/drag_indicator_black_24dp.svg" alt="" />
+          <th class="poll-arrangement poll-icon" id="arr-icon" @click="scrollToLine('arr')">
+            <img src="../assets/images/drag_indicator_black_24dp.svg" alt="Poll arrangement icon" />
           </th>
-          <th class="poll-feature">
-            <img src="../assets/images/south_black_24dp.svg" alt="" />
+          <th class="poll-order poll-icon" id="ord-icon" @click="scrollToLine('ord')">
+            <img src="../assets/images/south_black_24dp.svg" alt="Poll order icon" />
           </th>
         </tr>
       </table>
@@ -141,14 +141,21 @@ export default {
         return this.pollSelections[superKey[0]].selections[key][this.lang];
       }
     },
+    scrollToLine(column) {
+      if (column === "arr") {
+        document.getElementById(`arr--${this.arrangement}`).scrollIntoView();
+      } else {
+        document.getElementById(`ord--${this.order}`).scrollIntoView();
+      }
+    }
   },
 };
 </script>
 
 <style scoped>
-#table-header {
+/* #table-header {
   padding-bottom: 0;
-}
+} */
 #poll-questions {
   padding-top: 0;
   height: 30vh;
@@ -171,5 +178,8 @@ tr {
 }
 th {
   text-align: left;
+}
+.poll-icon {
+  cursor: pointer;
 }
 </style>
