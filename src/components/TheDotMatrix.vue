@@ -24,21 +24,27 @@ export default {
       arrangement: false,
       order: false,
       language: "de",
-      maxDotsPerRow: 80,
+      maxDotsPerRow: 100,
       xScaleOuter: null,
       xScaleInner: null,
       yScale: null,
+      duration: 2000,
+      linearColors: null,
+      orderKeys: null,
     };
   },
   watch: {
     selectedArrangement() {
       this.arrangement = this.selectedArrangement;
+      const order = this.order || this.defaultOrd;
       // Update D3
-      this.callUpdateArrangement(this.arrangement, this.order);
+      this.updateColors(order);
+      this.callUpdateArrangement(this.arrangement, order);
     },
     selectedOrder() {
       this.order = this.selectedOrder;
       // Update D3
+      this.updateColors(this.order);
       this.callUpdateArrangement(this.arrangement, this.order);
     },
     pollLang() {
@@ -46,10 +52,16 @@ export default {
     },
   },
   methods: {
+    updateColors(order) {
+      this.linearColors = null;
+      if (!this.pollArrangements[order]) {
+        this.linearColors = this.getColorScale(order);
+      } else {
+        this.orderKeys = Object.keys(this.pollArrangements[order]);
+      }
+    },
     getOuterXDomain(arrangement) {
       // Outer x-Scale - depends on the arrangement
-      console.log("pollArrangement", this.pollArrangements);
-      console.log("arrangement", arrangement);
       const xOuterItems = Object.keys(this.pollArrangements[arrangement]);
       const xOuterDomain = xOuterItems.map(
         (item) => this.pollArrangements[arrangement][item][this.language]
@@ -101,17 +113,36 @@ export default {
       );
       return yScaleDomain;
     },
+    getColorScale(order) {
+      let colorScale;
+      // It's numerical
+
+      // Get the max
+      const max = d3.max(this.pollData, (human) => human[order]);
+
+      // Get the min
+      const min = d3.min(this.pollData, (human) => human[order]);
+
+      colorScale = d3
+        .scaleLinear()
+        .domain([min, max])
+        .range(["lightgrey", "black"]);
+      return colorScale;
+    },
+    colorGenerator(index) {
+      return d3.schemePaired[index % 10];
+    },
     drawDotMatrix() {
       d3.select("svg").remove();
 
       // Set dimensions
       const dimensions = {
         width: 1000,
-        height: 300,
+        height: 800,
         margins: {
           top: 15,
           right: 10,
-          bottom: 15,
+          bottom: 500,
           left: 10,
         },
         ctrWidth: null,
@@ -142,11 +173,12 @@ export default {
         );
 
       // Get tooltip element from DOM
-      const tooltip = d3.select("#tooltip");
-      console.log(ctr, tooltip);
+      // const tooltip = d3.select("#tooltip");
+      // console.log(tooltip);
 
       const drawArrangement = (
         arrangement,
+        order,
         outerXDomain,
         innerXDomain,
         yDomain
@@ -174,23 +206,10 @@ export default {
           .range([0, dimensions.ctrHeight])
           .paddingInner(0.1);
 
-        // Create x-axis
-        const xAxis = d3
-          .axisBottom(this.xScaleOuter)
-          .tickSize(0)
-          .tickSizeOuter(0);
-
-        // Draw x-axis
-        const xAxisLine = ctr
-          .append("g")
-          .attr("id", "x-axis")
-          .attr("transform", `translate(0, ${dimensions.ctrHeight})`)
-          .call(xAxis);
-
-        // Remove the horizontal x-axis line
-        xAxisLine.call((axis) => axis.select(".domain").remove());
-
         const dotsGroup = ctr.append("g").attr("class", "dots");
+
+        // colors
+        this.updateColors(order);
 
         dotsGroup
           .selectAll("g")
@@ -202,7 +221,6 @@ export default {
               this.pollArrangements[arrangement][d[arrangement]][this.language]
             )}, 0)`;
           }) // Position along the main x-axis
-          // .attr("id", (d) => d.id)
           .append("circle")
           .attr("class", "human")
           .attr("cx", (d) => {
@@ -221,9 +239,39 @@ export default {
             }
             return r;
           })
-          .attr("fill", "black");
+          .attr("fill", (d) => {
+            if (this.linearColors) {
+              return this.linearColors(d[order]);
+            } else {
+              return d3.schemeTableau10[this.orderKeys.indexOf(d[order]) % 10];
+            }
+          });
 
-        // Update function
+        // Create x-axis
+        const xAxis = d3
+          .axisBottom(this.xScaleOuter)
+          .tickSize(0)
+          .tickSizeOuter(0);
+
+        // Draw x-axis
+        const xAxisLine = ctr
+          .append("g")
+          .attr("id", "x-axis")
+          .attr("transform", `translate(0, ${dimensions.ctrHeight})`)
+          .call(xAxis);
+
+        // Rotate axis tick labels
+        xAxisLine
+          .selectAll("text")
+          .style("text-anchor", "end")
+          .attr("dy", 10)
+          .attr("dx", -10)
+          // .attr("dy", "-1rem")
+          // .attr("dx", "-1rem")
+          .attr("transform", "rotate(-90)");
+
+        // Remove the horizontal x-axis line
+        xAxisLine.call((axis) => axis.select(".domain").remove());
       };
 
       // Calculating drawArrangement parameters
@@ -236,7 +284,13 @@ export default {
       );
 
       // Calling drawArrangement()
-      drawArrangement(this.defaultArr, outerXDomain, innerXDomain, yDomain);
+      drawArrangement(
+        this.defaultArr,
+        this.defaultOrd,
+        outerXDomain,
+        innerXDomain,
+        yDomain
+      );
     },
     updateArrangement(
       newArrangement,
@@ -245,31 +299,38 @@ export default {
       newXInner,
       newYDomain
     ) {
-      console.log(newOrder);
+      console.log("newArrangement", newArrangement);
+      console.log("newOrder", newOrder);
 
-      // const newOuterXScale = this.xScaleOuter.domain(newXOuter);
       this.xScaleOuter.domain(newXOuter);
 
-      // const newInnerXScale = this.xScaleInner
       this.xScaleInner
         .domain(newXInner)
-        //.range([0, newOuterXScale.bandwidth()]);
         .range([0, this.xScaleOuter.bandwidth()]);
 
-      // const newYScale = this.yScale.domain(newYDomain);
       this.yScale.domain(newYDomain);
 
       const x = d3.select("#x-axis");
       x.transition()
-        .duration(1000)
+        .duration(this.duration / 2)
         .call(d3.axisBottom(this.xScaleOuter).tickSize(0).tickSizeOuter(0));
+
+      // Rotate axis tick labels
+      x.selectAll("text")
+        .style("text-anchor", "end")
+        .attr("dy", -1)
+        .attr("dx", -15)
+        // .attr("dy", "-1rem")
+        // .attr("dx", "-1rem")
+        .attr("transform", "rotate(-90)");
+
       // Remove the horizontal x-axis line
       x.call((axis) => axis.select(".domain").remove());
 
       // Update the position of the dots
       d3.selectAll(".dot")
         .transition()
-        .duration(2000)
+        .duration(this.duration)
         .attr("transform", (d) => {
           if (
             d[newArrangement] !== " " &&
@@ -282,12 +343,14 @@ export default {
                 this.language
               ]
             )}, 0)`;
+          } else {
+            // Deal with positioning missing (" ") values
           }
         }); // Position along the main x-axis
 
       d3.selectAll(".human")
         .transition()
-        .duration(2000)
+        .duration(this.duration)
         .attr("cx", (d) => {
           // Get index of inner Scale
           const iIdx = d.innerIdx % newXInner.length;
@@ -304,7 +367,15 @@ export default {
           }
           return r;
         })
-        .attr("fill", "black");
+        .attr("fill", (d) => {
+          if (this.linearColors) {
+            return this.linearColors(d[this.order]);
+          } else {
+            return d3.schemeTableau10[
+              this.orderKeys.indexOf(d[this.order]) % 10
+            ];
+          }
+        });
     },
     callUpdateArrangement(arrangement, order) {
       const newXOuter = this.getOuterXDomain(arrangement);

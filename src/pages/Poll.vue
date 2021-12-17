@@ -41,21 +41,15 @@
           @set-order="setOrder"
         ></the-poll-table>
       </div>
-      <div v-else class="col-12">
-        Loading...
-      </div>
+      <div v-else class="col-12">Loading...</div>
     </div>
     <div class="row">
       <div v-if="pollData && arrangement" class="col-10">
-        {{ pollData.length }} Menschen wurden gefragt:<br>{{ selectionText(arrangement) }}
+        {{ pollData.length }} Menschen wurden gefragt:<br />
+        <span id="poll-arrangement" v-html="selectionText(arrangement)"></span>
       </div>
       <div v-else class="col-10"></div>
-      <div class="col-2">
-        <div v-if="pollData && arrangement" class="col-10">
-          {{ selectionText(order) }}
-        </div>
-        <div v-else class="col-10"></div>
-      </div>
+      <div class="col-2"></div>
     </div>
     <div class="row">
       <div v-if="pollData" class="col-10" id="poll-chart">
@@ -69,7 +63,13 @@
           :poll-lang="lang"
         ></the-dot-matrix>
       </div>
-      <div class="col-2" id="poll-legend">Legend</div>
+      <div
+        v-if="pollData && arrangement"
+        v-html="selectionText(order)"
+        class="col-2"
+        id="poll-order"
+      ></div>
+      <div v-else class="col-2"></div>
     </div>
   </div>
 </template>
@@ -88,7 +88,12 @@ export default {
   async mounted() {
     const pollData = await this.tryCatchData("data");
     if (pollData) {
-      this.pollData = pollData;
+      // Sort people by social security number
+      pollData.sort((a, b) => {
+        return a.SECURITYID > b.SECURITYID ? 1 : -1;
+      });
+      // Take first 1000 people
+      this.pollData = pollData.slice(0, 1000);
     }
 
     const pollArrangements = await this.tryCatchData("arrangements");
@@ -177,7 +182,9 @@ export default {
         return this.pollSelections[key][this.lang];
       } else {
         const superKey = key.split("_");
-        return this.pollSelections[superKey[0]].selections[key][this.lang];
+        return `${this.pollSelections[superKey[0]][this.lang]}<br>- ${
+          this.pollSelections[superKey[0]].selections[key][this.lang]
+        }`;
       }
     },
     scrollToLine(column) {
@@ -196,16 +203,24 @@ export default {
 <style scoped>
 #poll-questions {
   padding-top: 0;
-  height: 20vh;
+  margin-bottom: 1rem;
+  height: 25vh;
   border-bottom: solid 1px black;
   overflow-y: scroll;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
+/* WebKit */
 #poll-questions::-webkit-scrollbar {
-  /* WebKit */
   width: 0;
   height: 0;
+}
+#poll-arrangement {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#poll-order {
+  font-weight: bold;
 }
 table {
   width: 100%;
