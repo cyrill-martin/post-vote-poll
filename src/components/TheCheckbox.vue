@@ -11,6 +11,15 @@
 export default {
   emits: ["new-chart-setting"],
   props: ["chart-control", "selection-id", "selected-arr", "selected-ord"],
+  inject: ["defaultArr", "defaultOrd"],
+  mounted() {
+    if (this.selectionId === this.defaultArr && this.chartControl === "arr") {
+      this.emitSetting();
+    }
+    if (this.selectionId === this.defaultOrd && this.chartControl === "ord") {
+      this.emitSetting();
+    }
+  },
   data() {
     return {
       checked: false,

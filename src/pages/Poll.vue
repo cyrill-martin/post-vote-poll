@@ -7,11 +7,25 @@
       <table>
         <tr>
           <th class="poll-question">{{ question[lang] }}</th>
-          <th class="poll-arrangement poll-icon" id="arr-icon" @click="scrollToLine('arr')">
-            <img src="../assets/images/drag_indicator_black_24dp.svg" alt="Poll arrangement icon" />
+          <th
+            class="poll-arrangement poll-icon"
+            id="arr-icon"
+            @click="scrollToLine('arr')"
+          >
+            <img
+              src="../assets/images/drag_indicator_black_24dp.svg"
+              alt="Poll arrangement icon"
+            />
           </th>
-          <th class="poll-order poll-icon" id="ord-icon" @click="scrollToLine('ord')">
-            <img src="../assets/images/south_black_24dp.svg" alt="Poll order icon" />
+          <th
+            class="poll-order poll-icon"
+            id="ord-icon"
+            @click="scrollToLine('ord')"
+          >
+            <img
+              src="../assets/images/south_black_24dp.svg"
+              alt="Poll order icon"
+            />
           </th>
         </tr>
       </table>
@@ -27,17 +41,35 @@
           @set-order="setOrder"
         ></the-poll-table>
       </div>
-      <div v-else class="col-12">Loading...</div>
+      <div v-else class="col-12">
+        Loading...
+      </div>
     </div>
     <div class="row">
-      <div v-if="pollData" class="col-9" id="poll-chart">
-        <span v-if="arrangement">{{ selectionText(arrangement) }}</span>
-        <span v-else></span>
-        by
-        <span v-if="order">{{ selectionText(order) }}</span>
-        <span v-else></span>
+      <div v-if="pollData && arrangement" class="col-10">
+        {{ pollData.length }} Menschen wurden gefragt:<br>{{ selectionText(arrangement) }}
       </div>
-      <div class="col-3" id="poll-legend">Legend</div>
+      <div v-else class="col-10"></div>
+      <div class="col-2">
+        <div v-if="pollData && arrangement" class="col-10">
+          {{ selectionText(order) }}
+        </div>
+        <div v-else class="col-10"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div v-if="pollData" class="col-10" id="poll-chart">
+        <the-dot-matrix
+          v-if="pollSelections && pollArrangements && pollData"
+          :poll-data="pollData"
+          :poll-arrangements="pollArrangements"
+          :poll-selections="pollSelections"
+          :selected-arrangement="arrangement"
+          :selected-order="order"
+          :poll-lang="lang"
+        ></the-dot-matrix>
+      </div>
+      <div class="col-2" id="poll-legend">Legend</div>
     </div>
   </div>
 </template>
@@ -45,38 +77,14 @@
 <script>
 import Polls from "../data/polls.json";
 import ThePollTable from "../components/ThePollTable.vue";
+import TheDotMatrix from "../components/TheDotMatrix.vue";
 
 export default {
   components: {
     ThePollTable,
+    TheDotMatrix,
   },
   props: ["id", "lang"],
-  data() {
-    return {
-      pollData: null,
-      pollArrangements: null,
-      pollSelections: null,
-      arrangement: false,
-      order: false,
-      question: {
-        de: "Frage",
-        fr: "Question",
-        it: "Questione",
-      },
-    };
-  },
-  computed: {
-    pollMetadata() {
-      return Polls.find((poll) => poll.id.toString() === this.id);
-    },
-    selectionKeys() {
-      if (this.pollSelections) {
-        return Object.keys(this.pollSelections);
-      } else {
-        return [];
-      }
-    },
-  },
   async mounted() {
     const pollData = await this.tryCatchData("data");
     if (pollData) {
@@ -92,6 +100,37 @@ export default {
     if (pollSelections) {
       this.pollSelections = pollSelections;
     }
+  },
+  data() {
+    return {
+      pollData: null,
+      pollArrangements: null,
+      pollSelections: null,
+      arrangement: null,
+      order: false,
+      question: {
+        de: "Frage",
+        fr: "Question",
+        it: "Questione",
+      },
+    };
+  },
+  provide: {
+    // Default selections
+    defaultArr: "PART",
+    defaultOrd: "POLINT",
+  },
+  computed: {
+    pollMetadata() {
+      return Polls.find((poll) => poll.id.toString() === this.id);
+    },
+    selectionKeys() {
+      if (this.pollSelections) {
+        return Object.keys(this.pollSelections);
+      } else {
+        return [];
+      }
+    },
   },
   methods: {
     async fetchData(file) {
@@ -142,23 +181,22 @@ export default {
       }
     },
     scrollToLine(column) {
-      if (column === "arr") {
-        document.getElementById(`arr--${this.arrangement}`).scrollIntoView();
-      } else {
-        document.getElementById(`ord--${this.order}`).scrollIntoView();
+      let col = this.arrangement;
+      if (column === "ord") {
+        col = this.order;
       }
-    }
+      document
+        .getElementById(`${column}--${col}`)
+        .scrollIntoView({ behavior: "smooth" });
+    },
   },
 };
 </script>
 
 <style scoped>
-/* #table-header {
-  padding-bottom: 0;
-} */
 #poll-questions {
   padding-top: 0;
-  height: 30vh;
+  height: 20vh;
   border-bottom: solid 1px black;
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
