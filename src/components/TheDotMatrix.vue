@@ -14,6 +14,7 @@ export default {
     "selectedOrder",
     "pollLang",
   ],
+  emits: ["nr-of-answers"],
   inject: ["defaultArr", "defaultOrd"],
   mounted() {
     this.drawDotMatrix();
@@ -31,8 +32,18 @@ export default {
       duration: 2000,
       linearColors: null,
       orderKeys: null,
-      // colorScheme: d3.schemeTableau10,
-      colorScheme: ["797d62","9b9b7a","baa587","d9ae94","f1dca7","ffcb69","e8ac65","d08c60","b58463","997b66"],
+      colorScheme: [
+        "797d62",
+        "9b9b7a",
+        "baa587",
+        "d9ae94",
+        "f1dca7",
+        "ffcb69",
+        "e8ac65",
+        "d08c60",
+        "b58463",
+        "997b66",
+      ],
     };
   },
   watch: {
@@ -51,11 +62,13 @@ export default {
     },
     pollLang() {
       this.language = this.pollLang;
+      this.drawDotMatrix();
     },
   },
   methods: {
     updateColors(order) {
       if (!this.pollArrangements[order]) {
+        this.orderKeys = null;
         this.linearColors = this.getColorScale(order);
       } else {
         this.linearColors = null;
@@ -70,16 +83,22 @@ export default {
         xOuterDomain = xOuterItems.map(
           (item) => this.pollArrangements[arrangement][item][this.language]
         );
+
+        // Get rid of "MISSING" values
+        xOuterDomain = xOuterDomain.filter((item) => item !== "MISSING");
+
         return xOuterDomain;
       } else {
         // It's numerical
         // Get the max
-        const max = parseInt(d3.max(this.pollData, (human) => human[arrangement]));
+        const max = parseInt(
+          d3.max(this.pollData, (human) => human[arrangement])
+        );
         // Get the min
-        const min = parseInt(d3.min(this.pollData, (human) => human[arrangement]));
-        console.log(min, max);
+        const min = parseInt(
+          d3.min(this.pollData, (human) => human[arrangement])
+        );
         xOuterDomain = Array.from({ length: max - min + 1 }, (_, i) => i + min);
-        console.log(xOuterDomain);
       }
       return xOuterDomain;
     },
@@ -93,8 +112,25 @@ export default {
     getYDomain(arrangement, order, nrOfInnerGroups) {
       // y-Scale - depends on largest group: Number of members / xInnerDomain
 
-      // Group the this.dataset by the selected arrangement
-      const groupedData = d3.groups(this.pollData, (d) => d[arrangement]);
+      let groupedData;
+
+      let dataLength = this.pollData.length;
+
+      // Get rid of "MISSING" values
+      if (this.pollArrangements[arrangement]) {
+        groupedData = this.pollData.filter((human) => {
+          return this.existence(human, arrangement);
+        });
+        dataLength = groupedData.length;
+      } else {
+        groupedData = this.pollData;
+      }
+
+      // EMIT dataLength;
+      this.$emit("nr-of-answers", dataLength);
+
+      // Group the data by the selected arrangement
+      groupedData = d3.groups(groupedData, (d) => d[arrangement]);
       // E.g. this.dataset = [
       //   [ "1", [...] ],
       //   [ "2", [...] ],
@@ -144,11 +180,66 @@ export default {
         .range(["lightgrey", "black"]);
       return colorScale;
     },
-    colorGenerator(index) {
-      return d3.schemePaired[index % 10];
+    existence(d, arrangement) {
+      let existence = false;
+
+      if (!this.pollArrangements[arrangement]) {
+        existence = true;
+      } else if (d[arrangement] !== " ") {
+        if (
+          this.pollArrangements[arrangement][d[arrangement]][this.language] !==
+          "MISSING"
+        ) {
+          existence = true;
+        }
+      }
+      return existence;
+    },
+    drawLegend() {
+      d3.select("#svg-legend").remove();
+
+      // Set dimensions
+      const dimensions = {
+        width: 200,
+        height: 800,
+        margins: {
+          top: 10,
+          right: 10,
+          bottom: 10,
+          left: 10,
+        },
+        ctrWidth: null,
+        ctrHeight: null,
+      };
+
+      // Create and set inner container width
+      dimensions.ctrWidth =
+        dimensions.width - (dimensions.margins.left + dimensions.margins.right);
+      // Create and set inner container height
+      dimensions.ctrHeight =
+        dimensions.height -
+        (dimensions.margins.top + dimensions.margins.bottom);
+
+      // Create SVG element
+      const svg = d3
+        .select("#poll-order")
+        .append("svg")
+        .attr("id", "svg-legend")
+        .attr("preserveAspectRatio", "xMinYMin")
+        .attr("viewBox", `0 0 ${dimensions.width} ${dimensions.height}`);
+
+      // Add inner container to SVG
+      const ctr = svg
+        .append("g")
+        .attr(
+          "transform",
+          `translate(${dimensions.margins.left}, ${dimensions.margins.top})`
+        );
+
+      console.log(ctr);
     },
     drawDotMatrix() {
-      d3.select("svg").remove();
+      d3.select("#svg-chart").remove();
 
       // Set dimensions
       const dimensions = {
@@ -176,6 +267,7 @@ export default {
       const svg = d3
         .select("#poll-chart")
         .append("svg")
+        .attr("id", "svg-chart")
         .attr("preserveAspectRatio", "xMinYMin")
         .attr("viewBox", `0 0 ${dimensions.width} ${dimensions.height}`);
 
@@ -232,37 +324,49 @@ export default {
           .join("g")
           .attr("class", "dot")
           .attr("transform", (d) => {
-            return `translate(${+this.xScaleOuter(
-              this.pollArrangements[arrangement][d[arrangement]][this.language]
-            )}, 0)`;
+            if (this.existence(d, arrangement)) {
+              return `translate(${+this.xScaleOuter(
+                this.pollArrangements[arrangement][d[arrangement]][
+                  this.language
+                ]
+              )}, 0)`;
+            }
           }) // Position along the main x-axis
           .append("circle")
           .attr("class", "human")
           .attr("cx", (d) => {
-            // Get index of inner Scale
-            const iIdx = d.innerIdx % innerXDomain.length;
-            return this.xScaleInner(iIdx) + this.xScaleInner.bandwidth() / 2;
+            if (this.existence(d, arrangement)) {
+              // Get index of inner Scale
+              const iIdx = d.innerIdx % innerXDomain.length;
+              return this.xScaleInner(iIdx) + this.xScaleInner.bandwidth() / 2;
+            }
           })
           .attr("cy", (d) => {
-            const yIdx = Math.floor(d.innerIdx / innerXDomain.length);
-            return this.yScale(yIdx);
-          })
-          .attr("r", () => {
-            let r = this.xScaleInner.bandwidth() / 2;
-            if (this.yScale.bandwidth() / 2 < r) {
-              r = this.yScale.bandwidth() / 2;
+            if (this.existence(d, arrangement)) {
+              const yIdx = Math.floor(d.innerIdx / innerXDomain.length);
+              return this.yScale(yIdx);
             }
-            return r;
+          })
+          .attr("r", (d) => {
+            if (this.existence(d, arrangement)) {
+              let r = this.xScaleInner.bandwidth() / 2;
+              if (this.yScale.bandwidth() / 2 < r) {
+                r = this.yScale.bandwidth() / 2;
+              }
+              return r;
+            }
           })
           .attr("fill", (d) => {
-            if (this.linearColors) {
-              return this.linearColors(d[order]);
-            } else {
-              return `#${
-                this.colorScheme[
-                  this.orderKeys.indexOf(d[order]) % this.colorScheme.length
-                ]
-              }`;
+            if (this.existence(d, arrangement)) {
+              if (this.linearColors) {
+                return this.linearColors(d[order]);
+              } else {
+                return `#${
+                  this.colorScheme[
+                    this.orderKeys.indexOf(d[order]) % this.colorScheme.length
+                  ]
+                }`;
+              }
             }
           });
 
@@ -283,10 +387,8 @@ export default {
         xAxisLine
           .selectAll("text")
           .style("text-anchor", "end")
-          .attr("dy", 10)
-          .attr("dx", -10)
-          // .attr("dy", "-1rem")
-          // .attr("dx", "-1rem")
+          .attr("dy", -1)
+          .attr("dx", -15)
           .attr("transform", "rotate(-90)");
 
         // Remove the horizontal x-axis line
@@ -294,22 +396,15 @@ export default {
       };
 
       // Calculating drawArrangement parameters
-      const outerXDomain = this.getOuterXDomain(this.defaultArr);
+      const arrangement = this.arrangement || this.defaultArr;
+      const order = this.order || this.defaultOrd;
+
+      const outerXDomain = this.getOuterXDomain(arrangement);
       const innerXDomain = this.getInnerXDomain(outerXDomain.length);
-      const yDomain = this.getYDomain(
-        this.defaultArr,
-        this.defaultOrd,
-        innerXDomain.length
-      );
+      const yDomain = this.getYDomain(arrangement, order, innerXDomain.length);
 
       // Calling drawArrangement()
-      drawArrangement(
-        this.defaultArr,
-        this.defaultOrd,
-        outerXDomain,
-        innerXDomain,
-        yDomain
-      );
+      drawArrangement(arrangement, order, outerXDomain, innerXDomain, yDomain);
     },
     updateArrangement(
       newArrangement,
@@ -339,8 +434,6 @@ export default {
         .style("text-anchor", "end")
         .attr("dy", -1)
         .attr("dx", -15)
-        // .attr("dy", "-1rem")
-        // .attr("dx", "-1rem")
         .attr("transform", "rotate(-90)");
 
       // Remove the horizontal x-axis line
@@ -351,23 +444,25 @@ export default {
         .transition()
         .duration(this.duration)
         .attr("transform", (d) => {
-          if (this.pollArrangements[newArrangement]) {
-            if (
-              d[newArrangement] !== " " &&
-              this.pollArrangements[newArrangement][d[newArrangement]][
-                this.language
-              ]
-            ) {
-              return `translate(${+this.xScaleOuter(
+          if (this.existence(d, newArrangement)) {
+            if (this.pollArrangements[newArrangement]) {
+              if (
+                d[newArrangement] !== " " &&
                 this.pollArrangements[newArrangement][d[newArrangement]][
                   this.language
                 ]
-              )}, 0)`;
+              ) {
+                return `translate(${+this.xScaleOuter(
+                  this.pollArrangements[newArrangement][d[newArrangement]][
+                    this.language
+                  ]
+                )}, 0)`;
+              }
             } else {
-              // Deal with positioning missing (" ") values
+              return `translate(${+this.xScaleOuter(
+                parseInt(d[newArrangement])
+              )}, 0)`;
             }
-          } else {
-            return `translate(${+this.xScaleOuter(parseInt(d[newArrangement]))}, 0)`;
           }
         }); // Position along the main x-axis
 
@@ -375,30 +470,39 @@ export default {
         .transition()
         .duration(this.duration)
         .attr("cx", (d) => {
-          // Get index of inner Scale
-          const iIdx = d.innerIdx % newXInner.length;
-          return this.xScaleInner(iIdx) + this.xScaleInner.bandwidth() / 2;
+          if (this.existence(d, newArrangement)) {
+            // Get index of inner Scale
+            const iIdx = d.innerIdx % newXInner.length;
+            return this.xScaleInner(iIdx) + this.xScaleInner.bandwidth() / 2;
+          }
         })
         .attr("cy", (d) => {
-          const yIdx = Math.floor(d.innerIdx / newXInner.length);
-          return this.yScale(yIdx);
-        })
-        .attr("r", () => {
-          let r = this.xScaleInner.bandwidth() / 2;
-          if (this.yScale.bandwidth() / 2 < r) {
-            r = this.yScale.bandwidth() / 2;
+          if (this.existence(d, newArrangement)) {
+            const yIdx = Math.floor(d.innerIdx / newXInner.length);
+            return this.yScale(yIdx);
           }
-          return r;
+        })
+        .attr("r", (d) => {
+          if (this.existence(d, newArrangement)) {
+            let r = this.xScaleInner.bandwidth() / 2;
+            if (this.yScale.bandwidth() / 2 < r) {
+              r = this.yScale.bandwidth() / 2;
+            }
+            return r;
+          }
         })
         .attr("fill", (d) => {
-          if (this.linearColors) {
-            return this.linearColors(d[this.order]);
-          } else {
-            return `#${
-              this.colorScheme[
-                this.orderKeys.indexOf(d[this.order]) % this.colorScheme.length
-              ]
-            }`;
+          if (this.existence(d, newArrangement)) {
+            if (this.linearColors) {
+              return this.linearColors(d[this.order]);
+            } else {
+              return `#${
+                this.colorScheme[
+                  this.orderKeys.indexOf(d[this.order]) %
+                    this.colorScheme.length
+                ]
+              }`;
+            }
           }
         });
     },

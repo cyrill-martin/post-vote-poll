@@ -45,7 +45,8 @@
     </div>
     <div class="row">
       <div v-if="pollData && arrangement" class="col-10">
-        {{ pollData.length }} Menschen wurden gefragt:<br />
+        <span v-html="introSentence(pollData.length, nrOfAnswers, lang )"></span>
+        <br>
         <span id="poll-arrangement" v-html="selectionText(arrangement)"></span>
       </div>
       <div v-else class="col-10"></div>
@@ -61,6 +62,7 @@
         :selected-arrangement="arrangement"
         :selected-order="order"
         :poll-lang="lang"
+        @nr-of-answers="updateNrOfAnswers"
       ></the-dot-matrix>
       <div
         v-if="pollData && arrangement"
@@ -103,6 +105,7 @@ export default {
   data() {
     return {
       pollData: null,
+      nrOfAnswers: null,
       pollArrangements: null,
       pollSelections: null,
       arrangement: null,
@@ -132,6 +135,17 @@ export default {
     },
   },
   methods: {
+    introSentence(total, actual, lang) {
+      const sentences = {
+        "de": `${total} Menschen wurden gefragt, <span style="background: #3584e4">${actual}</span> haben geantwortet`,
+        "fr": `${total} personnes ont été interrogées, <span style="background: #3584e4">${actual}</span> ont répondu`,
+        "it": `È stato chiesto a ${total} persone, <span style="background: #3584e4">${actual}</span> hanno risposto`,
+      }
+      return sentences[lang];
+    },
+    updateNrOfAnswers(nr) {
+      this.nrOfAnswers = nr;
+    },
     async fetchData(file) {
       const pollData = `${process.env.VUE_APP_BASEURL}/data/${this.id}/${this.id}_${file}.json`;
       const response = await fetch(pollData);

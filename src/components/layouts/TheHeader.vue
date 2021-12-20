@@ -1,9 +1,9 @@
 <template>
   <div class="col-12">
     <div class="logo">
-      <a href="https://kmapper.com" target="_blank"
-        ><img :src="logo" alt="The kmapper logo"
-      /></a>
+      <router-link to="/">
+        <img :src="logo" alt="The kmapper logo"
+      /></router-link>
     </div>
     <div class="languages">
       <button
@@ -36,8 +36,8 @@ export default {
   },
   data() {
     return {
-      language: null
-    }
+      language: null,
+    };
   },
   computed: {
     logo() {
