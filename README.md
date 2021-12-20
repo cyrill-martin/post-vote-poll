@@ -1,4 +1,6 @@
-# post-vote-poll
+# swisspolls
+
+...in progress!
 
 ## Project setup
 ```
