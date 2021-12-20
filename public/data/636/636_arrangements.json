@@ -534,7 +534,7 @@
             "it": "MISSING"
         }
     },
-    "REASON1ACC1_01 - 11": {
+    "REASON1ACC1_01": {
         "10": {
             "de": "Allgemeines",
             "fr": "Informations générales",
@@ -791,7 +791,7 @@
             "it": "MISSING"
         }
     },
-    "REASON2ACC1_01 - 10": {
+    "REASON2ACC1_01": {
         "10": {
             "de": "Allgemeines",
             "fr": "Informations générales",
@@ -6121,18 +6121,6 @@
             "de": "weiss nicht /keine Angabe",
             "fr": "ne sais pas / aucune indication",
             "it": "non so / nessuna risposta"
-        }
-    },
-    "UNUSED": {
-        "0": {
-            "de": "verwendet",
-            "fr": "utilisé",
-            "it": "utilizzato"
-        },
-        "1": {
-            "de": "nicht verwendet",
-            "fr": "non utilisé",
-            "it": "non utilizzato"
         }
     }
 }

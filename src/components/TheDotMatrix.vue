@@ -31,6 +31,8 @@ export default {
       duration: 2000,
       linearColors: null,
       orderKeys: null,
+      // colorScheme: d3.schemeTableau10,
+      colorScheme: ["797d62","9b9b7a","baa587","d9ae94","f1dca7","ffcb69","e8ac65","d08c60","b58463","997b66"],
     };
   },
   watch: {
@@ -53,19 +55,32 @@ export default {
   },
   methods: {
     updateColors(order) {
-      this.linearColors = null;
       if (!this.pollArrangements[order]) {
         this.linearColors = this.getColorScale(order);
       } else {
+        this.linearColors = null;
         this.orderKeys = Object.keys(this.pollArrangements[order]);
       }
     },
     getOuterXDomain(arrangement) {
       // Outer x-Scale - depends on the arrangement
-      const xOuterItems = Object.keys(this.pollArrangements[arrangement]);
-      const xOuterDomain = xOuterItems.map(
-        (item) => this.pollArrangements[arrangement][item][this.language]
-      );
+      let xOuterDomain;
+      if (this.pollArrangements[arrangement]) {
+        const xOuterItems = Object.keys(this.pollArrangements[arrangement]);
+        xOuterDomain = xOuterItems.map(
+          (item) => this.pollArrangements[arrangement][item][this.language]
+        );
+        return xOuterDomain;
+      } else {
+        // It's numerical
+        // Get the max
+        const max = parseInt(d3.max(this.pollData, (human) => human[arrangement]));
+        // Get the min
+        const min = parseInt(d3.min(this.pollData, (human) => human[arrangement]));
+        console.log(min, max);
+        xOuterDomain = Array.from({ length: max - min + 1 }, (_, i) => i + min);
+        console.log(xOuterDomain);
+      }
       return xOuterDomain;
     },
     getInnerXDomain(nrOfOuterGroups) {
@@ -188,8 +203,8 @@ export default {
           .scaleBand()
           .domain(outerXDomain)
           .range([0, dimensions.ctrWidth])
-          .paddingInner(0.05) // Space between groups of x-axis items
-          .paddingOuter(0.05)
+          .paddingInner(0.1) // Space between groups of x-axis items
+          .paddingOuter(0.1)
           .align(0.5);
 
         // Create the actual inner x-scale
@@ -197,7 +212,7 @@ export default {
           .scaleBand()
           .domain(innerXDomain)
           .range([0, this.xScaleOuter.bandwidth()])
-          .paddingInner(0.05);
+          .paddingInner(0.1);
 
         // Create the actual y-scale
         this.yScale = d3
@@ -243,7 +258,11 @@ export default {
             if (this.linearColors) {
               return this.linearColors(d[order]);
             } else {
-              return d3.schemeTableau10[this.orderKeys.indexOf(d[order]) % 10];
+              return `#${
+                this.colorScheme[
+                  this.orderKeys.indexOf(d[order]) % this.colorScheme.length
+                ]
+              }`;
             }
           });
 
@@ -332,19 +351,23 @@ export default {
         .transition()
         .duration(this.duration)
         .attr("transform", (d) => {
-          if (
-            d[newArrangement] !== " " &&
-            this.pollArrangements[newArrangement][d[newArrangement]][
-              this.language
-            ]
-          ) {
-            return `translate(${+this.xScaleOuter(
+          if (this.pollArrangements[newArrangement]) {
+            if (
+              d[newArrangement] !== " " &&
               this.pollArrangements[newArrangement][d[newArrangement]][
                 this.language
               ]
-            )}, 0)`;
+            ) {
+              return `translate(${+this.xScaleOuter(
+                this.pollArrangements[newArrangement][d[newArrangement]][
+                  this.language
+                ]
+              )}, 0)`;
+            } else {
+              // Deal with positioning missing (" ") values
+            }
           } else {
-            // Deal with positioning missing (" ") values
+            return `translate(${+this.xScaleOuter(parseInt(d[newArrangement]))}, 0)`;
           }
         }); // Position along the main x-axis
 
@@ -371,9 +394,11 @@ export default {
           if (this.linearColors) {
             return this.linearColors(d[this.order]);
           } else {
-            return d3.schemeTableau10[
-              this.orderKeys.indexOf(d[this.order]) % 10
-            ];
+            return `#${
+              this.colorScheme[
+                this.orderKeys.indexOf(d[this.order]) % this.colorScheme.length
+              ]
+            }`;
           }
         });
     },

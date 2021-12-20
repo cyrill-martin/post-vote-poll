@@ -578,10 +578,5 @@
         "de": "Sind Sie Mieter/in oder Eigentümer/in Ihrer Wohnung oder Ihres Hauses?",
         "fr": "Êtes-vous locataire ou propriétaire de votre appartement ou de votre maison ?",
         "it": "L'appartamento o la casa in cui abita è in affitto o di Sua proprietà?"
-    },
-    "UNUSED": {
-        "de": "Nicht verwendete Fälle",
-        "fr": "Cas non utilisés",
-        "it": "Casi non utilizzati"
     }
 }

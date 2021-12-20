@@ -88,12 +88,7 @@ export default {
   async mounted() {
     const pollData = await this.tryCatchData("data");
     if (pollData) {
-      // Sort people by social security number
-      pollData.sort((a, b) => {
-        return a.SECURITYID > b.SECURITYID ? 1 : -1;
-      });
-      // Take first 1000 people
-      this.pollData = pollData.slice(0, 1000);
+      this.pollData = pollData;
     }
 
     const pollArrangements = await this.tryCatchData("arrangements");

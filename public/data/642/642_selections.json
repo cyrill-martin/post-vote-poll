@@ -111,22 +111,22 @@
         "fr": "Indiquez sur une échelle de 0 (aucune importance) à 10 (très grande importance) l'importance que revêtait l'initiative pour l’interdiction des pesticides à vos yeux ?",
         "it": "Su una scala da 0 (nessuna importanza) a 10 (molto importante), quanto è stata importante per voi l'iniziativa popolare «Per una Svizzera senza pesticidi sintetici»?"
     },
-    "REASON1ACC2_01": {
+    "REASON1ACC2_01-10": {
         "de": "Welches ist der Hauptgrund, dass Sie diese Vorlage angenommen haben?",
         "fr": "Quelle est la principale raison qui vous a amené(e) à accepter ce projet ?",
         "it": "Qual è la ragione principale per cui Lei ha accettato questo oggetto?"
     },
-    "REASON2ACC2_01": {
+    "REASON2ACC2_01-10": {
         "de": "Welche anderen Gründe hat es für Sie noch gegeben, diese Vorlage anzunehmen?",
         "fr": "Quelles autres raisons aviez-vous ?",
         "it": "Ci sono state altre ragioni?"
     },
-    "REASON1DEN2_01": {
+    "REASON1DEN2_01-07": {
         "de": "Welches ist der Hauptgrund, dass Sie diese Vorlage abgelehnt haben?",
         "fr": "Quelle est la principale raison qui vous a amené(e) à rejeter ce projet ?",
         "it": "Qual è la ragione principale per cui Lei ha respinto questo oggetto?"
     },
-    "REASON2DEN2_01": {
+    "REASON2DEN2_01-05": {
         "de": "Welche anderen Gründe hat es für Sie noch gegeben, diese Vorlage abzulehnen?",
         "fr": "Quelles autres raisons aviez-vous ?",
         "it": "Ci sono state altre ragioni?"
@@ -585,10 +585,5 @@
         "de": "Sind Sie Mieter/in oder Eigentümer/in Ihrer Wohnung oder Ihres Hauses?",
         "fr": "Êtes-vous locataire ou propriétaire de votre appartement ou de votre maison ?",
         "it": "L'appartamento o la casa in cui abita è in affitto o di Sua proprietà?"
-    },
-    "UNUSED": {
-        "de": "Nicht verwendete Fälle",
-        "fr": "Cas non utilisés",
-        "it": "Casi non utilizzati"
     }
 }

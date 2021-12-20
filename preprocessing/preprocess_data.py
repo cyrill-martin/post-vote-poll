@@ -91,8 +91,8 @@ def create_poll_paths(poll=None) -> dict:
 
 def create_target_paths(poll, name) -> dict:
   return {
-    "target_dir": f"../public/data/polls/{poll}",
-    "target_file": f"../public/data/polls/{poll}/{poll}_{name}.json"
+    "target_dir": f"../public/data/{poll}",
+    "target_file": f"../public/data/{poll}/{poll}_{name}.json"
   }
 
 def skip_indicators() -> list:
@@ -107,6 +107,7 @@ def delete_indicators() -> list:
     "control1".upper(),
     "control3".upper(),
     "control3@".upper(),
+    "UNUSED",
     "GEWVORL1",
     "GEWVORL2",
     "GEWVORL3",

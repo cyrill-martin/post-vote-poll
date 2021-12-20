@@ -539,7 +539,7 @@
             "it": "MISSING"
         }
     },
-    "REASON1ACC3_01": {
+    "REASON1ACC3_01-05": {
         "10": {
             "de": "Allgemeines",
             "fr": "Informations générales",
@@ -751,7 +751,7 @@
             "it": "MISSING"
         }
     },
-    "REASON2ACC3_01": {
+    "REASON2ACC3_01-04": {
         "10": {
             "de": "Allgemeines",
             "fr": "Informations générales",
@@ -963,7 +963,7 @@
             "it": "MISSING"
         }
     },
-    "REASON1DEN3_01": {
+    "REASON1DEN3_01-04": {
         "10": {
             "de": "Allgemeines",
             "fr": "Informations générales",
@@ -1215,7 +1215,7 @@
             "it": "MISSING"
         }
     },
-    "REASON2DEN3_01": {
+    "REASON2DEN3_01-03": {
         "10": {
             "de": "Allgemeines",
             "fr": "Informations générales",
@@ -5833,18 +5833,6 @@
             "de": "weiss nicht /keine Angabe",
             "fr": "ne sais pas / aucune indication",
             "it": "non so / nessuna risposta"
-        }
-    },
-    "UNUSED": {
-        "0": {
-            "de": "verwendet",
-            "fr": "utilisé",
-            "it": "utilizzato"
-        },
-        "1": {
-            "de": "nicht verwendet",
-            "fr": "non utilisé",
-            "it": "non utilizzato"
         }
     }
 }
