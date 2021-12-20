@@ -88,13 +88,20 @@ def preprocess_data(poll, delimiter) -> None:
     reduced_data = sorted(reduced_data, key=lambda obj: obj["SECURITYID"])
     reduced_data = reduced_data[0:1000]
 
-    # Take core of special character in "CODERESP"
     for obj in reduced_data:
-      if "﻿CODERESP" in obj:
-        coderesp = obj["﻿CODERESP"]
-        del obj["﻿CODERESP"]
-        obj["CODERESP"] = coderesp
-    
+        # Take core of special character in "CODERESP"
+        if "﻿CODERESP" in obj:
+            coderesp = obj["﻿CODERESP"]
+            del obj["﻿CODERESP"]
+            obj["CODERESP"] = coderesp
+
+        # Take care of wrong CITIZENREPA codes
+        if obj["CITIZENREPA"] == "9":
+            obj["CITIZENREPA"] = "8"
+
+        if obj["CONFESSR"] == " ":
+            obj["CONFESSR"] = "99999998"
+
     save_results(poll, "data", reduced_data)
 
 
@@ -232,7 +239,10 @@ def preprocess_codebook(poll) -> None:
                 # It's a code!
 
                 cell_value = str(cell.value)
+
+                # Get propper keys
                 cell_value = cell_value.split(" ")[0]
+                cell_value = cell_value.split("-")[0]
 
                 if cell_value.isnumeric() == False and cell.value != None:
                     # It's a selection
@@ -255,9 +265,9 @@ def preprocess_codebook(poll) -> None:
                     is_super_selection = False
                     is_selection = False
                     # Set current attribute
-                    curr_att = cell.value
+                    curr_att = cell_value
                     # Create subkey in final arrangements object
-                    arrangements[curr_sel][cell.value] = {}
+                    arrangements[curr_sel][cell_value] = {}
 
                 else:
                     # It's a super selection!

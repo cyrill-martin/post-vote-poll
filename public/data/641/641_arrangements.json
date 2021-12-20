@@ -539,7 +539,7 @@
             "it": "MISSING"
         }
     },
-    "REASON1ACC1_01-08": {
+    "REASON1ACC1_01": {
         "10": {
             "de": "Allgemeines",
             "fr": "Informations générales",
@@ -841,7 +841,7 @@
             "it": "MISSING"
         }
     },
-    "REASON2ACC1_01-06": {
+    "REASON2ACC1_01": {
         "10": {
             "de": "Allgemeines",
             "fr": "Informations générales",
@@ -1148,7 +1148,7 @@
             "it": "MISSING"
         }
     },
-    "REASON1DEN1_01-06": {
+    "REASON1DEN1_01": {
         "10": {
             "de": "Allgemeines",
             "fr": "Informations générales",
@@ -1440,7 +1440,7 @@
             "it": "MISSING"
         }
     },
-    "REASON2DEN1_01-05": {
+    "REASON2DEN1_01": {
         "10": {
             "de": "Allgemeines",
             "fr": "Informations générales",

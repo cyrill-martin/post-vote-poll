@@ -52,17 +52,16 @@
       <div class="col-2"></div>
     </div>
     <div class="row">
-      <div v-if="pollData" class="col-10" id="poll-chart">
-        <the-dot-matrix
-          v-if="pollSelections && pollArrangements && pollData"
-          :poll-data="pollData"
-          :poll-arrangements="pollArrangements"
-          :poll-selections="pollSelections"
-          :selected-arrangement="arrangement"
-          :selected-order="order"
-          :poll-lang="lang"
-        ></the-dot-matrix>
-      </div>
+      <div v-if="pollData" class="col-10" id="poll-chart"></div>
+      <the-dot-matrix
+        v-if="pollSelections && pollArrangements && pollData"
+        :poll-data="pollData"
+        :poll-arrangements="pollArrangements"
+        :poll-selections="pollSelections"
+        :selected-arrangement="arrangement"
+        :selected-order="order"
+        :poll-lang="lang"
+      ></the-dot-matrix>
       <div
         v-if="pollData && arrangement"
         v-html="selectionText(order)"

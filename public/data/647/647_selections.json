@@ -111,22 +111,22 @@
         "fr": "Indiquez sur une échelle de 0 (aucune importance) à 10 (très grande importance) l'importance que revêtait « Mariage pour tous » à vos yeux ?",
         "it": "Su una scala da 0 (nessuna importanza) a 10 (molto importante), quanto è stata importante per voi «Matrimonnio per tutti»?"
     },
-    "REASON1ACC2_01-10": {
+    "REASON1ACC2_01": {
         "de": "Welches ist der Hauptgrund, dass Sie diese Vorlage angenommen haben?",
         "fr": "Quelle est la principale raison qui vous a amené(e) à accepter ce projet ?",
         "it": "Qual è la ragione principale per cui Lei ha accettato questo oggetto?"
     },
-    "REASON2ACC2_01-10": {
+    "REASON2ACC2_01": {
         "de": "Welche anderen Gründe hat es für Sie noch gegeben, diese Vorlage anzunehmen?",
         "fr": "Quelles autres raisons aviez-vous ?",
         "it": "Ci sono state altre ragioni?"
     },
-    "REASON1DEN2_01-07": {
+    "REASON1DEN2_01": {
         "de": "Welches ist der Hauptgrund, dass Sie diese Vorlage abgelehnt haben?",
         "fr": "Quelle est la principale raison qui vous a amené(e) à rejeter ce projet ?",
         "it": "Qual è la ragione principale per cui Lei ha respinto questo oggetto?"
     },
-    "REASON2DEN2_01-05": {
+    "REASON2DEN2_01": {
         "de": "Welche anderen Gründe hat es für Sie noch gegeben, diese Vorlage abzulehnen?",
         "fr": "Quelles autres raisons aviez-vous ?",
         "it": "Ci sono state altre ragioni?"
