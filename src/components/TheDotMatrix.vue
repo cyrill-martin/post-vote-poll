@@ -33,16 +33,16 @@ export default {
       linearColors: null,
       orderKeys: null,
       colorScheme: [
-        "283d3b",
-        "197278",
-        "edddd4",
-        "c44536",
-        "772e25",
-        "21585a",
-        "83a8a6",
-        "d99185",
-        "9e3a2e",
-        "4c4340",
+        "ef476f",
+        "ffd166",
+        "06d6a0",
+        "118ab2",
+        "073b4c",
+        "f4f1de",
+        "e07a5f",
+        "3d405b",
+        "81b29a",
+        "f2cc8f",
       ],
     };
   },
@@ -167,9 +167,9 @@ export default {
       let colorScale;
       // It's numerical
       // Get the max
-      const max = d3.max(this.pollData, (human) => human[order]);
+      const max = parseInt(d3.max(this.pollData, (human) => human[order]));
       // Get the min
-      const min = d3.min(this.pollData, (human) => human[order]);
+      const min = parseInt(d3.min(this.pollData, (human) => human[order]));
 
       this.orderKeys = Array.from({ length: max - min + 1 }, (_, i) => i + min);
 
@@ -199,7 +199,7 @@ export default {
 
       const dimensions = {
         width: 200,
-        height: 800,
+        height: 1000,
         margins: {
           top: 0,
           right: 10,
@@ -317,8 +317,6 @@ export default {
         dimensions.height = 500;
         dimensions.margins.bottom = 250;
       }
-
-      console.log(window.innerWidth);
 
       // Create and set inner container width
       dimensions.ctrWidth =

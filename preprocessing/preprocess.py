@@ -89,7 +89,7 @@ def preprocess_data(poll, delimiter) -> None:
     reduced_data = reduced_data[0:1000]
 
     for obj in reduced_data:
-        # Take core of special character in "CODERESP"
+        # Take care of special character in "CODERESP"
         if "﻿CODERESP" in obj:
             coderesp = obj["﻿CODERESP"]
             del obj["﻿CODERESP"]
@@ -292,9 +292,72 @@ def preprocess_codebook(poll) -> None:
         arrangements.pop(item, False)
 
     # Reduce data!
-
     selections = reduce_data_obj(poll, selections)
     arrangements = reduce_data_obj(poll, arrangements)
+
+    # Take care of wrong lrsp values
+    arrangements["LRSP"] = {
+        "0": {
+            "de": "0 ganz links",
+            "fr": "0 tout à gauche",
+            "it": "0 estrema sinistra"
+        },
+        "1": {
+            "de": "1",
+            "fr": "1",
+            "it": "1"
+        },
+        "2": {
+            "de": "2",
+            "fr": "2",
+            "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
+        },
+        "4": {
+            "de": "4",
+            "fr": "4",
+            "it": "4"
+        },
+        "5": {
+            "de": "5 Zentrum",
+            "fr": "5 centre",
+            "it": "5 centro"
+        },
+        "6": {
+            "de": "6",
+            "fr": "6",
+            "it": "6"
+        },
+        "7": {
+            "de": "7",
+            "fr": "7",
+            "it": "7"
+        },
+        "8": {
+            "de": "8",
+            "fr": "8",
+            "it": "8"
+        },
+        "9": {
+            "de": "9",
+            "fr": "9",
+            "it": "9"
+        },
+        "10": {
+            "de": "10 ganz rechts",
+            "fr": "10 tout à droite",
+            "it": "10 estrema destra"
+        },
+        "98": {
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
+            "it": "non so / nessuna risposta"
+        }
+    }
 
     # Save results
     save_results(poll, "selections", selections)

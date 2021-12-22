@@ -2760,20 +2760,25 @@
         }
     },
     "LRSP": {
-        "1": {
-            "de": "0",
-            "fr": "0",
-            "it": "0"
+        "0": {
+            "de": "0 ganz links",
+            "fr": "0 tout à gauche",
+            "it": "0 estrema sinistra"
         },
-        "2": {
+        "1": {
             "de": "1",
             "fr": "1",
             "it": "1"
         },
-        "3": {
+        "2": {
             "de": "2",
             "fr": "2",
             "it": "2"
+        },
+        "3": {
+            "de": "3",
+            "fr": "3",
+            "it": "3"
         },
         "4": {
             "de": "4",
@@ -2781,9 +2786,9 @@
             "it": "4"
         },
         "5": {
-            "de": "5",
-            "fr": "5",
-            "it": "5"
+            "de": "5 Zentrum",
+            "fr": "5 centre",
+            "it": "5 centro"
         },
         "6": {
             "de": "6",
@@ -2806,13 +2811,13 @@
             "it": "9"
         },
         "10": {
-            "de": "10",
-            "fr": "10",
-            "it": "10"
+            "de": "10 ganz rechts",
+            "fr": "10 tout à droite",
+            "it": "10 estrema destra"
         },
         "98": {
-            "de": "ne sais pas/ aucune indication",
-            "fr": "ne sais pas/ aucune indication",
+            "de": "weiss nicht / keine Angabe",
+            "fr": "ne sais pas / aucune indication",
             "it": "non so / nessuna risposta"
         }
     },
