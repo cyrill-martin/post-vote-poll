@@ -7,13 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "predeploy": "vue-cli-service build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "firebase deploy"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cyrill-martin/swisspolls.git"
-  },
-  "homepage": "https://cyrill-martin.github.io/swisspolls/",
   "dependencies": {
     "core-js": "^3.6.5",
     "d3": "^7.2.1",
