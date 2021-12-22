@@ -1,27 +1,35 @@
 <template>
-  <div class="container row col-12">
-    <table>
-      <tr>
-        <th @click="sortColumn('date')">
-          {{ tableColumns.date[lang] }}
-          <span v-html="sortIndicator('date')"></span>
-        </th>
-        <th @click="sortColumn('vote')">
-          {{ tableColumns.vote[lang] }}
-          <span v-html="sortIndicator('vote')"></span>
-        </th>
-      </tr>
-      <tr
-        class="vote"
-        v-for="poll in polls"
-        :key="poll.id"
-        :id="poll.id"
-        @click="selectPoll(poll.id)"
-      >
-        <td class="vote-date">{{ poll.date }}</td>
-        <td class="vote-vote">{{ poll[lang] }}</td>
-      </tr>
-    </table>
+  <div class="container">
+    <div class="row col-12">
+      <h1 v-html="introSentence(lang)"></h1>
+    </div>
+    <div class="col-12">
+      {{ explanationSentence(lang) }}
+    </div>
+    <div class="row col-12">
+      <table>
+        <tr>
+          <th @click="sortColumn('date')">
+            {{ tableColumns.date[lang] }}
+            <span v-html="sortIndicator('date')"></span>
+          </th>
+          <th @click="sortColumn('vote')">
+            {{ tableColumns.vote[lang] }}
+            <span v-html="sortIndicator('vote')"></span>
+          </th>
+        </tr>
+        <tr
+          class="vote"
+          v-for="poll in polls"
+          :key="poll.id"
+          :id="poll.id"
+          @click="selectPoll(poll.id)"
+        >
+          <td class="vote-date">{{ poll.date }}</td>
+          <td class="vote-vote">{{ poll[lang] }}</td>
+        </tr>
+      </table>
+    </div>
   </div>
 </template>
 
@@ -55,6 +63,22 @@ export default {
     };
   },
   methods: {
+    introSentence(lang) {
+      const langs = {
+        de: "Visualisierungen der <a href='https://swissvotes.ch' target='_blan'>swissvotes</a>-Datensätze der Nachbefragungen zu den eidgenössischen Volksabstimmungen",
+        fr: "Visualisations des ensembles de données <a href='https://swissvotes.ch' target='_blan'>swissvotes</a> des enquêtes de suivi des référendums fédéraux",
+        it: "Visualizzazioni dei set di dati <a href='https://swissvotes.ch' target='_blan'>swissvotes</a> dei sondaggi successivi ai referendum federali",
+      };
+      return langs[lang];
+    },
+    explanationSentence(lang) {
+      const langs = {
+        de: "Visualisiert werden die Aussagen von 1000 zufällig ausgewählten Personen.",
+        fr: "Les déclarations de 1000 personnes sélectionnées au hasard sont visualisées.",
+        it: "Vengono visualizzate le dichiarazioni di 1000 persone selezionate a caso.",
+      };
+      return langs[lang];
+    },
     checkColumn(column) {
       if (column === "date") {
         return "id";
