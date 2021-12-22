@@ -41,7 +41,7 @@ export default {
   },
   computed: {
     logo() {
-      return require("../../assets/images/kmapper_k_3b.png");
+      return require("../../assets/images/kmapper_swisspolls.png");
     },
   },
   methods: {

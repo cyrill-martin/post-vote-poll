@@ -45,8 +45,9 @@
     </div>
     <div class="row">
       <div v-if="pollData && arrangement" class="col-10">
-        <span v-html="introSentence(pollData.length, nrOfAnswers, lang )"></span>
-        <br>
+        <span v-html="introSentence(pollData.length, nrOfAnswers, lang)"></span
+        >:
+        <br />
         <span id="poll-arrangement" v-html="selectionText(arrangement)"></span>
       </div>
       <div v-else class="col-10"></div>
@@ -64,13 +65,10 @@
         :poll-lang="lang"
         @nr-of-answers="updateNrOfAnswers"
       ></the-dot-matrix>
-      <div
-        v-if="pollData && arrangement"
-        v-html="selectionText(order)"
-        class="col-2"
-        id="poll-order"
-      ></div>
-      <div v-else class="col-2"></div>
+      <!-- <div v-if="pollData && arrangement" class="col-2" id="poll-order"> -->
+      <div class="col-2" id="poll-order">
+        <span v-if="order" id="order-text" v-html="selectionText(order)"></span>
+      </div>
     </div>
   </div>
 </template>
@@ -137,10 +135,10 @@ export default {
   methods: {
     introSentence(total, actual, lang) {
       const sentences = {
-        "de": `${total} Menschen wurden gefragt, <span style="background: #3584e4">${actual}</span> haben geantwortet`,
-        "fr": `${total} personnes ont été interrogées, <span style="background: #3584e4">${actual}</span> ont répondu`,
-        "it": `È stato chiesto a ${total} persone, <span style="background: #3584e4">${actual}</span> hanno risposto`,
-      }
+        de: `${total} Menschen wurden gefragt, <mark>${actual}</mark> haben geantwortet`,
+        fr: `${total} personnes ont été interrogées, <mark>${actual}</mark> ont répondu`,
+        it: `È stato chiesto a ${total} persone, <mark>${actual}</mark> hanno risposto`,
+      };
       return sentences[lang];
     },
     updateNrOfAnswers(nr) {
@@ -227,7 +225,7 @@ export default {
   font-weight: bold;
   font-size: 1.2rem;
 }
-#poll-order {
+#order-text {
   font-weight: bold;
 }
 table {

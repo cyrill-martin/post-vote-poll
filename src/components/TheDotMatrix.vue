@@ -22,8 +22,8 @@ export default {
   },
   data() {
     return {
-      arrangement: false,
-      order: false,
+      arrangement: this.defaultArr,
+      order: this.defaultOrd,
       language: "de",
       maxDotsPerRow: 100,
       xScaleOuter: null,
@@ -33,16 +33,16 @@ export default {
       linearColors: null,
       orderKeys: null,
       colorScheme: [
-        "797d62",
-        "9b9b7a",
-        "baa587",
-        "d9ae94",
-        "f1dca7",
-        "ffcb69",
-        "e8ac65",
-        "d08c60",
-        "b58463",
-        "997b66",
+        "283d3b",
+        "197278",
+        "edddd4",
+        "c44536",
+        "772e25",
+        "21585a",
+        "83a8a6",
+        "d99185",
+        "9e3a2e",
+        "4c4340",
       ],
     };
   },
@@ -51,14 +51,13 @@ export default {
       this.arrangement = this.selectedArrangement;
       const order = this.order || this.defaultOrd;
       // Update D3
-      this.updateColors(order);
       this.callUpdateArrangement(this.arrangement, order);
     },
     selectedOrder() {
       this.order = this.selectedOrder;
+      const arrangement = this.arrangement || this.defaultArr;
       // Update D3
-      this.updateColors(this.order);
-      this.callUpdateArrangement(this.arrangement, this.order);
+      this.callUpdateArrangement(arrangement, this.order, true);
     },
     pollLang() {
       this.language = this.pollLang;
@@ -68,7 +67,6 @@ export default {
   methods: {
     updateColors(order) {
       if (!this.pollArrangements[order]) {
-        this.orderKeys = null;
         this.linearColors = this.getColorScale(order);
       } else {
         this.linearColors = null;
@@ -80,6 +78,7 @@ export default {
       let xOuterDomain;
       if (this.pollArrangements[arrangement]) {
         const xOuterItems = Object.keys(this.pollArrangements[arrangement]);
+
         xOuterDomain = xOuterItems.map(
           (item) => this.pollArrangements[arrangement][item][this.language]
         );
@@ -167,12 +166,12 @@ export default {
     getColorScale(order) {
       let colorScale;
       // It's numerical
-
       // Get the max
       const max = d3.max(this.pollData, (human) => human[order]);
-
       // Get the min
       const min = d3.min(this.pollData, (human) => human[order]);
+
+      this.orderKeys = Array.from({ length: max - min + 1 }, (_, i) => i + min);
 
       colorScale = d3
         .scaleLinear()
@@ -195,30 +194,25 @@ export default {
       }
       return existence;
     },
-    drawLegend() {
+    drawLegend(keys) {
       d3.select("#svg-legend").remove();
 
-      // Set dimensions
       const dimensions = {
         width: 200,
         height: 800,
         margins: {
-          top: 10,
+          top: 0,
           right: 10,
-          bottom: 10,
-          left: 10,
+          bottom: 500,
+          left: 5,
         },
         ctrWidth: null,
         ctrHeight: null,
       };
 
-      // Create and set inner container width
-      dimensions.ctrWidth =
-        dimensions.width - (dimensions.margins.left + dimensions.margins.right);
-      // Create and set inner container height
-      dimensions.ctrHeight =
-        dimensions.height -
-        (dimensions.margins.top + dimensions.margins.bottom);
+      const spacingVertical = 15;
+      const circleRadius = spacingVertical / 3;
+      const spacingHorizontal = spacingVertical / 2;
 
       // Create SVG element
       const svg = d3
@@ -236,7 +230,60 @@ export default {
           `translate(${dimensions.margins.left}, ${dimensions.margins.top})`
         );
 
-      console.log(ctr);
+      // Add legend group
+      const legendGroup = ctr
+        .append("g")
+        .attr("class", "legend")
+        .style("font-size", "10px")
+        .attr("transform", `translate(0, ${dimensions.margins.top})`);
+
+      // Add <g> for each legend item
+      const legendItems = legendGroup
+        .selectAll(".legend-item")
+        .data(keys)
+        .join("g")
+        .attr("class", "legend-item")
+        .attr(
+          "transform",
+          (_, i) => `translate(0, ${spacingVertical + i * spacingVertical})`
+        );
+
+      // Draw the legend circles for selected legend keys
+      legendItems
+        .append("circle")
+        .transition()
+        .duration(1000)
+        .attr("cx", 0)
+        .attr("cy", 0.5)
+        .attr("r", circleRadius)
+        .attr("fill", (d) => {
+          if (this.linearColors) {
+            return this.linearColors(d);
+          } else {
+            return `#${
+              this.colorScheme[
+                this.orderKeys.indexOf(d) % this.colorScheme.length
+              ]
+            }`;
+          }
+        });
+      const order = this.order || this.defaultOrd;
+      // Write the legend keys next to the legend circles
+      legendItems
+        .append("text")
+        .attr("opacity", 0)
+        .transition()
+        .duration(1000)
+        .attr("opacity", 1)
+        .attr("x", spacingHorizontal)
+        .attr("y", circleRadius / 2 + 1)
+        .text((d) => {
+          if (this.linearColors) {
+            return d;
+          } else {
+            return this.pollArrangements[order][d][this.language];
+          }
+        });
     },
     drawDotMatrix() {
       d3.select("#svg-chart").remove();
@@ -314,9 +361,6 @@ export default {
           .paddingInner(0.1);
 
         const dotsGroup = ctr.append("g").attr("class", "dots");
-
-        // colors
-        this.updateColors(order);
 
         dotsGroup
           .selectAll("g")
@@ -402,6 +446,10 @@ export default {
       const outerXDomain = this.getOuterXDomain(arrangement);
       const innerXDomain = this.getInnerXDomain(outerXDomain.length);
       const yDomain = this.getYDomain(arrangement, order, innerXDomain.length);
+
+      // colors
+      this.updateColors(order);
+      this.drawLegend(this.orderKeys);
 
       // Calling drawArrangement()
       drawArrangement(arrangement, order, outerXDomain, innerXDomain, yDomain);
@@ -506,10 +554,17 @@ export default {
           }
         });
     },
-    callUpdateArrangement(arrangement, order) {
+    callUpdateArrangement(arrangement, order, legend = false) {
       const newXOuter = this.getOuterXDomain(arrangement);
       const newXInner = this.getInnerXDomain(newXOuter.length);
       const newYDomain = this.getYDomain(arrangement, order, newXInner.length);
+
+      // colors
+      if (legend) {
+        this.updateColors(order);
+        this.drawLegend(this.orderKeys);
+      }
+
       this.updateArrangement(
         arrangement,
         order,

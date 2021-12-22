@@ -117,12 +117,12 @@ table {
 th {
   padding: 0.5rem;
   background-color: lightgrey;
-  color: blue;
+  color: #3584e4;
   text-align: left;
   cursor: pointer;
 }
 span {
-  color: blue;
+  color: #3584e4;
 }
 td {
   padding: 0.5rem;
