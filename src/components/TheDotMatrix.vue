@@ -203,16 +203,22 @@ export default {
         margins: {
           top: 0,
           right: 10,
-          bottom: 500,
+          bottom: 10,
           left: 5,
         },
         ctrWidth: null,
         ctrHeight: null,
       };
 
-      const spacingVertical = 15;
-      const circleRadius = spacingVertical / 3;
-      const spacingHorizontal = spacingVertical / 2;
+      let spacingVertical = 15;
+      let circleRadius = spacingVertical / 3;
+      let spacingHorizontal = spacingVertical / 2;
+
+      if (window.innerWidth < 720) {
+        spacingVertical = spacingVertical * 0.4;
+        circleRadius = circleRadius * 0.4;
+        spacingHorizontal = spacingHorizontal * 0.4;
+      }
 
       // Create SVG element
       const svg = d3
@@ -234,7 +240,12 @@ export default {
       const legendGroup = ctr
         .append("g")
         .attr("class", "legend")
-        .style("font-size", "10px")
+        .style("font-size", () => {
+          if (window.innerWidth < 720) {
+            return "4px";
+          }
+          return "10px";
+        })
         .attr("transform", `translate(0, ${dimensions.margins.top})`);
 
       // Add <g> for each legend item
@@ -301,6 +312,13 @@ export default {
         ctrWidth: null,
         ctrHeight: null,
       };
+
+      if (window.innerWidth < 720) {
+        dimensions.height = 500;
+        dimensions.margins.bottom = 250;
+      }
+
+      console.log(window.innerWidth);
 
       // Create and set inner container width
       dimensions.ctrWidth =
