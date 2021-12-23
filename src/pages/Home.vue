@@ -110,12 +110,12 @@ export default {
       if (this.tableColumns[column].sortedDesc) {
         column = this.checkColumn(column);
         this.polls.sort((a, b) => {
-          return b[column] > a[column] ? 1 : 0;
+          return b[column] > a[column] ? 1 : -1;
         });
       } else {
         column = this.checkColumn(column);
         this.polls.sort((a, b) => {
-          return b[column] < a[column] ? 1 : 0;
+          return b[column] < a[column] ? 1 : -1;
         });
       }
     },
