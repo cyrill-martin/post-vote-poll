@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row col-12 poll-info">
-      <h1>{{ pollMetadata[lang] }} - {{ pollMetadata.date }}</h1>
+      <h1>{{ pollMetadata[lang] }} - {{ pollMetadata.date }} *</h1>
     </div>
     <div class="row col-12" id="table-header">
       <table>
@@ -68,6 +68,20 @@
       <!-- <div v-if="pollData && arrangement" class="col-2" id="poll-order"> -->
       <div class="col-2" id="poll-order">
         <span v-if="order" id="order-text" v-html="selectionText(order)"></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p>
+          Für die Visualisierung werden maximal 1000 Teilnehmer der
+          Nachbefragung zur Abstimmung dargestellt. Die Auswahl basiert auf der
+          Sortierung aller Teilnehmer nach Sozialversicherungsnummer
+          (aufsteigend) und der Verwendung der ersten 1000 Teilnehmer.
+          Original-Codebuch und -Datensatz zur Nachbefragung sind verfügbar auf
+          <a :href="`https://swissvotes.ch/vote/${id}.00`" target="_blank"
+            >https://swissvotes.ch/vote/{{ id }}.00</a
+          >.
+        </p>
       </div>
     </div>
   </div>
@@ -241,4 +255,16 @@ th {
 .poll-icon {
   cursor: pointer;
 }
+/* #source {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  font-size: 0.8rem;
+}
+@media only screen and (max-width: 65em) {
+  #source {
+    width: 95%;
+  }
+} */
 </style>

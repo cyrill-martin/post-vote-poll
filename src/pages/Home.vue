@@ -30,6 +30,33 @@
         </tr>
       </table>
     </div>
+    <div class="row col-12">
+      <div id="about">
+        <h3>Daten:</h3>
+        <p>
+          Die bei Auswahl einer Abstimmung angezeigten Fragen und Daten basieren
+          auf den auf
+          <a href="https://swissvotes.ch" target="_blank">swissvotes</a>
+          verfügbaren Codebüchern und Datensätzen der jeweiligen Nachbefragung
+          zu einer Abstimmung.
+        </p>
+        <p>
+          Codebücher, Daten und Code sind auf
+          <a href="https://github.com/cyrill-martin/swisspolls" target="_blank"
+            >GitHub</a
+          >
+          verfügbar.
+        </p>
+        <p>
+          <br />
+          <br />
+          Cyrill Martin<br />
+          <a href="mailto:cyrill.martin@kmapper.com"
+            >cyrill.martin@kmapper.com</a
+          >
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -164,5 +191,17 @@ td {
 }
 .vote-vote {
   width: 50%;
+}
+#about {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  font-size: 0.9rem;
+}
+@media only screen and (max-width: 65em) {
+  #about {
+    width: 95%;
+  }
 }
 </style>
