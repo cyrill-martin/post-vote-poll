@@ -76,8 +76,17 @@
           Für die Visualisierung werden maximal 1000 Teilnehmer der
           Nachbefragung zur Abstimmung dargestellt. Die Auswahl basiert auf der
           Sortierung aller Teilnehmer nach Sozialversicherungsnummer
-          (aufsteigend) und der Verwendung der ersten 1000 Teilnehmer.
-          Original-Codebuch und -Datensatz zur Nachbefragung sind verfügbar auf
+          (aufsteigend) und der Verwendung der ersten 1000 Teilnehmer einer
+          Befragung. Transformierte und für diese Seite z.T. leicht bearbeitete Daten sind
+          verfügbar auf
+          <a
+            :href="`https://github.com/cyrill-martin/swisspolls/tree/main/public/data/${id}`"
+            target="_blank"
+            >https://github.com/cyrill-martin/swisspolls/tree/main/public/data/{{
+              id
+            }}</a
+          >. Original-Codebuch und -Datensatz zur Nachbefragung sind verfügbar
+          auf
           <a :href="`https://swissvotes.ch/vote/${id}.00`" target="_blank"
             >https://swissvotes.ch/vote/{{ id }}.00</a
           >.
@@ -255,16 +264,4 @@ th {
 .poll-icon {
   cursor: pointer;
 }
-/* #source {
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  font-size: 0.8rem;
-}
-@media only screen and (max-width: 65em) {
-  #source {
-    width: 95%;
-  }
-} */
 </style>
