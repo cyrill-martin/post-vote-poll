@@ -82,5 +82,26 @@
     "fr": "Mariage pour tous",
     "it": "Matrimonio per tutti",
     "date": "2021-09-26"
+  },
+  {
+    "id": 648,
+    "de": "Pflegeinitiative",
+    "fr": "Initiative sur les soins infirmiers",
+    "it": "Iniziativa sulle cure infermieristiche",
+    "date": "2021-11-28"
+  },
+  {
+    "id": 649,
+    "de": "Justizinitiative",
+    "fr": "Initiative sur la justice",
+    "it": "Justizinitiative",
+    "date": "2021-11-28"
+  },
+  {
+    "id": 650,
+    "de": "Änderung des Covid-19-Gesetzes",
+    "fr": "Modification de la loi COVID-19",
+    "it": "Modifica della legge COVID-19",
+    "date": "2021-11-28"
   }
 ]

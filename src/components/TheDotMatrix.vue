@@ -33,9 +33,9 @@ export default {
       linearColors: null,
       orderKeys: null,
       colorScheme: [
+        "06d6a0",
         "ef476f",
         "ffd166",
-        "06d6a0",
         "118ab2",
         "073b4c",
         "f4f1de",

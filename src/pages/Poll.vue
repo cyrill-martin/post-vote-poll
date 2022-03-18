@@ -73,7 +73,7 @@
     <div class="row">
       <div class="col-12">
         <p>
-          Für die Visualisierung werden maximal 1000 Teilnehmer der
+          * Für die Visualisierung werden maximal 1000 Teilnehmer der
           Nachbefragung zur Abstimmung dargestellt. Die Auswahl basiert auf der
           Sortierung aller Teilnehmer nach Sozialversicherungsnummer
           (aufsteigend) und der Verwendung der ersten 1000 Teilnehmer einer
