@@ -205,12 +205,20 @@ export default {
         console.log(error);
       }
     },
+    updateUrl() {
+      history.pushState(
+        {},
+        null,
+        `${this.$route.path}?arr=${this.arrangement}&ord=${this.order}`
+      );
+    },
     setArrangement(arr) {
       // [ "arr", "BIRTHYEARR", true ]
       if (this.arrangement === arr[1]) {
         this.arrangement = false;
       } else {
         this.arrangement = arr[1];
+        this.updateUrl();
       }
     },
     setOrder(ord) {
@@ -218,6 +226,7 @@ export default {
         this.order = false;
       } else {
         this.order = ord[1];
+        this.updateUrl();
       }
     },
     selectionText(key) {
