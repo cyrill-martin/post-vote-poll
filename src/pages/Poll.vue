@@ -138,10 +138,12 @@ export default {
       },
     };
   },
-  provide: {
-    // Default selections
-    defaultArr: "PART",
-    defaultOrd: "POLINT",
+  provide() {
+    return {
+      // Default selections
+      defaultArr: this.defaultArr,
+      defaultOrd: this.defaultOrd,
+    }
   },
   computed: {
     pollMetadata() {
@@ -154,6 +156,18 @@ export default {
         return [];
       }
     },
+    defaultArr() {
+      if (this.$route.query.arr) {
+        return this.$route.query.arr;
+      }
+      return "PART"
+    },
+    defaultOrd() {
+      if (this.$route.query.ord) {
+        return this.$route.query.ord;
+      }
+      return "POLINT"
+    }
   },
   methods: {
     introSentence(total, actual, lang) {
