@@ -1,12 +1,28 @@
 def poll_ids() -> list:
-  poll_ids = [648, 649, 650]
+  poll_ids = [651, 652, 653, 654]
   return poll_ids
 
 def polls_with_semicolon() -> list:
-  return [641, 642, 643, 644, 645, 648, 649, 650]
+  return []
 
 def poll_vote_info() -> dict:
   return {
+    654: {
+        "vote": 4,
+        "nr_of_votes": 4
+    },     
+    653: {
+        "vote": 3,
+        "nr_of_votes": 4
+    }, 
+    652: {
+        "vote": 2,
+        "nr_of_votes": 4
+    },
+    651: {
+        "vote": 1,
+        "nr_of_votes": 4
+    },
     650: {
         "vote": 3,
         "nr_of_votes": 3
